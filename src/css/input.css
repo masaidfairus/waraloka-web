@@ -12,16 +12,6 @@
     }
 }
 
-@layer components {
-  .swiper-pagination-bullet {
-    @apply bg-[#D9D9D9];
-  }
-
-  .swiper-pagination-bullet-active {
-    @apply bg-primary-text;
-  }
-}
-
 @theme{
     --color-primary: #2E8B57;
     --color-secondary: #FFD54F;

@@ -1,11 +1,37 @@
 let sidebar = document.getElementById('sidebar');
+let tab_informasi = document.getElementById('tabinfo');
+let tab_produk = document.getElementById('tabproduk');
+let info_button = document.getElementById('infobutton');
+let produk_button = document.getElementById('produkbutton');
 
 function openSide() {
-    sidebar.classList.replace('translate-x-full', 'translate-x-0')
+  sidebar.classList.replace('translate-x-full', 'translate-x-0')
 }
 
 function closeSide() {
-    sidebar.classList.replace('translate-x-0', 'translate-x-full')
+  sidebar.classList.replace('translate-x-0', 'translate-x-full')
+}
+
+function info() {
+  tab_informasi.classList.replace('absolute', 'relative');
+  tab_informasi.classList.replace('invisible', 'visible');
+  
+  tab_produk.classList.replace('relative', 'absolute');
+  tab_produk.classList.replace('visible', 'invisible');
+
+  info_button.classList.replace('text-primary-text/60', 'text-primary')
+  produk_button.classList.replace('text-primary', 'text-primary-text/60')
+}
+
+function produk() {
+  tab_produk.classList.replace('absolute', 'relative');
+  tab_produk.classList.replace('invisible', 'visible');
+  
+  tab_informasi.classList.replace('relative', 'absolute');
+  tab_informasi.classList.replace('visible', 'invisible');
+
+  info_button.classList.replace('text-primary', 'text-primary-text/60')
+  produk_button.classList.replace('text-primary-text/60', 'text-primary')
 }
 
 const swiper = new Swiper('.swiper', {

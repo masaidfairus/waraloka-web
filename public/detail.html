@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waraloka - UMKM Directory</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+</head>
+<body class="bg-neutral relative overflow-x-hidden flex flex-col justify-center items-center">
+    <header class="w-full relative z-10">
+        <nav class="w-full px-20 py-6 bg-neutral shadow-sm shadow-black/20 fixed flex justify-between items-center">
+            <a href="#" class="w-max h-auto invisible lg:visible">
+                <img src="../assets/images/Waraloka-Logo.svg" alt="Waraloka-Logo" class="w-40 h-auto max-w-full">
+            </a>
+
+            <div class="gap-8 flex justify-center items-center invisible lg:visible">
+                <a href="#" class="text-primary-text text-base text-center font-medium tracking-wide capitalize">beranda</a>
+                <a href="#" class="text-primary-text/60 text-base text-center font-medium tracking-wide capitalize">testimoni</a>
+                <a href="#" class="text-primary-text/60 text-base text-center font-medium tracking-wide capitalize">berita</a>
+                <a href="#" class="text-primary-text/60 text-base text-center font-medium tracking-wide capitalize">tentang kami</a>
+            </div>
+
+            <a onclick="openSide()" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl absolute right-6 visible lg:invisible flex justify-center items-center">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+
+        <aside id="sidebar" class="w-80 h-screen py-6 px-8 bg-zinc-300/50 backdrop-blur-xs fixed right-0 top-0 gap-12 flex flex-col justify-start items-start translate-x-full transition-all duration-300">
+            <div class="w-full flex justify-between items-center">
+                <a href="#" class="w-max h-auto">
+                    <img src="../assets/images/Waraloka-Logo.svg" alt="Waraloka-Logo" class="w-40 h-auto max-w-full">
+                </a>
+
+                <a onclick="closeSide()" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl flex justify-center items-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+            </div>
+
+            <div class="w-full gap-3 flex flex-col justify-center items-start">
+                <a href="#" class="text-primary-text text-lg text-center font-medium tracking-wide capitalize">beranda</a>
+                <a href="#" class="text-primary-text/60 text-lg text-center font-medium tracking-wide capitalize">testimoni</a>
+                <a href="#" class="text-primary-text/60 text-lg text-center font-medium tracking-wide capitalize">berita</a>
+                <a href="#" class="text-primary-text/60 text-lg text-center font-medium tracking-wide capitalize">tentang kami</a>
+            </div>
+        </aside>
+    </header>
+    
+    <main class="w-full px-5 lg:px-20 relative overflow-x-hidden">
+        <section class="w-full pt-36 pb-10 flex flex-col justify-center items-center">
+            <!-- Breadcrumbs -->
+            <div class="w-full mb-10 gap-3 flex justify-start items-center">
+                <a href="index.html" class="text-primary-text/60 text-left text-sm font-bold capitalize tracking-wide">beranda</a>
+                <i class="fa-solid fa-chevron-right text-primary-text text-sm font-bold"></i>
+                <a href="#" class="text-primary text-left text-sm font-bold capitalize tracking-wide">toko es buah pelangi</a>
+            </div>
+
+            <div class="w-full mb-8 gap-6 flex flex-col justify-center items-start">
+                <h1 class="text-left text-5xl text-primary-text font-bold capitalize tracking-wide">toko es buah pelangi</h1>
+                <div class="gap-5 flex justify-center items-center">
+                    <div class="text-primary-text gap-2 flex justify-center items-center">
+                        <i class="fa-solid fa-clock text-xl"></i>
+                        <span class="text-base text-left font-medium capitalize tracking-wide">jam buka: 06.00 - 22.00 WIB</span>
+                    </div>
+                    <div class="text-primary-text gap-2 flex justify-center items-center">
+                        <i class="fa-solid fa-location-dot text-xl"></i>
+                        <span class="text-base text-left font-medium capitalize tracking-wide">pertigaan pasar jumat</span>
+                    </div>
+                    <div class="text-primary-text gap-2 flex justify-center items-center">
+                        <i class="fa-solid fa-layer-group text-xl"></i>
+                        <span class="text-base text-left font-medium capitalize tracking-wide">makanan & minuman</span>
+                    </div>
+                </div>
+            </div>
+
+            <section class="w-full gap-10 flex justify-center items-start">
+                <div class="w-full flex flex-col justify-center items-start">
+                    <div class="w-full h-80 mb-8 relative gap-3 flex justify-center items-center">
+                        <div class="w-150 h-full rounded-xl overflow-hidden flex justify-center items-center">
+                            <img src="../assets/images/gambar-buah.png" alt="gambar-buah" class="w-full h-full object-center object-cover">
+                        </div>
+
+                        <div class="w-full h-full gap-2 flex flex-col justify-center items-center">
+                            <div class="w-full h-1/2 rounded-xl overflow-hidden flex justify-center items-center">
+                                <img src="../assets/images/gambar-buah.png" alt="gambar-buah" class="w-full h-full object-center object-cover">
+                            </div>
+                            <div class="w-full h-1/2 rounded-xl overflow-hidden flex justify-center items-center">
+                                <img src="../assets/images/gambar-buah.png" alt="gambar-buah" class="w-full h-full object-center object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex flex-col justify-start items-center">
+                        <header class="w-full pb-10 border-b-2 border-b-zinc-300 gap-6 flex justify-start items-center">
+                            <h3 id="infobutton" onclick="info()" class="text-primary text-left text-2xl font-semibold capitalize tracking-wide cursor-pointer">informasi</h3>
+                            <span class="w-[0.22rem] h-8 bg-primary-text/60 rounded-full"></span>
+                            <h3 id="produkbutton" onclick="produk()" class="text-primary-text/60 text-left text-2xl font-semibold capitalize tracking-wide cursor-pointer">produk</h3>
+                        </header>
+
+                        <!-- Tab Informasi -->
+                        <div id="tabinfo" class="w-full relative visible flex flex-col justify-center items-center">
+                            <div class="w-full py-8 border-b-2 border-b-zinc-300 gap-6 flex flex-col justify-center items-start">
+                                <h3 class="w-full text-primary-text text-3xl text-left font-bold capitalize tracking-wide">tentang toko ini</h3>
+                                <p class="w-full text-primary-text/60 text-justify text-base font-medium tracking-wide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repellat recusandae consequuntur tenetur necessitatibus, debitis deserunt repellendus porro accusamus, molestias error dolorem hic autem possimus earum. Rem quo dicta distinctio laudantium mollitia repellendus deleniti sed placeat similique ad quos, atque provident. Vero optio deserunt fuga nobis id ea esse sint.</p>
+                            </div>
+
+                            <div class="w-full py-8 gap-6 flex flex-col justify-center items-start">
+                                <h3 class="w-full text-primary-text text-3xl text-left font-bold capitalize tracking-wide">detail kontak</h3>
+                                <div class="gap-5 flex flex-col justify-center items-start">
+                                    <a href="#" class="w-full text-primary-text gap-3 flex justify-start items-center">
+                                        <i class="fa-solid fa-location-dot text-2xl"></i>
+                                        <p class="w-full text-justify text-sm font-normal tracking-wider">8MH7+HGR, Jl. Raya Gn. Salak Endah, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810</p>
+                                    </a>
+                                    <a href="#" class="w-full text-primary-text gap-3 flex justify-start items-center">
+                                        <i class="fa-solid fa-phone-volume text-xl"></i>
+                                        <p class="w-full text-justify text-sm font-normal tracking-wider">+6287677457854</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab Produk -->
+                        <div id="tabproduk" class="w-full absolute invisible flex justify-start items-center">
+                            <div class="w-full py-8 gap-5 pr-20 grid grid-cols-2 justify-center items-center">
+                                <div class="w-full h-90 p-3 border-2 border-zinc-300 rounded-lg gap-3 overflow-hidden flex flex-col justify-between items-center">
+                                    <img src="../assets/images/es-duren.png" alt="es-duren" class="w-full h-auto max-w-full rounded-lg object-center object-cover">
+                                    <div class="w-full flex justify-between items-start">
+                                        <h2 class="text-primary-text text-2xl text-left font-bold capitalize tracking-wider">es durian</h2>
+                                        <p class="text-primary-text/60 text-base text-right font-normal capitalize tracking-wider">rp 15.000</p>
+                                    </div>
+                                    <article class="w-full text-primary-text/60 text-justify text-base capitalize tracking-wide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas unde et sequi inventore beatae perferendis dolores.</article>
+                                </div>
+                                <div class="w-full h-90 p-3 border-2 border-zinc-300 rounded-lg gap-3 overflow-hidden flex flex-col justify-between items-center">
+                                    <img src="../assets/images/es-duren.png" alt="es-duren" class="w-full h-auto max-w-full rounded-lg object-center object-cover">
+                                    <div class="w-full flex justify-between items-start">
+                                        <h2 class="text-primary-text text-2xl text-left font-bold capitalize tracking-wider">es durian</h2>
+                                        <p class="text-primary-text/60 text-base text-right font-normal capitalize tracking-wider">rp 15.000</p>
+                                    </div>
+                                    <article class="w-full text-primary-text/60 text-justify text-base capitalize tracking-wide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas unde et sequi inventore beatae perferendis dolores.</article>
+                                </div>
+                                <div class="w-full h-90 p-3 border-2 border-zinc-300 rounded-lg gap-3 overflow-hidden flex flex-col justify-between items-center">
+                                    <img src="../assets/images/es-duren.png" alt="es-duren" class="w-full h-auto max-w-full rounded-lg object-center object-cover">
+                                    <div class="w-full flex justify-between items-start">
+                                        <h2 class="text-primary-text text-2xl text-left font-bold capitalize tracking-wider">es durian</h2>
+                                        <p class="text-primary-text/60 text-base text-right font-normal capitalize tracking-wider">rp 15.000</p>
+                                    </div>
+                                    <article class="w-full text-primary-text/60 text-justify text-base capitalize tracking-wide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas unde et sequi inventore beatae perferendis dolores.</article>
+                                </div>
+                                <div class="w-full h-90 p-3 border-2 border-zinc-300 rounded-lg gap-3 overflow-hidden flex flex-col justify-between items-center">
+                                    <img src="../assets/images/es-duren.png" alt="es-duren" class="w-full h-auto max-w-full rounded-lg object-center object-cover">
+                                    <div class="w-full flex justify-between items-start">
+                                        <h2 class="text-primary-text text-2xl text-left font-bold capitalize tracking-wider">es durian</h2>
+                                        <p class="text-primary-text/60 text-base text-right font-normal capitalize tracking-wider">rp 15.000</p>
+                                    </div>
+                                    <article class="w-full text-primary-text/60 text-justify text-base capitalize tracking-wide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas unde et sequi inventore beatae perferendis dolores.</article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-120 gap-6 flex flex-col justify-center items-center">
+                    <div class="w-full h-auto p-4 border-2 border-zinc-400 rounded-lg gap-4 flex flex-col justify-center items-center">
+                        <iframe class="w-full h-70 rounded-lg max-w-full shadow-md shadow-black/20" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.805434473167!2d106.6637691!3d-6.671014700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d0e32f879fc3%3A0xc409dc9689511bc0!2sES%20BUAH%20PELANGI!5e0!3m2!1sen!2sid!4v1761895206257!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <a href="https://maps.app.goo.gl/wz5aRFReNJ6dsYUd7" class="w-full py-3 bg-primary rounded-md text-center text-sm text-white capitalize tracking-wider">kunjungi toko <i class="fa-solid fa-chevron-right ml-2"></i></a>
+                    </div>
+                    <div class="w-full h-auto p-4 border-2 border-zinc-400 rounded-lg gap-4 flex flex-col justify-center items-center">
+                        <div class="w-full gap-4 flex flex-col justify-center items-start">
+                            <h2 class="text-primary-text text-xl text-left font-bold capitalize tracking-wide">rincian agen</h2>
+                            <div class="w-full gap-1 flex flex-col justify-center items-start">
+                                <p class="text-primary-text text-base text-left font-semibold capitalize tracking-wide">pemilik toko</p>
+                                <span class="text-primary-text/60 text-xs text-left font-medium capitalize tracking-wider">tubagus ahnaf azmi parade masaid</span>
+                            </div>
+                        </div>
+                        <a href="#" class="w-full py-3 bg-primary rounded-md text-center text-sm text-white capitalize tracking-wider"><i class="fa-solid fa-phone-volume mr-2"></i> kontak pemilik</a>
+                    </div>
+                    <div class="w-full h-auto p-4 border-2 border-zinc-400 rounded-lg gap-4 flex flex-col justify-center items-center">
+                        <div class="w-full gap-4 flex flex-col justify-center items-start">
+                            <h2 class="text-primary-text text-xl text-left font-bold capitalize tracking-wide">waktu buka</h2>
+                            <div class="w-full gap-1 flex flex-col justify-center items-start">
+                                <p class="text-primary-text/60 text-base text-left font-semibold capitalize tracking-wide">berikut jadwal buka layanan kami</p>
+                                <span class="text-primary text-sm text-left font-medium capitalize tracking-wider">monday - friday | 06:00 - 22:00 WIB</span>
+                            </div>
+                        </div>
+                        <a href="#" class="w-full py-3 bg-primary rounded-md text-center text-sm text-white capitalize tracking-wider"><i class="fa-regular fa-calendar-circle-plus mr-2"></i> tambahkan ke kalender</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="w-full pb-20 gap-6 flex flex-col justify-center items-center">
+            <h1 class="w-full text-left text-primary-text text-4xl font-bold capitalize tracking-wide">rekomendasi toko serupa</h1>
+            <div class="w-full overflow-x-scroll scrollbar-none flex justify-start items-center">
+                    <div class="w-max h-max gap-4 flex justify-center items-center">
+                        <div class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
+                            <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Buah Balap 88" class="w-full h-50 max-w-full rounded-xl">
+                            <div class="gap-1 flex flex-col justify-center items-start">
+                                <h2 class="text-primary-text text-lg text-left font-semibold capitalize tracking-wide">buah balap 88</h2>
+                                <p class="text-primary-text/60 text-base text-left font-normal capitalize tracking-wide">makanan & minuman</p>
+                            </div>
+                        </div>
+                        <div class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
+                            <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Ayam Geprek DFC" class="w-full h-50 max-w-full rounded-xl">
+                            <div class="gap-1 flex flex-col justify-center items-start">
+                                <h2 class="text-primary-text text-lg text-left font-semibold capitalize tracking-wide">ayam geprek DFC</h2>
+                                <p class="text-primary-text/60 text-base text-left font-normal capitalize tracking-wide">makanan & minuman</p>
+                            </div>
+                        </div>
+                        <div class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
+                            <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Ayam Goreng D'Kriuk Pamijahan" class="w-full h-50 max-w-full rounded-xl">
+                            <div class="gap-1 flex flex-col justify-center items-start">
+                                <h2 class="text-primary-text text-lg text-left font-semibold capitalize tracking-wide">d'Kriuk pamijahan</h2>
+                                <p class="text-primary-text/60 text-base text-left font-normal capitalize tracking-wide">makanan & minuman</p>
+                            </div>
+                        </div>
+                        <div class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
+                            <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Nasi Uduk Ibu Ai" class="w-full h-50 max-w-full rounded-xl">
+                            <div class="gap-1 flex flex-col justify-center items-start">
+                                <h2 class="text-primary-text text-lg text-left font-semibold capitalize tracking-wide">nasi uduk ibu ai</h2>
+                                <p class="text-primary-text/60 text-base text-left font-normal capitalize tracking-wide">makanan & minuman</p>
+                            </div>
+                        </div>
+                        <div class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
+                            <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Seblak Prasmanan" class="w-full h-50 max-w-full rounded-xl">
+                            <div class="gap-1 flex flex-col justify-center items-start">
+                                <h2 class="text-primary-text text-lg text-left font-semibold capitalize tracking-wide">seblak prasmanan</h2>
+                                <p class="text-primary-text/60 text-base text-left font-normal capitalize tracking-wide">makanan & minuman</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="w-full flex flex-col justify-center items-center ">
+        <header class="w-full py-8 border-y-2 border-y-zinc-400 gap-10 flex flex-col justify-center items-center">
+            <div class="w-full px-8 lg:px-28 gap-6 lg:gap-0 grid lg:flex grid-cols-2 lg:grid-cols-0 justify-between items-start">
+                <div class="gap-3 flex flex-col justify-center items-start">
+                    <a href="#" class="text-primary-text text-center lg:text-left text-[0.5rem] lg:text-sm font-semibold uppercase tracking-wide">menggunakan waraloka</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">penawaran terbaik</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">tempat penawaran terbaik</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">promo</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">pusat bantuan</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">kebijakan privasi</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">syarat dan ketentuan</a>
+                </div>
+                <div class="gap-3 flex flex-col justify-center items-start">
+                    <a href="#" class="text-primary-text text-center lg:text-left text-[0.5rem] lg:text-sm font-semibold uppercase tracking-wide">informasi</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">publish acara di waraloka</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">solusi untuk pemilik tempat</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">unduh brosur</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">manajer pengalaman waraloka</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">titik penjualan</a>
+                </div>
+                <div class="gap-3 flex flex-col justify-center items-start">
+                    <a href="#" class="text-primary-text text-center lg:text-left text-[0.5rem] lg:text-sm font-semibold uppercase tracking-wide">bertemu waraloka</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">tentang kami</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">testimoni</a>
+                    <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">berita</a>
+                </div>
+                <div class="gap-8 flex flex-col justify-center items-start">
+                    <div class=" gap-3 flex flex-col justify-center items-start">
+                        <a href="#" class="text-primary-text text-center lg:text-left text-[0.5rem] lg:text-sm font-semibold uppercase tracking-wide">layanan pelanggan (WA):</a>
+                        <a href="#" class="text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">+62 882-2990-0877</a>
+                    </div>
+                    
+                    <div class=" gap-3 flex flex-col justify-center items-start">
+                        <a href="#" class="text-primary-text text-center lg:text-left text-[0.5rem] lg:text-sm font-semibold uppercase tracking-wide">kantor waraloka:</a>
+                        <a href="#" class="w-30 lg:w-50 text-primary-text/60 text-center lg:text-left text-[0.5rem] lg:text-sm font-regular capitalize tracking-wide">Jl. KH. Abdul Hamid, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="w-max h-auto">
+                <img src="../assets/images/Waraloka-Logo.svg" alt="Waraloka-Logo" class="w-50 lg:w-70 h-auto max-w-full">
+            </a>
+
+            <div class="w-full gap-3 flex flex-col justify-center items-center">
+                <h2 class="w-full text-primary-text text-center text-base lg:text-xl font-medium uppercase">social media kami:</h2>
+                <div class="text-primary-text/60 text-2xl lg:text-4xl gap-6 lg:gap-4 flex justify-center items-center">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="w-full py-6 flex justify-center items-center">
+            <h1 class="text-primary-text text-center text-base lg:text-xl font-semibold capitalize tracking-wide">waraloka &copy; 2025. all rights reserved.</h1>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../src/js/main.js"></script>
+</body>
+</html>
