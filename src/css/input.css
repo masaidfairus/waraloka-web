@@ -1,1 +1,47 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@layer base{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Plus Jakarta Sans', 'Inter';
+        scroll-behavior: smooth;
+    }
+}
+
+@layer components {
+  .swiper-pagination-bullet {
+    @apply bg-[#D9D9D9];
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply bg-primary-text;
+  }
+}
+
+@theme{
+    --color-primary: #2E8B57;
+    --color-secondary: #FFD54F;
+    --color-primary-text: #1F2937;
+    --color-neutral: #F9FAFB;
+    --color-navigation: #0B0D14;
+    --color-accent: #FF7043;
+
+    --font-plus-jakarta: "Plus Jakarta Sans";
+    --font-inter: "inter";
+}
+
+@utility font-semibold{
+    font-weight: 600;
+}
+
+@utility scrollbar-none{
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
