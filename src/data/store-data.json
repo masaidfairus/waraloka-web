@@ -48,6 +48,7 @@
           "name": "Es Buah Pelangi",
           "price": 5000,
           "productImg": "",
+          "alt": "",
           "description": "Es buah segar dengan campuran buah lokal dan susu kental manis."
         },
         {
@@ -55,6 +56,7 @@
           "name": "Es Durian",
           "price": 5000,
           "productImg": "",
+          "alt": "",
           "description": "Es durian segar, creamy, dan manis, dengan aroma durian asli yang menggoda – kesegaran sempurna di setiap tegukan."
         },
         {
@@ -62,6 +64,7 @@
           "name": "Es Alpukat",
           "price": 5000,
           "productImg": "",
+          "alt": "",
           "description": "Segarnya es alpukat creamy dengan rasa manis alami dan tekstur lembut, cocok dinikmati kapan saja dan pasti bikin ketagihan!"
         },
         {
@@ -69,6 +72,7 @@
           "name": "Aneka Buah",
           "price": 15000,
           "productImg": "",
+          "alt": "",
           "description": "Jual Buah Segar Pilihan. Kualitas premium, fresh setiap hari. Siap antarkan vitamin terbaik!"
         }
       ]
