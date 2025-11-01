@@ -1,0 +1,77 @@
+{
+  "msmeShops": [
+    {
+      "id": 1,
+      "name": "Toko Es Buah Pelangi",
+      "description": "Menjual berbagai jenis buah segar dan es buah segar khas Pasar Jumat.",
+      "category": "Makanan & Minuman",
+      "openingTimes": {
+        "days": "Setiap Hari",
+        "hours": "06:00 - 22:00 WIB"
+      },
+      "location": {
+        "address": "8MH7+HGR, Jl. Raya Gn. Salak Endah, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810",
+        "benchmark": "Pertigaan Pasar Jumat",
+        "mapsLink": "https://maps.app.goo.gl/4X64WVFRkPwVxwP89",
+        "mapsEmbedLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63404.886951570676!2d106.59373125820314!3d-6.671014699999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d0e32f879fc3%3A0xc409dc9689511bc0!2sES%20BUAH%20PELANGI!5e0!3m2!1sid!2sid!4v1761980018129!5m2!1sid!2sid"
+      },
+      "owner": {
+        "name": "Pak Makmun",
+        "role": "Pemilik Toko"
+      },
+      "contacts": {
+        "phone": "+6281291675822"
+      },
+      "images": {
+        "thumbnail": {
+          "image": "assets/images/es-buah-pelangi-thumbnail.webp",
+          "alt": "Tampilan toko es buah pelangi dari depan"
+        },
+        "gallery": [
+          {
+            "image": "assets/images/es-buah-pelangi-gallery-1.webp",
+            "alt": "Toko es buah pelangi yang menjual aneka buah segar, terlihat tumpukan besar mangga hijau, nanas tergantung, dan buah naga merah."
+          },
+          {
+            "image": "assets/images/es-buah-pelangi-gallery-2.webp",
+            "alt": "Toko es buah pelangi dengan berbagai buah segar seperti tumpukan mangga hijau, melon kuning digantung, dan pepaya di depan."
+          },
+          {
+            "image": "assets/images/es-buah-pelangi-gallery-3.webp",
+            "alt": "Berbagai buah segar dijual di kios Es Buah Pelangi, terlihat tumpukan besar mangga hijau, semangka, pepaya, serta melon dan nanas yang digantung."
+          }
+        ]
+      },
+      "products": [
+        {
+          "id": 1,
+          "name": "Es Buah Pelangi",
+          "price": 5000,
+          "productImg": "",
+          "description": "Es buah segar dengan campuran buah lokal dan susu kental manis."
+        },
+        {
+          "id": 2,
+          "name": "Es Durian",
+          "price": 5000,
+          "productImg": "",
+          "description": "Es durian segar, creamy, dan manis, dengan aroma durian asli yang menggoda – kesegaran sempurna di setiap tegukan."
+        },
+        {
+          "id": 3,
+          "name": "Es Alpukat",
+          "price": 5000,
+          "productImg": "",
+          "description": "Segarnya es alpukat creamy dengan rasa manis alami dan tekstur lembut, cocok dinikmati kapan saja dan pasti bikin ketagihan!"
+        },
+        {
+          "id": 4,
+          "name": "Aneka Buah",
+          "price": 15000,
+          "productImg": "",
+          "description": "Jual Buah Segar Pilihan. Kualitas premium, fresh setiap hari. Siap antarkan vitamin terbaik!"
+        }
+      ]
+    }
+  ]
+}
