@@ -1,4 +1,6 @@
 let sidebar = document.getElementById('sidebar');
+let side_content = document.getElementById('side_content');
+let side_section = document.getElementById('side_section');
 let tab_informasi = document.getElementById('tabinfo');
 let tab_produk = document.getElementById('tabproduk');
 let info_button = document.getElementById('infobutton');
@@ -6,10 +8,24 @@ let produk_button = document.getElementById('produkbutton');
 
 function openSide() {
   sidebar.classList.replace('translate-x-full', 'translate-x-0')
+
+  closeSidebar();
 }
 
 function closeSide() {
   sidebar.classList.replace('translate-x-0', 'translate-x-full')
+}
+
+function openSidebar() {
+  side_section.classList.replace('translate-x-full', 'translate-x-0')
+  side_content.classList.replace('overflow-y-none', 'overflow-y-scroll')
+  
+  closeSide();
+}
+
+function closeSidebar() {
+  side_section.classList.replace('translate-x-0', 'translate-x-full')
+  side_content.classList.replace('overflow-y-scroll', 'overflow-y-none')
 }
 
 function info() {
