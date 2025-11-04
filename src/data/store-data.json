@@ -12,32 +12,29 @@
       "location": {
         "address": "8MH7+HGR, Jl. Raya Gn. Salak Endah, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810",
         "benchmark": "Pertigaan Pasar Jumat",
-        "mapsLink": "https://maps.app.goo.gl/4X64WVFRkPwVxwP89",
-        "mapsEmbedLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63404.886951570676!2d106.59373125820314!3d-6.671014699999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d0e32f879fc3%3A0xc409dc9689511bc0!2sES%20BUAH%20PELANGI!5e0!3m2!1sid!2sid!4v1761980018129!5m2!1sid!2sid"
+        "mapsLink": "https://maps.app.goo.gl/1DFjWhzbbcjZCNAY7",
+        "mapsEmbedLink": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d535.0503948236615!2d106.6635493376349!3d-6.671028693837442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d0e32f879fc3%3A0xc409dc9689511bc0!2sES%20BUAH%20PELANGI!5e0!3m2!1sid!2sid!4v1762138692561!5m2!1sid!2sid"
       },
-      "owner": {
-        "name": "Pak Makmun",
-        "role": "Pemilik Toko"
-      },
+      "ownerName": "Pak Makmun",
       "contacts": {
         "phone": "+6281291675822"
       },
       "images": {
         "thumbnail": {
-          "image": "assets/images/es-buah-pelangi-thumbnail.webp",
+          "image": "assets/images/es-buah-pelangi/thumbnail.webp",
           "alt": "Tampilan toko es buah pelangi dari depan"
         },
         "gallery": [
           {
-            "image": "assets/images/es-buah-pelangi-gallery-1.webp",
+            "image": "assets/images/es-buah-pelangi/gallery-1.webp",
             "alt": "Toko es buah pelangi yang menjual aneka buah segar, terlihat tumpukan besar mangga hijau, nanas tergantung, dan buah naga merah."
           },
           {
-            "image": "assets/images/es-buah-pelangi-gallery-2.webp",
+            "image": "assets/images/es-buah-pelangi/gallery-2.webp",
             "alt": "Toko es buah pelangi dengan berbagai buah segar seperti tumpukan mangga hijau, melon kuning digantung, dan pepaya di depan."
           },
           {
-            "image": "assets/images/es-buah-pelangi-gallery-3.webp",
+            "image": "assets/images/es-buah-pelangi/gallery-3.webp",
             "alt": "Berbagai buah segar dijual di kios Es Buah Pelangi, terlihat tumpukan besar mangga hijau, semangka, pepaya, serta melon dan nanas yang digantung."
           }
         ]
@@ -47,33 +44,675 @@
           "id": 1,
           "name": "Es Buah Pelangi",
           "price": 5000,
-          "productImg": "",
-          "alt": "",
+          "productImg": "assets/images/es-buah-pelangi/es-buah.webp",
+          "alt": "Wadah merah muda bertuliskan Es Buah Pelangi dengan gambar mangkuk es buah berwarna-warni, penjual sedang menuangkan minuman ke dalam gelas.",
           "description": "Es buah segar dengan campuran buah lokal dan susu kental manis."
         },
         {
           "id": 2,
           "name": "Es Durian",
           "price": 5000,
-          "productImg": "",
-          "alt": "",
+          "productImg": "assets/images/es-buah-pelangi/es-durian.webp",
+          "alt": "Segelas es durian dengan potongan daging durian di atasnya, diletakkan di atas meja bersama buah durian utuh di latar belakang.",
           "description": "Es durian segar, creamy, dan manis, dengan aroma durian asli yang menggoda – kesegaran sempurna di setiap tegukan."
         },
         {
           "id": 3,
           "name": "Es Alpukat",
           "price": 5000,
-          "productImg": "",
-          "alt": "",
+          "productImg": "assets/images/es-buah-pelangi/es-alpukat.webp",
+          "alt": "Wadah hijau besar bertuliskan Es Alpukat dengan gambar buah alpukat di depan, digunakan untuk menjual minuman es alpukat.",
           "description": "Segarnya es alpukat creamy dengan rasa manis alami dan tekstur lembut, cocok dinikmati kapan saja dan pasti bikin ketagihan!"
         },
         {
           "id": 4,
           "name": "Aneka Buah",
           "price": 15000,
-          "productImg": "",
-          "alt": "",
+          "productImg": "assets/images/es-buah-pelangi/gallery-3.webp",
+          "alt": "Berbagai buah segar dijual di kios Es Buah Pelangi, terlihat tumpukan besar mangga hijau, semangka, pepaya, serta melon dan nanas yang digantung.",
           "description": "Jual Buah Segar Pilihan. Kualitas premium, fresh setiap hari. Siap antarkan vitamin terbaik!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Nasi Uduk Ibu AI",
+      "description": "Menjual berbagai sarapan, gorengan, dan minuman hangat",
+      "category": "Makanan & Minuman",
+      "openingTimes": {
+        "days": "Setiap Hari",
+        "hours": "06:00 - 09:00 WIB"
+      },
+      "location": {
+        "address": "8MH7+HGR, Jl. Raya Gn. Salak Endah, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810",
+        "benchmark": "Depan Kantor Kecamatan Pamijahan",
+        "mapsLink": "https://maps.app.goo.gl/Z9LMyZbLrnN7QUBeA",
+        "mapsEmbedLink": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d247.67505776988617!2d106.66399403266006!3d-6.671572213417419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1762138891405!5m2!1sid!2sid"
+      },
+      "ownerName": "Ibu AI",
+      "contacts": {
+        "phone": "+6282570703466"
+      },
+      "images": {
+        "thumbnail": {
+          "image": "assets/images/nasi-uduk-ibu-ai/thumbnail.webp",
+          "alt": "Tampilan toko nasi uduk ibu ai dari depan"
+        },
+        "gallery": [
+          {
+            "image": "assets/images/nasi-uduk-ibu-ai/gallery-1.webp",
+            "alt": "Nasi bungkus daun pisang khas warung tradisional Indonesia di keranjang biru, siap disajikan untuk pembeli."
+          },
+          {
+            "image": "assets/images/nasi-uduk-ibu-ai/gallery-2.webp",
+            "alt": "Penjual gorengan dan makanan tradisional di warung hijau melayani pembeli, suasana khas jajanan sore di Indonesia."
+          },
+          {
+            "image": "assets/images/nasi-uduk-ibu-ai/gallery-3.webp",
+            "alt": "Warung gorengan tradisional Indonesia dengan teko teh, gelas, dan aneka jajanan di meja depan, suasana kuliner kaki lima."
+          }
+        ]
+      },
+      "products": [
+        {
+          "id": 1,
+          "name": "Nasi Uduk",
+          "price": 10000,
+          "productImg": "assets/images/nasi-uduk-ibu-ai/nasi-uduk.webp",
+          "alt": "Sepiring nasi uduk lengkap dengan telur, sambal, kacang, dan kerupuk.",
+          "description": "Nasi uduk khas Betawi dengan lauk lengkap seperti telur pindang, tempe, sambal, kacang goreng, dan kerupuk gurih."
+        },
+        {
+          "id": 2,
+          "name": "Lontong Sayur",
+          "price": 12000,
+          "productImg": "assets/images/nasi-uduk-ibu-ai/lontong-sayur.webp",
+          "alt": "Semangkuk lontong sayur dengan kuah santan, tempe, telur, dan sayuran.",
+          "description": "Lontong sayur berkuah santan pedas dengan potongan tempe, telur rebus, dan sayur labu, hidangan tradisional khas pagi hari di Indonesia."
+        },
+        {
+          "id": 3,
+          "name": "Kopi",
+          "price": 5000,
+          "productImg": "assets/images/nasi-uduk-ibu-ai/kopi.webp",
+          "alt": "Secangkir kopi hitam panas di atas meja kayu dengan sendok kecil di dalamnya.",
+          "description": "Kopi hitam panas dengan aroma kuat khas Indonesia, disajikan dalam cangkir kaca di atas meja kayu."
+        },
+        {
+          "id": 4,
+          "name": "Susu",
+          "price": 5000,
+          "productImg": "assets/images/nasi-uduk-ibu-ai/susu.webp",
+          "alt": "Segelas susu putih di atas meja marmer berwarna terang.",
+          "description": "Susu segar disajikan dalam gelas bening, minuman sederhana yang bergizi tinggi dan cocok untuk sarapan."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dkriuk Fried Chicken Pasar Jumat",
+      "description": "Dkriuk Fried Chicken adalah usaha mikro kecil menengah dengan sistem kemitraan yang dibangun sejak tahun 2020, Kami membangun usaha ini dengan sistem kemitraan, Kami menghadirkan berbagai menu yang inovatif serta paket kemitraan yang ekonomis.",
+      "category": "Makanan & Minuman",
+      "openingTimes": {
+        "days": "Setiap Hari",
+        "hours": "08:00 - 22:00 WIB"
+      },
+      "location": {
+        "address": "8MH7+FHH, Jl. Raya Gn. Salak Endah, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810",
+        "benchmark": "Depan Puskesmas Pamijahan",
+        "mapsLink": "https://maps.app.goo.gl/Fko6GeEFsXwMv18d7",
+        "mapsEmbedLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d309.9880815364812!2d106.66379437951801!3d-6.6713146159654775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d0e3291c576b%3A0x2859bd36cd459906!2sDkriuk%20Fried%20Chicken!5e0!3m2!1sid!2sid!4v1762139002063!5m2!1sid!2sid"
+      },
+      "ownerName": "Pak Ahmad",
+      "contacts": {
+        "phone": "0881-537-5825"
+      },
+      "images": {
+        "thumbnail": {
+          "image": "assets/images/dkriuk-pasar-jumat/thumbnail.webp",
+          "alt": "Tampilan dkriuk fried chicken dari depan"
+        },
+        "gallery": [
+          {
+            "image": "assets/images/dkriuk-pasar-jumat/gallery-1.webp",
+            "alt": "Gerobak d’kriuk fried chicken dengan etalase berisi ayam goreng di depan warung berwarna merah."
+          },
+          {
+            "image": "assets/images/dkriuk-pasar-jumat/gallery-2.webp",
+            "alt": "Warung d’kriuk fried chicken berwarna merah dengan papan menu berdiri di depan dan etalase berisi ayam goreng."
+          },
+          {
+            "image": "assets/images/dkriuk-pasar-jumat/gallery-3.webp",
+            "alt": "Tampak depan warung d’kriuk fried chicken di pinggir jalan dengan spanduk besar dan gerobak berwarna merah."
+          }
+        ]
+      },
+      "products": [
+        {
+          "id": 1,
+          "name": "Ayam Goreng",
+          "price": 8000,
+          "productImg": "assets/images/dkriuk-pasar-jumat/ayam-goreng.webp",
+          "alt": "Potongan ayam goreng renyah d’Kriuk Fried Chicken dengan sambal dan saus tomat di atas talenan kayu.",
+          "description": "Ayam goreng renyah khas d’Kriuk Fried Chicken disajikan dengan sambal dan saus tomat, menawarkan cita rasa gurih dan pedas khas Indonesia."
+        },
+        {
+          "id": 2,
+          "name": "Sate Ayam Krispi",
+          "price": 4000,
+          "productImg": "assets/images/dkriuk-pasar-jumat/sate-ayam-krispi.webp",
+          "alt": "Tusukan ayam goreng krispi d’Kriuk Fried Chicken di atas piring kayu dengan kemasan merah di belakangnya.",
+          "description": "Tusukan ayam goreng krispi d’Kriuk, camilan lezat dengan tekstur renyah di luar dan lembut di dalam, cocok untuk teman makan atau jajanan santai."
+        },
+        {
+          "id": 3,
+          "name": "Kentang Goreng",
+          "price": 6000,
+          "productImg": "assets/images/dkriuk-pasar-jumat/kentang-goreng.webp",
+          "alt": "Kentang goreng renyah dalam kemasan d’Kriuk Fried Chicken berwarna merah dan putih.",
+          "description": "Kentang goreng d’Kriuk yang gurih dan renyah, disajikan dalam kemasan khas berwarna merah putih yang menggugah selera."
+        },
+        {
+          "id": 4,
+          "name": "Sosis",
+          "price": 10000,
+          "productImg": "assets/images/dkriuk-pasar-jumat/sosis.webp",
+          "alt": "Dua potong sosis panggang d’Kriuk Fried Chicken di atas latar merah dan kuning dengan tulisan promosi.",
+          "description": "Sosis panggang dari d’Kriuk Fried Chicken yang juicy dan gurih, alternatif lezat selain ayam krispi favorit."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "M&G Hasibuan Photo Copy",
+      "description": "M&G Hasibuan Photo Copy adalah layanan fotokopi dan percetakan terpercaya yang menyediakan berbagai kebutuhan dokumen, seperti cetak hitam putih, warna, laminating, jilid, dan pengetikan. Dengan pelayanan cepat, hasil rapi, dan harga terjangkau, M&G Hasibuan Photo Copy berkomitmen memberikan kemudahan bagi pelajar, mahasiswa, dan masyarakat umum dalam urusan dokumen harian maupun proyek besar.",
+      "category": "Percetakan dan Fotokopi",
+      "openingTimes": {
+        "days": "Setiap Hari",
+        "hours": "06:00 - 21:00 WIB"
+      },
+      "location": {
+        "address": "8MH7+6MG, Jl. Raya Gn. Salak Endah, RT.02/RW.05 Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810",
+        "benchmark": "Dekat Kantor Kecamatan Pamijahan",
+        "mapsLink": "https://maps.app.goo.gl/SBs6adHFkC9gGwxYA",
+        "mapsEmbedLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.3497588252114!2d106.66406231305535!3d-6.671924945682661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d1000372f425%3A0x1914ac8db9c1e429!2sM%26G%20Hasibuan%20Photo%20Copy!5e0!3m2!1sid!2sid!4v1762141556399!5m2!1sid!2sid"
+      },
+      "ownerName": "Hasibuan",
+      "contacts": {
+        "phone": "+6282578325788"
+      },
+      "images": {
+        "thumbnail": {
+          "image": "assets/images/hasibuan-fotokopi/thumbnail.webp",
+          "alt": "Tampilan m&g Hasibuan photo copy dari depan"
+        },
+        "gallery": [
+          {
+            "image": "assets/images/hasibuan-fotokopi/gallery-1.webp",
+            "alt": "Tampak depan toko M&G Hasibuan Photo Copy dengan papan nama besar dan etalase yang berisi bingkai foto, alat tulis, serta mesin fotokopi di sisi kiri."
+          },
+          {
+            "image": "assets/images/hasibuan-fotokopi/gallery-2.webp",
+            "alt": "Bagian dalam toko M&G Hasibuan Photo Copy yang menampilkan rak penuh bingkai foto, alat tulis, hiasan ulang tahun, serta perlengkapan kantor."
+          },
+          {
+            "image": "assets/images/hasibuan-fotokopi/gallery-3.webp",
+            "alt": "Area layanan pelanggan M&G Hasibuan Photo Copy dengan rak berisi kertas warna-warni, printer, dan perlengkapan fotokopi di dinding."
+          }
+        ]
+      },
+      "products": [
+        {
+          "id": 1,
+          "name": "Pensil",
+          "price": 3000,
+          "productImg": "assets/images/hasibuan-fotokopi/pensil.webp",
+          "alt": "Pensil Joyko 2B dalam kotak hijau berisi 12 batang.",
+          "description": "Pensil 2B berkualitas untuk ujian dan menulis sehari-hari."
+        },
+        {
+          "id": 2,
+          "name": "Pulpen",
+          "price": 4000,
+          "productImg": "assets/images/hasibuan-fotokopi/pulpen.webp",
+          "alt": "Pulpen Joyko GP-260 hitam dengan kemasan biru putih.",
+          "description": "Pulpen tinta halus dengan grip nyaman dan cepat kering."
+        },
+        {
+          "id": 3,
+          "name": "Penghapus Papan Tulis",
+          "price": 12000,
+          "productImg": "assets/images/hasibuan-fotokopi/penghapus-papantulis.webp",
+          "alt": "Penghapus papan tulis E-Star ES-400 warna hitam dan hijau.",
+          "description": "Penghapus besar untuk papan tulis, mudah membersihkan tinta."
+        },
+        {
+          "id": 4,
+          "name": "Buku Campus",
+          "price": 7000,
+          "productImg": "assets/images/hasibuan-fotokopi/buku-campus.webp",
+          "alt": "Buku tulis Big Boss Campus 50 lembar dengan sampul merah.",
+          "description": "Buku tulis tebal dan rapi untuk sekolah atau kantor."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Lapak Gas LPG 3Kg",
+      "description": "Lapak Gas 3kg adalah tempat penjualan dan pengisian ulang gas elpiji ukuran 3 kilogram yang siap melayani kebutuhan rumah tangga, warung makan, dan usaha kecil. Kami menyediakan tabung gas dengan kondisi terawat, aman, dan selalu dicek sebelum dijual. Dengan harga terjangkau dan pelayanan cepat, pelanggan dapat membeli langsung di tempat atau memesan untuk pengantaran ke rumah (jika tersedia di area sekitar). Lapak ini berkomitmen memberikan pelayanan ramah dan memastikan stok gas selalu tersedia setiap hari.",
+      "category": "Kebutuhan Rumah Tangga",
+      "openingTimes": {
+        "days": "Setiap Hari",
+        "hours": "06:00 - 16:00 WIB"
+      },
+      "location": {
+        "address": "8MH7+5JH, Jl. Raya Gn. Salak Endah, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810",
+        "benchmark": "Jl. Raya Gn. Salak Endah",
+        "mapsLink": "https://maps.app.goo.gl/rhMmgQrBmUNcDQsK9",
+        "mapsEmbedLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.6747985230238!2d106.66415776918593!3d-6.672084912656682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d0e2d1969b45%3A0xeb59d562fdf6658e!2s8MH7%2B5JH%2C%20Jl.%20Raya%20Gn.%20Salak%20Endah%2C%20Gn.%20Sari%2C%20Kec.%20Pamijahan%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat%2016810!5e0!3m2!1sid!2sid!4v1762153309564!5m2!1sid!2sid"
+      },
+      "ownerName": "Erwandi",
+      "contacts": {
+        "phone": "+6282567129021"
+      },
+      "images": {
+        "thumbnail": {
+          "image": "assets/images/gas-lpg/thumbnail.webp",
+          "alt": "Tampilan Lapak gas LPG 3Kg dari depan"
+        },
+        "gallery": [
+          {
+            "image": "assets/images/gas-lpg/gallery-1.webp",
+            "alt": "Tumpukan tabung gas elpiji 3kg berwarna hijau di depan lapak gas"
+          },
+          {
+            "image": "assets/images/gas-lpg/gallery-2.webp",
+            "alt": "Deretan tabung gas elpiji 3kg tersusun di dalam ruangan lapak gas"
+          },
+          {
+            "image": "assets/images/gas-lpg/gallery-3.webp",
+            "alt": "Stok tabung gas elpiji 3kg di dalam toko penjualan gas"
+          }
+        ]
+      },
+      "products": [
+        {
+          "id": 1,
+          "name": "Gas 3 kg",
+          "price": 18000,
+          "productImg": "assets/images/gas-lpg/gallery-1.webp",
+          "alt": "Tumpukan tabung gas elpiji 3kg berwarna hijau di depan lapak gas",
+          "description": "Gas Elpiji 3 Kg merupakan bahan bakar rumah tangga yang praktis dan ekonomis, cocok untuk keperluan memasak sehari-hari. Menggunakan tabung hijau resmi dari Pertamina dengan isi gas yang aman dan efisien. Ideal digunakan oleh rumah tangga kecil maupun usaha kuliner rumahan."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "DFC Ayam Geprek",
+      "description": "DFC Ayam Geprek adalah tempat makan yang menyajikan berbagai menu ayam goreng dengan cita rasa gurih dan pedas khas Indonesia. Menyediakan pilihan menu seperti Ayam Goreng Original, Ayam Geprek Cabe Merah/Hijau, Mie Goreng Ayam Geprek, hingga Paket Nasi Ayam Asam Manis dan Burger Ayam. Dengan harga terjangkau dan rasa yang menggugah selera, DFC Ayam Geprek menjadi pilihan pas untuk makan siang, makan malam, atau santapan cepat bersama teman dan keluarga.",
+      "category": "Makanan & Minuman",
+      "openingTimes": {
+        "days": "Setiap Hari",
+        "hours": "08:00 - 21:00 WIB"
+      },
+      "location": {
+        "address": "Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat",
+        "benchmark": "Jl. Raya Gn. Salak Endah",
+        "mapsLink": "https://maps.app.goo.gl/TcK4MVEFG2Lc11ok7",
+        "mapsEmbedLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.674846335275!2d106.66414575354156!3d-6.671990359766418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d0e2d234dd37%3A0xb8cc31a310692d35!2sKHARISMA%20CELL!5e0!3m2!1sid!2sid!4v1762154605771!5m2!1sid!2sid"
+      },
+      "ownerName": "Devan",
+      "contacts": {
+        "phone": "+628561719744"
+      },
+      "images": {
+        "thumbnail": {
+          "image": "assets/images/dfc-ayam-geprek/thumbnail.webp",
+          "alt": "Tampilan DFC Ayam geprek dari depan"
+        },
+        "gallery": [
+          {
+            "image": "assets/images/dfc-ayam-geprek/gallery-1.webp",
+            "alt": "Spanduk menu DFC Ayam Geprek yang menampilkan gambar Ayam Goreng Original, Ayam Goreng DFC, dan Indomie Goreng Ayam Geprek dengan sambal cabai merah."
+          },
+          {
+            "image": "assets/images/dfc-ayam-geprek/gallery-2.webp",
+            "alt": "Tampilan area pemesanan DFC Ayam Geprek dengan etalase makanan. Terlihat seorang wanita berhijab sedang berdiri di depan konter."
+          },
+          {
+            "image": "assets/images/dfc-ayam-geprek/gallery-3.webp",
+            "alt": "Tampak depan keseluruhan toko DFC Ayam Geprek yang didominasi warna hijau terang dan kuning, dengan spanduk besar di atas, dan sebuah motor terparkir di depan."
+          }
+        ]
+      },
+      "products": [
+        {
+          "id": 1,
+          "name": "Ayam Geprek",
+          "price": 10000,
+          "productImg": "assets/images/dfc-ayam-geprek/geprek.webp",
+          "alt": "Potongan ayam goreng renyah digeprek dengan sambal cabai merah segar, disajikan dengan irisan timun.",
+          "description": "Nikmati kelezatan Ayam Geprek Original DFC! Ayam goreng krispi pilihan kami digeprek sempurna dengan racikan sambal cabai merah khas DFC yang pedasnya menggugah selera. Disajikan hangat dengan irisan timun segar sebagai penambah cita rasa."
+        },
+        {
+          "id": 2,
+          "name": "Burger Ayam",
+          "price": 12000,
+          "productImg": "assets/images/dfc-ayam-geprek/burger-ayam.webp",
+          "alt": "Burger dengan patty ayam krispi, keju meleleh, sayuran hijau, dan saus di antara dua roti bun bertabur wijen.",
+          "description": "Rasakan sensasi berbeda dengan Burger Ayam Krispi DFC! Sebuah patty ayam goreng krispi yang juicy, dipadukan dengan keju cheddar meleleh, sayuran segar, dan saus istimewa, semua dibalut dalam roti burger bertabur wijen yang empuk. Lezat dalam setiap gigitan!"
+        },
+        {
+          "id": 3,
+          "name": "Fried Chicken",
+          "price": 8000,
+          "productImg": "assets/images/dfc-ayam-geprek/fried-chicken.webp",
+          "alt": "Tumpukan potongan ayam goreng krispi keemasan di atas piring.",
+          "description": "Ayam Goreng Krispi DFC adalah pilihan sempurna untuk lauk atau camilan. Potongan ayam renyah dengan bumbu khas DFC, digoreng hingga keemasan dan siap menemani hidangan Anda. Cocok untuk dinikmati bersama keluarga atau teman."
+        },
+        {
+          "id": 4,
+          "name": "Mie Goreng Geprek",
+          "price": 15000,
+          "productImg": "assets/images/dfc-ayam-geprek/mie-goreng-ayam-geprek.webp",
+          "alt": "Indomie goreng disajikan dengan ayam geprek sambal cabai merah dan dua potong telur rebus.",
+          "description": "Kombinasi sempurna pedasnya Ayam Geprek dengan gurihnya Indomie goreng! Indomie disajikan lengkap dengan ayam geprek renyah yang dilumuri sambal pedas DFC dan dua potong telur rebus sebagai pelengkap. Pilihan pas untuk kenikmatan yang memuaskan."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Soto Mie Bogor Si Embah",
+      "description": "Selamat datang di Soto Mie Bogor Si Mbah, destinasi kuliner yang menghadirkan kehangatan dan kelezatan soto otentik khas Bogor, kini hadir melayani Anda di Pamijahan! Kami menyajikan menu andalan seperti Soto Mie dengan kuah bening kaya rempah, risol, dan irisan daging pilihan, serta Soto Tangkar dengan kuah santan kuning yang gurih, semua diolah dari resep turun-temurun dan bahan segar berkualitas. Selain hidangan soto yang mengenyangkan, kami juga menyediakan aneka minuman segar seperti Es Duren. Soto Mie Bogor Si Mbah siap melayani pembelian langsung dan juga menerima Pemesanan dan Catering untuk berbagai acara. Untuk informasi lebih lanjut atau pemesanan, silakan hubungi kami di 0857-7151-1866.",
+      "category": "Makanan & Minuman",
+      "openingTimes": {
+        "days": "Setiap Hari",
+        "hours": "08:30 - 21:00 WIB"
+      },
+      "location": {
+        "address": "8MH7+7M3, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810",
+        "benchmark": "Jl. Raya Gn. Salak Endah",
+        "mapsLink": "https://maps.app.goo.gl/FB52aFT8GaGrWPAs6",
+        "mapsEmbedLink": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.6748438167472!2d106.6641662419509!3d-6.671995340407666!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d0e2d3f64c1d%3A0x32467b37dd9ae070!2s8MH7%2B7M3%2C%20Gn.%20Sari%2C%20Kec.%20Pamijahan%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat%2016810!5e0!3m2!1sid!2sid!4v1762218701754!5m2!1sid!2sid"
+      },
+      "ownerName": "Si Embah",
+      "contacts": {
+        "phone": "+6285771511866"
+      },
+      "images": {
+        "thumbnail": {
+          "image": "assets/images/soto-mie-bogor-siembah/thumbnail.webp",
+          "alt": "Tampilan soto mie bogor Si Embah dari depan"
+        },
+        "gallery": [
+          {
+            "image": "assets/images/soto-mie-bogor-siembah/gallery-1.webp",
+            "alt": "Gerobak jualan Soto Mie Bogor Si Mbah berwarna biru kuning dengan spanduk kontak dan menu di bagian atas."
+          },
+          {
+            "image": "assets/images/soto-mie-bogor-siembah/gallery-2.webp",
+            "alt": "Tampak depan toko Soto Mie Bogor Si Mbah dengan gerobak di depan teras dan spanduk menu yang menampilkan aneka soto dan minuman."
+          },
+          {
+            "image": "assets/images/soto-mie-bogor-siembah/gallery-3.webp",
+            "alt": "Tampilan penuh toko Soto Mie Bogor Si Mbah di kawasan perumahan, menunjukkan gerobak, spanduk, dan area jualan."
+          }
+        ]
+      },
+      "products": [
+        {
+          "id": 1,
+          "name": "Soto Ayam",
+          "price": 15000,
+          "productImg": "assets/images/soto-mie-bogor-siembah/soto-ayam.webp",
+          "alt": "Semangkuk soto ayam berkuah bening, disajikan dengan suwiran ayam, tauge, seledri, dan irisan jeruk nipis.",
+          "description": "Nikmati kehangatan Soto Ayam Bening khas Si Mbah. Kuah kaldu bening yang ringan namun kaya rasa, disajikan dengan suwiran daging ayam yang lembut, tauge renyah, dan taburan seledri segar. Tambahkan perasan jeruk nipis untuk kesegaran maksimal."
+        },
+        {
+          "id": 2,
+          "name": "Soto Mie Bogor",
+          "price": 18000,
+          "productImg": "assets/images/soto-mie-bogor-siembah/soto-mie.webp",
+          "alt": "Semangkuk Soto Mie Bogor dengan mie kuning, risol, irisan daging, dan kikil yang disajikan dengan kuah kental.",
+          "description": "Ini dia menu andalan kami, Soto Mie Bogor otentik! Paduan sempurna antara mie kuning, irisan kikil, daging, dan risol renyah dalam kuah kaldu rempah yang kaya rasa dan sedikit kental. Hidangan ini dijamin memuaskan selera Anda."
+        },
+        {
+          "id": 3,
+          "name": "Es Cendol",
+          "price": 10000,
+          "productImg": "assets/images/soto-mie-bogor-siembah/es-dawet.webp",
+          "alt": "Dua gelas besar Es Cendol atau Es Dawet yang disajikan di atas alas bambu, berisi santan, gula merah, dan butiran cendol hijau.",
+          "description": "Pelepas dahaga yang sempurna! Es Cendol/Dawet Si Mbah dibuat dari butiran cendol hijau yang lembut, dipadukan dengan santan gurih, dan siraman gula merah (gula aren) asli yang manis. Sangat cocok dinikmati setelah menyantap soto hangat."
+        },
+        {
+          "id": 4,
+          "name": "Soto Tangkar",
+          "price": 20000,
+          "productImg": "assets/images/soto-mie-bogor-siembah/soto-tangkar.webp",
+          "alt": "Semangkuk Soto Tangkar berkuah kuning santan, berisi potongan daging sapi besar, tomat, dan taburan bawang goreng, disajikan dengan nasi dan pelengkap.",
+          "description": "Cicipi kelezatan Soto Tangkar kami! Kuah santan kuning yang kaya akan rempah dan memiliki tekstur yang kental dan gurih. Berisi potongan daging sapi premium yang empuk, irisan tomat, dan bawang goreng. Biasa dinikmati bersama nasi hangat dan sambal."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Toko Dizel",
+      "description": "Toko Dizel adalah toko kelontong tepercaya yang menyediakan ribuan jenis produk untuk memenuhi kebutuhan rumah tangga dan pribadi Anda sehari-hari. Mulai dari sembako, makanan ringan, minuman dingin, hingga kebutuhan pokok lainnya, kami berkomitmen menjadi mitra terdekat masyarakat dalam menyediakan barang berkualitas dengan harga terjangkau. Lokasi strategis dan layanan yang ramah menjadikan Toko Dizel pilihan utama keluarga dan warga sekitar.",
+      "category": "Toko Kelontong",
+      "openingTimes": {
+        "days": "Setiap Hari",
+        "hours": "07:00 - 22:00 WIB"
+      },
+      "location": {
+        "address": "8MH7+FHH, Jl. Raya Gn. Salak Endah, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810",
+        "benchmark": "Jl. Raya Gn. Salak Endah",
+        "mapsLink": "https://maps.app.goo.gl/1aNL9P5RQLJTEc6XA",
+        "mapsEmbedLink": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.67512357602007!2d106.6639703351288!3d-6.671442065755838!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d0e3290a0901%3A0x66167b3c6376180!2s8MH7%2BFHH%2C%20Jl.%20Raya%20Gn.%20Salak%20Endah%2C%20Gn.%20Sari%2C%20Kec.%20Pamijahan%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat%2016810!5e0!3m2!1sid!2sid!4v1762220277701!5m2!1sid!2sid"
+      },
+      "ownerName": "Dhimas Zulkarnaen",
+      "contacts": {
+        "phone": "0812-3456-7890"
+      },
+      "images": {
+        "thumbnail": {
+          "image": "assets/images/toko-dizel/thumbnail.webp",
+          "alt": "Tampak depan Toko Dizel, toko kelontong dua lantai dengan berbagai spanduk rokok, dan tiga motor pelanggan terparkir di depan."
+        },
+        "gallery": [
+          {
+            "image": "assets/images/toko-dizel/gallery-1.webp",
+            "alt": "Tumpukan kantong plastik kemasan keripik atau camilan yang digantung memenuhi sudut interior Toko Dizel."
+          },
+          {
+            "image": "assets/images/toko-dizel/gallery-2.webp",
+            "alt": "Rak display rokok yang tersusun rapi berdasarkan merek dan harga, terlihat juga etalase berisi camilan dan produk lain."
+          },
+          {
+            "image": "assets/images/toko-dizel/gallery-3.webp",
+            "alt": "Sudut interior Toko Dizel yang dipenuhi rak-rak berisi berbagai macam produk kelontong dan minuman botol."
+          }
+        ]
+      },
+      "products": [
+        {
+          "id": 1,
+          "name": "Aneka Camilan Ringan",
+          "price": 5000,
+          "productImg": "assets/images/toko-dizel/aneka-jajanan.webp",
+          "alt": "Rak kawat putih berisi berbagai merek keripik, biskuit, dan makanan ringan dalam kemasan sachet.",
+          "description": "Berbagai macam makanan ringan dan camilan dalam kemasan siap santap. Cocok untuk teman nonton atau bekal anak sekolah. Kisaran Harga: Rp 2.000 – Rp 15.000 (per kemasan kecil hingga sedang)."
+        },
+        {
+          "id": 2,
+          "name": "Kebutuhan Pokok & Rumah Tangga",
+          "price": 5000,
+          "productImg": "assets/images/toko-dizel/aneka-kebutuhan.webp",
+          "alt": "Kumpulan berbagai macam produk rumah tangga seperti deterjen, sabun, telur, minyak, dan makanan kemasan.",
+          "description": "Kebutuhan pokok harian, termasuk minyak goreng, bumbu dapur, telur, deterjen, dan peralatan plastik. Kisaran Harga: Variatif, mulai dari Rp 5.000 (untuk bumbu sachet) hingga Rp 35.000 (untuk minyak/deterjen kemasan besar)."
+        },
+        {
+          "id": 3,
+          "name": "Minuman Dingin dalam Kulkas",
+          "price": 5000,
+          "productImg": "assets/images/toko-dizel/aneka-minuman.webp",
+          "alt": "Kulkas berisi berbagai minuman kemasan siap minum, termasuk teh, kopi kaleng, dan fruit juice.",
+          "description": "Pilihan lengkap minuman dingin dan segar, dari teh botol, minuman kopi kaleng, hingga aneka jus buah dan air mineral. Kisaran Harga: Rp 5.000 – Rp 15.000 (per botol/kaleng/kotak)."
+        },
+        {
+          "id": 4,
+          "name": "Air Minum Galon",
+          "price": 20000,
+          "productImg": "assets/images/toko-dizel/galon.webp",
+          "alt": "Tumpukan galon air mineral siap isi ulang atau siap jual dengan tutup merah.",
+          "description": "Layanan penyediaan atau penjualan air minum dalam kemasan galon. Solusi praktis untuk stok air minum keluarga. Kisaran Harga: Rp 20.000 – Rp 50.000 (untuk galon air isi ulang hingga merek premium)."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Toko Mas Mutiara",
+      "description": "Toko Mas Mutiara adalah destinasi tepercaya untuk jual beli perhiasan emas dan permata. Kami menawarkan koleksi lengkap mulai dari anting, cincin pernikahan, gelang, hingga kalung dengan desain klasik maupun modern. Kami juga melayani pesanan model perhiasan khusus (custom) sesuai keinginan Anda. Kunjungi kami untuk mendapatkan perhiasan berkualitas dengan harga terbaik di Pasar Jumat. Kami menjamin keaslian dan kualitas setiap produk.",
+      "category": "Toko Perhiasan",
+      "openingTimes": {
+        "days": "Senin - Sabtu",
+        "hours": "09:00 - 17:00 WIB"
+      },
+      "location": {
+        "address": "8MH7+HGR, Jl. Raya Gn. Salak Endah, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810",
+        "benchmark": "Pasar Jumat",
+        "mapsLink": "https://maps.app.goo.gl/VgC8y4QdX5BAGBUr7",
+        "mapsEmbedLink": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.67534572535575!2d106.66374336863547!3d-6.671002692654987!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d0e32f81312d%3A0xf9590721bff983d0!2s8MH7%2BHGR%2C%20Jl.%20Raya%20Gn.%20Salak%20Endah%2C%20Gn.%20Sari%2C%20Kec.%20Pamijahan%2C%20Kabupaten%20Bogor%2C%20Jawa%20Barat%2016810!5e0!3m2!1sid!2sid!4v1762221573359!5m2!1sid!2sid"
+      },
+      "ownerName": "Andi Saputra",
+      "contacts": {
+        "phone": "0877-1234-5678"
+      },
+      "images": {
+        "thumbnail": {
+          "image": "assets/images/toko-mas-mutiara/thumbnail.webp",
+          "alt": "Tampak depan Toko Mas Mutiara dengan spanduk merah besar, etalase penuh perhiasan, dan dua staf sedang melayani di dalam toko."
+        },
+        "gallery": [
+          {
+            "image": "assets/images/toko-mas-mutiara/gallery-1.webp",
+            "alt": "Tampak depan Toko Mas Mutiara, gerai perhiasan kecil dengan etalase kaca yang menampilkan koleksi kalung dan gelang emas."
+          },
+          {
+            "image": "assets/images/toko-mas-mutiara/gallery-2.webp",
+            "alt": "Interior Toko Mas Mutiara, fokus pada etalase berbentuk L berwarna putih yang penuh dengan perhiasan emas."
+          },
+          {
+            "image": "assets/images/toko-mas-mutiara/gallery-3.webp",
+            "alt": "Interior luas Toko Mas Mutiara yang memperlihatkan area pelayanan dan koleksi perhiasan yang tertata rapi di dalam etalase."
+          }
+        ]
+      },
+      "products": [
+        {
+          "id": 1,
+          "name": "Anting Emas Bandul Kupu-Kupu",
+          "price": 1800000,
+          "productImg": "assets/images/toko-mas-mutiara/anting-emas.webp",
+          "alt": "Sepasang anting emas gantung dengan desain bentuk kupu-kupu yang dihiasi permata putih berkilauan.",
+          "description": "Anting emas dengan desain gantung Kupu-Kupu yang elegan, cocok untuk hadiah atau gaya sehari-hari. Dibuat dari emas 75% dengan permata imitasi berkualitas."
+        },
+        {
+          "id": 2,
+          "name": "Sepasang Cincin Emas Solitaire",
+          "price": 4500000,
+          "productImg": "assets/images/toko-mas-mutiara/cincin-emas.webp",
+          "alt": "Dua buah cincin emas kuning polos, salah satunya berhiaskan satu mata permata berlian (solitaire) di dalam kotak abu-abu.",
+          "description": "Cincin pernikahan atau pertunangan. Set terdiri dari cincin polos pria dan cincin solitaire wanita. Tersedia dalam kadar 70% dan 75%."
+        },
+        {
+          "id": 3,
+          "name": "Gelang Emas Rantai Tebal",
+          "price": 3200000,
+          "productImg": "assets/images/toko-mas-mutiara/gelang-emas.webp",
+          "alt": "Gelang emas kuning model rantai tebal yang bertekstur, dilengkapi dengan bandul kecil.",
+          "description": "Gelang emas model rantai tebal (Cuban Link) yang populer. Memberikan kesan *bold* dan modern. Berat emas berkisar 5-7 gram, kadar 70%."
+        },
+        {
+          "id": 4,
+          "name": "Kalung Emas Bandul Hati Permata",
+          "price": 2700000,
+          "productImg": "assets/images/toko-mas-mutiara/kalung-emas.webp",
+          "alt": "Kalung emas tipis dengan bandul berbentuk hati yang dihiasi permata kecil dan permata tetes air di bagian bawah.",
+          "description": "Kalung emas berdesain romantis dengan bandul bentuk hati yang bertabur permata. Sangat cocok untuk kado ulang tahun atau perayaan. Panjang standar 45 cm."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "YourTEA Authentic Java Tea",
+      "description": "YourTEA adalah kedai minuman kekinian yang menyajikan teh otentik dari Jawa dengan berbagai varian rasa inovatif. Kami menawarkan kesegaran Black Tea, kehangatan Coffee Bottle spesial, hingga hidangan pendamping lezat seperti Donat dan Cireng. YourTEA berkomitmen menyajikan minuman berkualitas tinggi dan camilan yang cocok dinikmati kapan saja. Temukan sensasi baru Passion Fruit, nikmati Kopi Gula Aren, atau bawa pulang Donat Kentang favorit Anda!",
+      "category": "Kedai Minuman & Camilan",
+      "openingTimes": {
+        "days": "Setiap Hari",
+        "hours": "10:00 - 21:00 WIB"
+      },
+      "location": {
+        "address": "8MH7+2MG, Jl. Raya Gn. Salak Endah, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810",
+        "benchmark": "Dekat Area Indomaret & Alfamart",
+        "mapsLink": "https://maps.app.goo.gl/D8KzYcA5ZLuYSQHd6",
+        "mapsEmbedLink": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.67462405036588!2d106.66412167059842!3d-6.672429936216998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d1001bfce4d3%3A0xa0849a7b73beb3ea!2sYourtea%20Gunung%20Sari!5e0!3m2!1sid!2sid!4v1762221906485!5m2!1sid!2sid"
+      },
+      "ownerName": "Rizky Firmansyah",
+      "contacts": {
+        "phone": "0851-4321-9876"
+      },
+      "images": {
+        "thumbnail": {
+          "image": "assets/images/yourtea/thumbnail.webp",
+          "alt": "Tampak depan kedai YourTEA yang didominasi warna biru tua dan hijau muda, dengan tulisan 'YourTEA' di atas etalase kaca."
+        },
+        "gallery": [
+          {
+            "image": "assets/images/yourtea/gallery-1.webp",
+            "alt": "Tampilan etalase pemesanan YourTEA dari dekat, penuh dengan stiker menu dan promosi minuman spesial Black Tea."
+          },
+          {
+            "image": "assets/images/yourtea/gallery-2.webp",
+            "alt": "Tampilan area pemesanan YourTEA dari dalam, memperlihatkan menu minuman yang terpampang di dinding kaca dan konter kasir."
+          },
+          {
+            "image": "assets/images/yourtea/gallery-3.webp",
+            "alt": "Spanduk promosi YourTEA yang menampilkan Sensasi Baru Passion Fruit, Cireng Tabor, dan Rujak Cireng."
+          }
+        ]
+      },
+      "products": [
+        {
+          "id": 1,
+          "name": "Varian Original Black Tea",
+          "price": 14000,
+          "productImg": "assets/images/yourtea/black-tea.webp",
+          "alt": "Poster YourTEA yang menampilkan dua gelas Original Black Tea ukuran Medium dan Jumbo.",
+          "description": "Teh hitam otentik Jawa dengan rasa murni dan menyegarkan. Tersedia dalam ukuran Medium (Rp 14.000) dan Jumbo (Rp 16.000)."
+        },
+        {
+          "id": 2,
+          "name": "Special Menu Coffee Bottle (Kopi Gula Aren)",
+          "price": 35000,
+          "productImg": "assets/images/yourtea/coffee-bottle.webp",
+          "alt": "Poster YourTEA yang menampilkan tiga botol Coffee Bottle spesial: Kopi Pandan, Kopi Gula Aren, dan Kopi Salted Caramel.",
+          "description": "Kopi Susu dengan perpaduan Gula Aren khas, disajikan dalam botol 250ml. Pilihan lain termasuk Kopi Pandan dan Kopi Salted Caramel. Kisaran Harga: Rp 35.000 per botol."
+        },
+        {
+          "id": 3,
+          "name": "Donat Kentang Varian",
+          "price": 4000,
+          "productImg": "assets/images/yourtea/donuts-menu.webp",
+          "alt": "Poster Donat Menu yang menampilkan tiga jenis donat: Donat Kentang kuning, Donat Talas ungu, dan Donat Pandan hijau.",
+          "description": "Donat lembut dengan bahan dasar kentang. Tersedia dalam varian rasa Donat Kentang, Donat Talas, dan Donat Pandan. Harga: 1 Pcs Rp 4.000, 2 Pcs Rp 7.000, 4 Pcs Rp 12.000."
+        },
+        {
+          "id": 4,
+          "name": "Varian Minuman Populer (Milk Tea)",
+          "price": 18000,
+          "productImg": "assets/images/yourtea/special-mix.webp",
+          "alt": "Lima gelas minuman YourTEA yang berjejer, menampilkan varian rasa seperti Green Tea, Thai Tea, dan Milk Tea.",
+          "description": "Minuman berbasis teh susu yang populer dan menyegarkan, termasuk Green Tea, Thai Tea, dan Milk Tea. Kisaran Harga: Rp 18.000 – Rp 25.000 per gelas."
         }
       ]
     }
