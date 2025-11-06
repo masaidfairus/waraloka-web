@@ -5,6 +5,8 @@ let tab_informasi = document.getElementById('tabinfo');
 let tab_produk = document.getElementById('tabproduk');
 let info_button = document.getElementById('infobutton');
 let produk_button = document.getElementById('produkbutton');
+let model_section = document.getElementById('model');
+let card_model = document.getElementById('cardModel');
 
 function openSide() {
   sidebar.classList.replace('translate-x-full', 'translate-x-0')
@@ -26,6 +28,24 @@ function openSidebar() {
 function closeSidebar() {
   side_section.classList.replace('translate-x-0', 'translate-x-full')
   side_content.classList.replace('overflow-y-scroll', 'overflow-y-none')
+}
+
+function openModel() {
+  model_section.classList.replace('translate-y-full', 'translate-y-0')
+
+  if (card_model.classList.contains('hide-model')) {
+    card_model.classList.replace('hide-model', 'show-model')
+  } else {
+    card_model.classList.add('show-model')
+  }
+}
+
+function closeModel() {
+  card_model.classList.replace('show-model', 'hide-model')
+  
+  setTimeout(() => {
+    model_section.classList.replace('translate-y-0', 'translate-y-full')
+  }, 300)
 }
 
 function info() {
@@ -51,7 +71,6 @@ function produk() {
 }
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
 

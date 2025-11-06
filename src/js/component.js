@@ -89,7 +89,7 @@ footer.innerHTML = `
                 <div class="text-primary-text/60 text-2xl lg:text-4xl gap-6 lg:gap-4 flex justify-center items-center">
                     <a href="https://instagram.com" target="_blank" rel="noopener" title="instagram-link"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://x.com" target="_blank" rel="noopener" title="twitter-link"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://facebook.com" target="_blank" rel="noopener" title="facebook-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" title="facebook-link"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
             </div>
         </div>
