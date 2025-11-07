@@ -3,7 +3,7 @@ const footer = document.getElementById('footer')
 
 header.classList = "w-full relative z-10"
 header.innerHTML = `
-            <nav class="w-full px-20 py-6 bg-neutral shadow-sm shadow-black/20 fixed flex justify-between items-center">
+            <nav class="w-full px-6 lg:px-20 py-6 bg-neutral shadow-sm shadow-black/20 fixed flex justify-between items-center">
                 <a href="index.html" class="w-max h-auto invisible lg:visible">
                     <img src="../assets/images/Waraloka-Logo.svg" alt="Waraloka-Logo" class="w-40 h-auto max-w-full">
                 </a>
@@ -15,18 +15,18 @@ header.innerHTML = `
                     <a href="index.html#tentang-kami" class="text-primary-text/60 text-base text-center font-medium tracking-wide capitalize">tentang kami</a>
                 </div>
 
-                <a onclick="openSide()" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl absolute right-6 visible lg:invisible flex justify-center items-center">
+                <a id="open-side" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl absolute right-6 visible lg:invisible flex justify-center items-center">
                     <i class="fa-solid fa-bars"></i>
                 </a>
             </nav>
 
-            <aside id="sidebar" class="w-80 h-screen py-6 px-8 bg-zinc-300/50 backdrop-blur-xs fixed right-0 top-0 gap-12 flex flex-col justify-start items-start translate-x-full transition-all duration-300">
-                <div class="w-full flex justify-between items-center">
+            <aside id="sidebar" class="w-8 0 h-screen py-6 px-8 bg-zinc-300/50 backdrop-blur-xs fixed right-0 top-0 gap-12 flex flex-col justify-start items-start translate-x-full transition-all duration-300">
+                <div class="w-full gap-8 flex justify-between items-center">
                     <a href="index.html" class="w-max h-auto">
                         <img src="../assets/images/Waraloka-Logo.svg" alt="Waraloka-Logo" class="w-40 h-auto max-w-full">
                     </a>
 
-                    <a onclick="closeSide()" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl flex justify-center items-center">
+                    <a id="close-side" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl flex justify-center items-center">
                         <i class="fa-solid fa-xmark"></i>
                     </a>
                 </div>
@@ -38,7 +38,21 @@ header.innerHTML = `
                     <a href="index.html#tentang-kami" class="text-primary-text/60 text-lg text-center font-medium tracking-wide capitalize">tentang kami</a>
                 </div>
             </aside>
-        `
+`
+
+document.getElementById('open-side').addEventListener('click', openSide)
+document.getElementById('close-side').addEventListener('click', closeSide)
+
+function openSide() {
+  document.getElementById('sidebar').classList.remove('translate-x-full')
+  document.getElementById('sidebar').classList.add('translate-x-0')
+
+  closeSidebar();
+}
+
+function closeSide() {
+  document.getElementById('sidebar').classList.add('translate-x-full')
+}
 
 footer.classList = "w-full flex flex-col justify-center items-center"
 footer.innerHTML = `
@@ -85,8 +99,8 @@ footer.innerHTML = `
             </a>
 
             <div class="w-full gap-3 flex flex-col justify-center items-center">
-                <h2 class="w-full text-primary-text text-center text-base lg:text-xl font-medium uppercase">social media kami:</h2>
-                <div class="text-primary-text/60 text-2xl lg:text-4xl gap-6 lg:gap-4 flex justify-center items-center">
+                <h2 class="w-full text-primary-text text-center text-base lg:text-base font-medium uppercase">social media kami:</h2>
+                <div class="text-primary-text/60 text-2xl lg:text-3xl gap-6 lg:gap-4 flex justify-center items-center">
                     <a href="https://instagram.com" target="_blank" rel="noopener" title="instagram-link"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://x.com" target="_blank" rel="noopener" title="twitter-link"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="https://facebook.com" target="_blank" rel="noopener" title="facebook-link"><i class="fa-brands fa-facebook-f"></i></a>
@@ -95,6 +109,6 @@ footer.innerHTML = `
         </div>
 
         <div class="w-full py-6 flex justify-center items-center">
-            <h1 class="text-primary-text text-center text-base lg:text-xl font-semibold capitalize tracking-wide">waraloka &copy; 2025. all rights reserved.</h1>
+            <h1 class="text-primary-text text-center text-base lg:text-base font-pj-sans-regular capitalize tracking-wide">waraloka &copy; 2025. all rights reserved.</h1>
         </div>
 `

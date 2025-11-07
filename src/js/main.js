@@ -1,4 +1,3 @@
-let sidebar = document.getElementById('sidebar');
 let side_content = document.getElementById('side_content');
 let side_section = document.getElementById('side_section');
 let tab_informasi = document.getElementById('tabinfo');
@@ -7,16 +6,6 @@ let info_button = document.getElementById('infobutton');
 let produk_button = document.getElementById('produkbutton');
 let model_section = document.getElementById('model');
 let card_model = document.getElementById('cardModel');
-
-function openSide() {
-  sidebar.classList.replace('translate-x-full', 'translate-x-0')
-
-  closeSidebar();
-}
-
-function closeSide() {
-  sidebar.classList.replace('translate-x-0', 'translate-x-full')
-}
 
 function openSidebar() {
   side_section.classList.replace('translate-x-full', 'translate-x-0')
