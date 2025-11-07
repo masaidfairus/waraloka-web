@@ -20,7 +20,7 @@ function closeSidebar() {
 }
 
 function openModel() {
-  model_section.classList.replace('translate-y-full', 'translate-y-0')
+  model_section.classList.replace('invisible', 'visible')
 
   if (card_model.classList.contains('hide-model')) {
     card_model.classList.replace('hide-model', 'show-model')
@@ -33,8 +33,8 @@ function closeModel() {
   card_model.classList.replace('show-model', 'hide-model')
   
   setTimeout(() => {
-    model_section.classList.replace('translate-y-0', 'translate-y-full')
-  }, 300)
+    model_section.classList.replace('visible', 'invisible')
+  }, 400)
 }
 
 function info() {
