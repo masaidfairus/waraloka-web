@@ -20,7 +20,7 @@ header.innerHTML = `
                 </a>
             </nav>
 
-            <aside id="sidebar" class="w-8 0 h-screen py-6 px-8 bg-zinc-300/50 backdrop-blur-xs fixed right-0 top-0 gap-12 flex flex-col justify-start items-start translate-x-full transition-all duration-300">
+            <aside id="sidebar" class="w-80 h-screen py-6 px-8 bg-zinc-300/50 backdrop-blur-xs fixed right-0 top-0 gap-12 flex flex-col justify-start items-start translate-x-full transition-all duration-300">
                 <div class="w-full gap-8 flex justify-between items-center">
                     <a href="index.html" class="w-max h-auto">
                         <img src="../assets/images/Waraloka-Logo.svg" alt="Waraloka-Logo" class="w-40 h-auto max-w-full">
@@ -44,14 +44,13 @@ document.getElementById('open-side').addEventListener('click', openSide)
 document.getElementById('close-side').addEventListener('click', closeSide)
 
 function openSide() {
-  document.getElementById('sidebar').classList.remove('translate-x-full')
-  document.getElementById('sidebar').classList.add('translate-x-0')
+  document.getElementById('sidebar').classList.replace('translate-x-full', 'translate-x-0')
 
   closeSidebar();
 }
 
 function closeSide() {
-  document.getElementById('sidebar').classList.add('translate-x-full')
+  document.getElementById('sidebar').classList.replace('translate-x-0', 'translate-x-full')
 }
 
 footer.classList = "w-full flex flex-col justify-center items-center"
