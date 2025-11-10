@@ -19,7 +19,7 @@
     
     <header id="header"></header>
     
-    <main class="w-full px-6 lg:px-20 relative overflow-x-hidden">
+    <main class="w-full px-6 lg:px-15 relative overflow-x-hidden">
         <section class="w-full pt-35 lg:pt-30 flex flex-col justify-center items-center">
             <!-- Breadcrumbs -->
             <div class="w-full gap-3 flex justify-start items-center">
@@ -35,56 +35,7 @@
                 <h3 class="w-full text-primary-text/60 text-sm lg:text-base text-center lg:text-left font-inter-regular tracking-wide">Saatnya pilih UMKM! Ini rekomendasi toko yang layak masuk daftar kamu.</h3>
             </header>
 
-            <div class="w-full gap-4 grid grid-cols-1 lg:grid-cols-4 justify-center items-center">
-                <a href="detail.html" class="w-full gap-3 flex flex-col justify-center items-start">
-                    <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Es Buah Pelangi" class="w-full h-50 max-w-full rounded-xl">
-                    <div class="gap-1 flex flex-col justify-center items-start">
-                        <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">es buah pelangi</h2>
-                        <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                    </div>
-                </a>
-                <a href="detail.html" class="w-full gap-3 flex flex-col justify-center items-start">
-                    <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Es Buah Pelangi" class="w-full h-50 max-w-full rounded-xl">
-                    <div class="gap-1 flex flex-col justify-center items-start">
-                        <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">es buah pelangi</h2>
-                        <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                    </div>
-                </a>
-                <a href="detail.html" class="w-full gap-3 flex flex-col justify-center items-start">
-                    <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Es Buah Pelangi" class="w-full h-50 max-w-full rounded-xl">
-                    <div class="gap-1 flex flex-col justify-center items-start">
-                        <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">es buah pelangi</h2>
-                        <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                    </div>
-                </a>
-                <a href="detail.html" class="w-full gap-3 flex flex-col justify-center items-start">
-                    <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Es Buah Pelangi" class="w-full h-50 max-w-full rounded-xl">
-                    <div class="gap-1 flex flex-col justify-center items-start">
-                        <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">es buah pelangi</h2>
-                        <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                    </div>
-                </a>
-                <a href="detail.html" class="w-full gap-3 flex flex-col justify-center items-start">
-                    <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Es Buah Pelangi" class="w-full h-50 max-w-full rounded-xl">
-                    <div class="gap-1 flex flex-col justify-center items-start">
-                        <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">es buah pelangi</h2>
-                        <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                    </div>
-                </a>
-                <a href="detail.html" class="w-full gap-3 flex flex-col justify-center items-start">
-                    <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Es Buah Pelangi" class="w-full h-50 max-w-full rounded-xl">
-                    <div class="gap-1 flex flex-col justify-center items-start">
-                        <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">es buah pelangi</h2>
-                        <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                    </div>
-                </a>
-                <a href="detail.html" class="w-full gap-3 flex flex-col justify-center items-start">
-                    <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Es Buah Pelangi" class="w-full h-50 max-w-full rounded-xl">
-                    <div class="gap-1 flex flex-col justify-center items-start">
-                        <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">es buah pelangi</h2>
-                        <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                    </div>
-                </a>
+            <div id="stores-wrapper" class="w-full gap-6 gap-y-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 justify-center items-start">
             </div>
         </section>
     </main>
@@ -92,7 +43,8 @@
     <footer id="footer"></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../src/js/component.js" defer></script>
+    <script src="../src/js/component.js" type="module" defer></script>
+    <script src="../src/js/stores.js" type="module" defer></script>
     <script src="../src/js/main.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
