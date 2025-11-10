@@ -21,5 +21,8 @@ WARALOKA adalah website berbasis peta yang membantu masyarakat menjelajahi UMKM 
 4. Website telah siap
 
 ## Website Progress
-- Landing Page
+- Landing Page 
 - Detail Store Page
+- Search Store Page
+- News Page
+- See all stores Page
