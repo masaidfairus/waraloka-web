@@ -35,9 +35,11 @@
                         </div>
 
                         <div class="w-full lg:w-max mr-8 flex justify-center items-center">
-                            <select name="category" title="select category" id="category-selector" class="w-full lg:w-50 px-6 lg:px-0 text-zinc-400 text-base text-left font-pj-sans-regular capitalize">
-                                <option class="text-zinc-400 text-base text-left font-pj-sans-regular capitalize" value="" selected>Semua kategori</option>
-                            </select>
+                            <input list="category-selector" name="category" title="select category" placeholder="Semua Kategori" class="w-full lg:w-50 px-6 lg:px-0 placeholder:text-zinc-400 text-base text-left font-pj-sans-regular capitalize">
+                                <datalist id="category-selector">
+                                    <option class="text-zinc-400 text-base text-left font-pj-sans-regular capitalize" value="" selected>Semua kategori</option>
+                                </datalist>
+                            </input>
                         </div>
 
                         <button class="w-full lg:w-max py-3 px-18 bg-primary rounded-md text-white text-center text-base font-pj-sans-medium capitalize cursor-pointer" type="submit">cari toko</button>
