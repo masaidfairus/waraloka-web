@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+
+    <link rel="shortcut icon" href="../assets/images/waraloka.ico" type="image/x-icon">
 </head>
 <body class="bg-neutral relative overflow-x-hidden flex flex-col justify-center items-center">
     
@@ -19,137 +21,64 @@
 
     <main class="w-full px-5 lg:px-20 relative overflow-x-hidden">
         <section class="w-full h-screen pb-6 lg:pb-8 pt-30 lg:pt-28 flex justify-center items-center">
-            <div style="background-image: url(../assets/images/hero-background-image.png);" class="w-full h-full px-5 bg-center bg-cover bg-no-repeat rounded-2xl gap-4 flex flex-col justify-center items-center">
+            <div class="hero-bg w-full h-full px-5 bg-center bg-cover bg-no-repeat rounded-2xl gap-4 flex flex-col justify-center items-center">
                 <div class="gap-2 flex flex-col justify-center items-center">
                     <h1 class="text-neutral text-center text-3xl lg:text-5xl font-pj-sans-bold tracking-wide leading-snug">Yukk, Cari UMKM <br>terbaik di dekat mu</h1>
                     <p class="text-neutral/60 text-center text-xs lg:text-sm font-inter-light tracking-wider">Temukan usaha lokal favoritmu dan dukung pelaku UMKM di sekitar kamu!</p>
                 </div>
 
-                <div class="w-max py-4 px-6 bg-white rounded-lg gap-10 flex flex-col lg:flex-row justify-between items-center">
-                    <div class="w-full lg:w-max pl-2 gap-3 flex justify-center items-center">
-                        <i class="fa-solid fa-search text-base text-zinc-400"></i>
-                        <input type="text" placeholder="Cari Nama Pekerjaan" class="h-10 bg-transparent text-zinc-950 text-left text-base font-pj-sans-regular placeholder:text-zinc-400 focus:outline-none">
-                    </div>
 
-                    <div class="w-full lg:w-max mr-8 flex justify-center items-center">
-                        <select name="category" title="select category" id="category" class="w-full lg:w-24 px-6 lg:px-0 text-zinc-400 text-base text-left font-pj-sans-regular capitalize">
-                            <option class="text-zinc-400 text-base text-left font-pj-sans-regular capitalize" value="" disabled selected>kategori</option>
-                            <option class="text-primary-text text-base text-left font-pj-sans-regular capitalize" value="kateg1">kateg 1</option>
-                            <option class="text-primary-text text-base text-left font-pj-sans-regular capitalize" value="kateg2">kateg 2</option>
-                            <option class="text-primary-text text-base text-left font-pj-sans-regular capitalize" value="kateg3">kateg 3</option>
-                        </select>
-                    </div>
+                    <form action="search.html" method="GET" class="w-max py-2 px-2 md:py-4 md:px-4 bg-white rounded-lg gap-10 flex flex-col lg:flex-row justify-between items-center">
+                        <div class="w-full lg:w-max pl-2 gap-3 flex justify-start items-center">
+                            <label for="search"><i class="fa-solid fa-search text-base text-zinc-400"></i></label>
+                            <input type="text" id="search" name="name" placeholder="Cari Nama Toko" class="w-full h-10 bg-transparent text-zinc-950 text-left text-base font-pj-sans-regular placeholder:text-zinc-400 focus:outline-none">
+                        </div>
 
-                    <button class="w-full lg:w-max py-3 px-18 bg-primary rounded-md text-white text-center text-base font-pj-sans-medium tracking-wider capitalize cursor-pointer" type="submit">cari</button>
-                </div>
+                        <div class="w-full lg:w-max mr-8 flex justify-center items-center">
+                            <select name="category" title="select category" id="category-selector" class="w-full lg:w-50 px-6 lg:px-0 text-zinc-400 text-base text-left font-pj-sans-regular capitalize">
+                                <option class="text-zinc-400 text-base text-left font-pj-sans-regular capitalize" value="" selected>Semua kategori</option>
+                            </select>
+                        </div>
+
+                        <button class="w-full lg:w-max py-3 px-18 bg-primary rounded-md text-white text-center text-base font-pj-sans-medium capitalize cursor-pointer" type="submit">cari toko</button>
+                    </form>
+
             </div>
         </section>
 
         <section class="w-full py-6 lg:py-10 gap-12 flex flex-col justify-center items-center">
             <div class="w-full gap-6 flex flex-col justify-center items-center">
                 <div class="w-full gap-6 flex flex-col lg:flex-row justify-between items-start">
-                    <div class="gap-2 flex flex-col justify-center items-start">
+                    <div class="w-full lg:w-auto gap-2 flex flex-col justify-center items-start">
                         <h1 class="w-full text-3xl lg:text-4xl text-center lg:text-left text-primary-text font-pj-sans-semibold capitalize tracking-wide">UMKM di sekitar kamu</h1>
                         <p class="w-full text-sm lg:text-base text-center lg:text-left text-primary-text/60 font-inter-medium tracking-wide">Saatnya pilih UMKM! Ini rekomendasi toko yang layak masuk daftar kamu.</p>
                     </div>
 
-                    <a href="see_all.html" class="w-full lg:w-max py-2 px-8 bg-primary hover:bg-transparent border-2 border-primary rounded-xl text-white hover:text-primary text-center text-sm lg:text-base font-pj-sans-medium capitalize tracking-wide transition-all duration-300">lihat semua</a>
+                    <a href="stores.html" class="w-full lg:w-max py-2 px-8 bg-primary hover:bg-transparent border-2 border-primary rounded-xl text-white hover:text-primary text-center text-sm lg:text-base font-pj-sans-medium capitalize tracking-wide transition-all duration-300">lihat semua</a>
                 </div>
 
                 <div class="w-full overflow-x-scroll scrollbar-none flex justify-start items-center">
-                    <div class="w-max h-max gap-4 flex justify-center items-center">
-                        <a href="detail.html" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
-                            <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Es Buah Pelangi" class="w-full h-50 max-w-full rounded-xl">
-                            <div class="gap-1 flex flex-col justify-center items-start">
-                                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">es buah pelangi</h2>
-                                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                            </div>
-                        </a>
-                        <a href="detail.html" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
-                            <img src="../assets/images/hero-background-image.png" alt="Gambar Tempat Fotokopi Hasibuan" class="w-full h-50 max-w-full rounded-xl">
-                            <div class="gap-1 flex flex-col justify-center items-start">
-                                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">hasibuan photo copy</h2>
-                                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">percetakan & fotokopi</p>
-                            </div>
-                        </a>
-                        <a href="detail.html" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
-                            <img src="../assets/images/hero-background-image.png" alt="Gambar Fashion Store Ruby" class="w-full h-50 max-w-full rounded-xl">
-                            <div class="gap-1 flex flex-col justify-center items-start">
-                                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">ruby fashion</h2>
-                                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">fashion wanita</p>
-                            </div>
-                        </a>
-                        <a href="detail.html" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
-                            <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Nasi Uduk Ibu Ai" class="w-full h-50 max-w-full rounded-xl">
-                            <div class="gap-1 flex flex-col justify-center items-start">
-                                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">nasi uduk ibu ai</h2>
-                                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                            </div>
-                        </a>
-                        <a href="detail.html" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
-                            <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Mas Mutiara" class="w-full h-50 max-w-full rounded-xl">
-                            <div class="gap-1 flex flex-col justify-center items-start">
-                                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">toko mas mutiara</h2>
-                                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">perhiasan</p>
-                            </div>
-                        </a>
-                    </div>
+                    <div id="nearby-stores-wrapper" class="w-max h-max gap-4 flex justify-center items-start"></div>
                 </div>
             </div>
 
             <div class="w-full gap-6 flex flex-col justify-center items-center">
                 <div class="w-full gap-6 flex flex-col lg:flex-row justify-between items-start">
-                    <div class="gap-2 flex flex-col justify-center items-start">
+                    <div class="w-full lg:w-auto gap-2 flex flex-col justify-center items-start">
                         <h1 class="w-full text-3xl lg:text-4xl text-center lg:text-left text-primary-text font-pj-sans-semibold capitalize tracking-wide">kuliner terfavorit untuk kamu</h1>
                         <p class="w-full text-sm lg:text-base text-center lg:text-left text-primary-text/60 font-inter-medium tracking-wide">Enggak mau ketinggalan kuliner viral? Yuk, cek kuliner yang paling ramai saat ini!</p>
                     </div>
 
-                    <a href="see_all.html" class="w-full lg:w-max py-2 px-8 bg-primary hover:bg-transparent border-2 border-primary rounded-xl text-white hover:text-primary text-center text-sm lg:text-base font-pj-sans-medium capitalize tracking-wide transition-all duration-300"">lihat semua</a>
+                    <a href="stores.html" class="w-full lg:w-max py-2 px-8 bg-primary hover:bg-transparent border-2 border-primary rounded-xl text-white hover:text-primary text-center text-sm lg:text-base font-pj-sans-medium capitalize tracking-wide transition-all duration-300"">lihat semua</a>
                 </div>
 
                 <div class="w-full overflow-x-scroll scrollbar-none flex justify-start items-center">
-                    <div class="w-max h-max gap-4 flex justify-center items-center">
-                        <a href="detail.html" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
-                            <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Buah Balap 88" class="w-full h-50 max-w-full rounded-xl">
-                            <div class="gap-1 flex flex-col justify-center items-start">
-                                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">buah balap 88</h2>
-                                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                            </div>
-                        </a>
-                        <a href="detail.html" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
-                            <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Ayam Geprek DFC" class="w-full h-50 max-w-full rounded-xl">
-                            <div class="gap-1 flex flex-col justify-center items-start">
-                                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">ayam geprek DFC</h2>
-                                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                            </div>
-                        </a>
-                        <a href="detail.html" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
-                            <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Ayam Goreng D'Kriuk Pamijahan" class="w-full h-50 max-w-full rounded-xl">
-                            <div class="gap-1 flex flex-col justify-center items-start">
-                                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">d'Kriuk pamijahan</h2>
-                                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                            </div>
-                        </a>
-                        <a href="detail.html" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
-                            <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Nasi Uduk Ibu Ai" class="w-full h-50 max-w-full rounded-xl">
-                            <div class="gap-1 flex flex-col justify-center items-start">
-                                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">nasi uduk ibu ai</h2>
-                                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                            </div>
-                        </a>
-                        <a href="detail.html" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
-                            <img src="../assets/images/hero-background-image.png" alt="Gambar Toko Seblak Prasmanan" class="w-full h-50 max-w-full rounded-xl">
-                            <div class="gap-1 flex flex-col justify-center items-start">
-                                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">seblak prasmanan</h2>
-                                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">makanan & minuman</p>
-                            </div>
-                        </a>
-                    </div>
+                    <div id="favorite-stores-wrapper" class="w-max h-max gap-4 flex justify-center items-start"></div>
                 </div>
             </div>
         </section>
 
-        <section id="tentang-kami" class="w-full py-6 lg:py-20 gap-8 flex flex-col justify-center items-center scroll-mt-10">
+        <section id="about-us" class="w-full py-6 lg:py-20 gap-8 flex flex-col justify-center items-center scroll-mt-10">
             <div class="w-full gap-4 flex flex-col justify-center items-start">
                 <h1 class="w-full text-4xl lg:text-5xl text-center lg:text-left text-primary-text font-pj-sans-semibold capitalize tracking-wide">tentang kami</h1>
                 <p class="w-full text-sm lg:text-base text-center lg:text-left text-primary-text/60 font-inter-medium tracking-wide">Kami hadir untuk membantu kamu menemukan dan mendukung UMKM terbaik di sekitar.</p>
@@ -170,48 +99,48 @@
             </div>
         </section>
 
-        <section id="berita" class="w-full py-8 gap-6 flex flex-col justify-center items-center scroll-mt-20">
+        <section id="news" class="w-full py-8 gap-6 flex flex-col justify-center items-center scroll-mt-20">
             <div class="w-full gap-2 flex flex-col justify-center items-start">
                 <h1 class="w-full text-3xl lg:text-4xl text-center lg:text-left text-primary-text font-pj-sans-semibold capitalize tracking-wide">berita terkini</h1>
                 <p class="w-full text-sm lg:text-base text-center lg:text-left text-primary-text/60 font-inter-medium tracking-wide">Enggak mau ketinggalan kuliner viral? Yuk, cek kuliner yang paling ramai saat ini!</p>
             </div>
 
             <div class="w-full h-160 lg:h-120 gap-3 flex flex-col lg:flex-row justify-center items-center">
-                <div style="background-image: url(../assets/images/king-kelapa.png);" class="w-full lg:w-1/2 h-full p-6 bg-no-repeat bg-cover bg-center-top rounded-lg flex flex-col justify-end items-start">
+                <a href="#" class="w-full first-news lg:w-1/2 h-full p-6 bg-no-repeat bg-cover bg-center-top rounded-lg flex flex-col justify-end items-start">
                     <div class="w-full gap-3 flex flex-col justify-center items-start">
                         <span class="py-1 px-4 bg-primary rounded-lg text-white text-center text-xs lg:text-base capitalize tracking-wide">news</span>
                         <h2 class="text-base lg:text-3xl text-left text-white font-pj-sans-semibold capitalize tracking-wider">Cerita UMKM Binaan Pertamina Raup Rp300 Juta per Bulan dari Olahan Kelapa</h2>
                     </div>
-                </div>
+                </a>
 
                 <div class="w-full lg:w-1/2 h-full gap-3 flex flex-col justify-center items-start">
                     <div class="w-full h-1/2 gap-3 flex justify-center items-start">
-                        <div style="background-image: url(../assets/images/speaker-jawa.png);" class="w-1/2 h-full p-3 bg-no-repeat bg-cover bg-center rounded-lg flex flex-col justify-end items-start">
+                        <a href="#" class="w-1/2 second-news h-full p-3 bg-no-repeat bg-cover bg-center rounded-lg flex flex-col justify-end items-start">
                             <div class="w-full gap-1 flex flex-col justify-center items-start">
                                 <span class="py-1 px-3 bg-primary rounded-sm text-white text-center text-[0.5rem] capitalize tracking-wider">news</span>
                                 <h2 class="text-[0.6rem] text-left text-white font-pj-sans-medium capitalize tracking-wider">Perkuat Daya Saing, 100 UMKM di Wilayah Indonesia Timur Diberi Pendampingan</h2>
                             </div>
-                        </div>
+                        </a>
                         
-                        <div style="background-image: url(../assets/images/mas-mas-paket.png);" class="w-1/2 h-full p-3 bg-no-repeat bg-cover bg-center rounded-lg flex flex-col justify-end items-start">
+                        <a href="#" class="w-1/2 third-news h-full p-3 bg-no-repeat bg-cover bg-center rounded-lg flex flex-col justify-end items-start">
                             <div class="w-full gap-1 flex flex-col justify-center items-start">
                                 <span class="py-1 px-3 bg-primary rounded-sm text-white text-center text-[0.5rem] capitalize tracking-wider">news</span>
                                 <h2 class="text-[0.6rem] text-left text-white font-pj-sans-medium capitalize tracking-wider">Tekanan Waktu dan Strategi Lapangan Warnai Episode 4 Shopee Jagoan UMKM Naik Kelas</h2>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
-                    <div style="background-image: url(../assets/images/mas-mas-kerupuk.png);" class="w-full h-1/2 p-5 bg-no-repeat bg-cover bg-center rounded-lg flex flex-col justify-end items-start">
+                    <a href="#" class="w-full fourth-news h-1/2 p-5 bg-no-repeat bg-cover bg-center rounded-lg flex flex-col justify-end items-start">
                         <div class="w-full gap-2 lg:gap-3 flex flex-col justify-center items-start">
                             <span class="py-1 px-4 bg-primary rounded-lg text-white text-center text-[0.6rem] lg:text-sm capitalize tracking-wide">news</span>
                             <h2 class="text-xs lg:text-xl text-left text-white font-pj-sans-semibold capitalize tracking-wider">Target Ciptakan 12 Juta Lapangan Kerja, Penyaluran KUR Sentuh Rp217,20 Triliun</h2>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="testimoni" class="w-full py-12 gap-10 flex flex-col justify-center items-center scroll-mt-18">
+        <section id="testimonial" class="w-full py-12 gap-10 flex flex-col justify-center items-center scroll-mt-18">
             <div class="w-full gap-2 flex flex-col justify-center items-center">
                 <h1 class="w-full text-3xl lg:text-4xl text-center text-primary-text font-pj-sans-semibold capitalize tracking-wide">ulasan dari pelanggan favorit kami</h1>
                 <p class="w-full text-sm lg:text-base text-center text-primary-text/60 font-inter-medium tracking-wide">Dengarkan apa yang mereka katakan tentang kami</p>
@@ -342,7 +271,8 @@
     <footer id="footer"></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../src/js/main.js"></script>
-    <script src="../src/js/component.js"></script>
+    <script src="../src/js/component.js" type="module" defer></script>
+    <script src="../src/js/home.js" type="module" defer></script>
+    <script src="../src/js/main.js" defer></script>
 </body>
 </html>

@@ -160,3 +160,23 @@
 @utility hide-model{
   animation: fade-top 300ms ease-in-out forwards;
 }
+
+.hero-bg {
+  background-image: url(../../assets/images/hero-background-image.png);
+}
+
+.first-news {
+  background-image: url(../assets/images/first-news.png)
+}
+
+.second-news {
+  background-image: url(../assets/images/second-news.png)
+}
+
+.third-news {
+  background-image: url(../assets/images/third-news.png)
+}
+
+.fourth-news {
+  background-image: url(../assets/images/fourth-news.png)
+}

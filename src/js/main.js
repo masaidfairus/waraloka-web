@@ -1,62 +1,13 @@
-let side_content = document.getElementById('side_content');
-let side_section = document.getElementById('side_section');
-let tab_informasi = document.getElementById('tabinfo');
-let tab_produk = document.getElementById('tabproduk');
-let info_button = document.getElementById('infobutton');
-let produk_button = document.getElementById('produkbutton');
-let model_section = document.getElementById('model');
-let card_model = document.getElementById('cardModel');
+document.getElementById('open-sidebar').addEventListener('click', openSidebar)
+document.getElementById('close-sidebar').addEventListener('click', closeSidebar)
 
 function openSidebar() {
-  side_section.classList.replace('translate-x-full', 'translate-x-0')
-  side_content.classList.replace('overflow-y-none', 'overflow-y-scroll')
-  
-  closeSide();
+  document.getElementById('sidebar').classList.replace('translate-x-full', 'translate-x-0')
+  closeSidebar();
 }
 
 function closeSidebar() {
-  side_section.classList.replace('translate-x-0', 'translate-x-full')
-  side_content.classList.replace('overflow-y-scroll', 'overflow-y-none')
-}
-
-function openModel() {
-  model_section.classList.replace('invisible', 'visible')
-
-  if (card_model.classList.contains('hide-model')) {
-    card_model.classList.replace('hide-model', 'show-model')
-  } else {
-    card_model.classList.add('show-model')
-  }
-}
-
-function closeModel() {
-  card_model.classList.replace('show-model', 'hide-model')
-  
-  setTimeout(() => {
-    model_section.classList.replace('visible', 'invisible')
-  }, 400)
-}
-
-function info() {
-  tab_informasi.classList.replace('absolute', 'relative');
-  tab_informasi.classList.replace('invisible', 'visible');
-  
-  tab_produk.classList.replace('relative', 'absolute');
-  tab_produk.classList.replace('visible', 'invisible');
-
-  info_button.classList.replace('text-primary-text/60', 'text-primary')
-  produk_button.classList.replace('text-primary', 'text-primary-text/60')
-}
-
-function produk() {
-  tab_produk.classList.replace('absolute', 'relative');
-  tab_produk.classList.replace('invisible', 'visible');
-  
-  tab_informasi.classList.replace('relative', 'absolute');
-  tab_informasi.classList.replace('visible', 'invisible');
-
-  info_button.classList.replace('text-primary', 'text-primary-text/60')
-  produk_button.classList.replace('text-primary-text/60', 'text-primary')
+  document.getElementById('sidebar').classList.replace('translate-x-0', 'translate-x-full')
 }
 
 const swiper = new Swiper('.swiper', {

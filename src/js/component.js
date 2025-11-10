@@ -1,6 +1,67 @@
 const header = document.getElementById('header')
 const footer = document.getElementById('footer')
 
+export async function getStoresData() {
+    try {
+        const response = await fetch('../src/data/store-data.json')
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`)
+        const data = await response.json()
+        return data
+    } catch (error) {
+        console.error('Failed to load store data:', error)
+    }
+}
+
+export function getCategoriesArray(stores) {
+    const categoriesArray = []
+    for (let store of stores) {
+        if (!categoriesArray.includes(store.category)) {
+            categoriesArray.push(store.category)
+        }
+    }
+    return categoriesArray
+}
+
+export function renderUniqueStore(stores, wrapperElement, index) {
+    const shuffledArray = [...stores];
+
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+
+    const randomItems = shuffledArray.slice(0, index);
+    randomItems.forEach(store => {
+        wrapperElement.innerHTML += `
+        <a href="detail.html?id=${store.id}" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
+            <img src="${store.images.thumbnail.image}" alt="${store.images.thumbnail.alt}" class="w-full h-50 max-w-full rounded-xl object-cover object-center">
+            <div class="gap-1 flex flex-col justify-center items-start">
+                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">${store.name}</h2>
+                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">${store.category}</p>
+            </div>
+        </a>        
+        `
+    })
+}
+
+export function renderCategoryStore(stores, category, index) {
+    const filterCategory = stores.filter(store => store.category === category)
+    const limitedStores = filterCategory.slice(0, index)
+    let storesHTML = ``
+    limitedStores.forEach(store => {
+        storesHTML += `
+        <a href="detail.html?id=${store.id}" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
+            <img src="${store.images.thumbnail.image}" alt="${store.images.thumbnail.alt}" class="w-full h-50 max-w-full rounded-xl object-cover object-center">
+            <div class="gap-1 flex flex-col justify-center items-start">
+                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">${store.name}</h2>
+                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">${store.category}</p>
+            </div>
+        </a>        
+        `
+    })
+    document.getElementById('favorite-stores-wrapper').innerHTML = storesHTML
+}
+
 header.classList = "w-full relative z-10"
 header.innerHTML = `
             <nav class="w-full px-6 lg:px-20 py-6 bg-neutral shadow-sm shadow-black/20 fixed flex justify-between items-center">
@@ -10,12 +71,12 @@ header.innerHTML = `
 
                 <div class="gap-8 flex justify-center items-center invisible lg:visible">
                     <a href="index.html" class="text-primary-text text-base text-center font-medium tracking-wide capitalize">beranda</a>
-                    <a href="index.html#testimoni" class="text-primary-text/60 text-base text-center font-medium tracking-wide capitalize">testimoni</a>
-                    <a href="index.html#berita" class="text-primary-text/60 text-base text-center font-medium tracking-wide capitalize">berita</a>
-                    <a href="index.html#tentang-kami" class="text-primary-text/60 text-base text-center font-medium tracking-wide capitalize">tentang kami</a>
+                    <a href="index.html#testimonial" class="text-primary-text/60 text-base text-center font-medium tracking-wide capitalize">testimoni</a>
+                    <a href="index.html#news" class="text-primary-text/60 text-base text-center font-medium tracking-wide capitalize">berita</a>
+                    <a href="index.html#about-us" class="text-primary-text/60 text-base text-center font-medium tracking-wide capitalize">tentang kami</a>
                 </div>
 
-                <a id="open-side" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl absolute right-6 visible lg:invisible flex justify-center items-center">
+                <a id="open-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl absolute right-6 visible lg:invisible flex justify-center items-center">
                     <i class="fa-solid fa-bars"></i>
                 </a>
             </nav>
@@ -26,32 +87,19 @@ header.innerHTML = `
                         <img src="../assets/images/Waraloka-Logo.svg" alt="Waraloka-Logo" class="w-40 h-auto max-w-full">
                     </a>
 
-                    <a id="close-side" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl flex justify-center items-center">
+                    <a id="close-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl flex justify-center items-center">
                         <i class="fa-solid fa-xmark"></i>
                     </a>
                 </div>
 
                 <div class="w-full gap-3 flex flex-col justify-center items-start">
                     <a href="index.html" class="text-primary-text text-lg text-center font-medium tracking-wide capitalize">beranda</a>
-                    <a href="index.html#testimoni" class="text-primary-text/60 text-lg text-center font-medium tracking-wide capitalize">testimoni</a>
-                    <a href="index.html#berita" class="text-primary-text/60 text-lg text-center font-medium tracking-wide capitalize">berita</a>
-                    <a href="index.html#tentang-kami" class="text-primary-text/60 text-lg text-center font-medium tracking-wide capitalize">tentang kami</a>
+                    <a href="index.html#testimonial" class="text-primary-text/60 text-lg text-center font-medium tracking-wide capitalize">testimoni</a>
+                    <a href="index.html#news" class="text-primary-text/60 text-lg text-center font-medium tracking-wide capitalize">berita</a>
+                    <a href="index.html#about-us" class="text-primary-text/60 text-lg text-center font-medium tracking-wide capitalize">tentang kami</a>
                 </div>
             </aside>
 `
-
-document.getElementById('open-side').addEventListener('click', openSide)
-document.getElementById('close-side').addEventListener('click', closeSide)
-
-function openSide() {
-  document.getElementById('sidebar').classList.replace('translate-x-full', 'translate-x-0')
-
-  closeSidebar();
-}
-
-function closeSide() {
-  document.getElementById('sidebar').classList.replace('translate-x-0', 'translate-x-full')
-}
 
 footer.classList = "w-full flex flex-col justify-center items-center"
 footer.innerHTML = `
@@ -75,21 +123,21 @@ footer.innerHTML = `
                     <a href="#" class="text-primary-text/60 text-left text-xs lg:text-sm font-regular capitalize tracking-wide">titik penjualan</a>
                 </div>
                 <div class="gap-3 flex flex-col justify-center items-start">
-                    <a href="#" class="text-primary-text text-left text-xs lg:text-sm font-semibold uppercase tracking-wide">bertemu waraloka</a>
-                    <a href="#" class="text-primary-text/60 text-left text-xs lg:text-sm font-regular capitalize tracking-wide">tentang kami</a>
-                    <a href="#" class="text-primary-text/60 text-left text-xs lg:text-sm font-regular capitalize tracking-wide">testimoni</a>
-                    <a href="#" class="text-primary-text/60 text-left text-xs lg:text-sm font-regular capitalize tracking-wide">berita</a>
+                    <a href="index.html" class="text-primary-text text-left text-xs lg:text-sm font-semibold uppercase tracking-wide">bertemu waraloka</a>
+                    <a href="index.html#about-us" class="text-primary-text/60 text-left text-xs lg:text-sm font-regular capitalize tracking-wide">tentang kami</a>
+                    <a href="index.html#testimonial" class="text-primary-text/60 text-left text-xs lg:text-sm font-regular capitalize tracking-wide">testimoni</a>
+                    <a href="index.html#news" class="text-primary-text/60 text-left text-xs lg:text-sm font-regular capitalize tracking-wide">berita</a>
                 </div>
                 <div class="gap-8 flex flex-col justify-center items-start">
-                    <div class=" gap-3 flex flex-col justify-center items-start">
-                        <a href="#" class="text-primary-text text-left text-xs lg:text-sm font-semibold uppercase tracking-wide">layanan pelanggan (WA):</a>
-                        <a href="#" class="text-primary-text/60 text-left text-xs lg:text-sm font-regular capitalize tracking-wide">+62 882-2990-0877</a>
-                    </div>
+                    <ul class=" gap-3 flex flex-col justify-center items-start">
+                        <li class="text-primary-text text-left text-xs lg:text-sm font-semibold uppercase tracking-wide">layanan pelanggan (WA):</li>
+                        <li><a href="https://www.whatsapp.com/" class="text-primary text-left text-xs lg:text-sm font-regular underline capitalize tracking-wide">+62 882-2990-0877</a></li>
+                    </ul>
 
-                    <div class=" gap-3 flex flex-col justify-center items-start">
-                        <a href="#" class="text-primary-text text-left text-xs lg:text-sm font-semibold uppercase tracking-wide">kantor waraloka:</a>
-                        <a href="#" class="w-30 lg:w-50 text-primary-text/60 text-left text-xs lg:text-sm font-regular capitalize tracking-wide">Jl. KH. Abdul Hamid, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810</a>
-                    </div>
+                    <ul class=" gap-3 flex flex-col justify-center items-start">
+                        <li class="text-primary-text text-left text-xs lg:text-sm font-semibold uppercase tracking-wide">kantor waraloka:</li>
+                        <li class="w-full lg:w-50 text-primary-text/60 text-left text-xs lg:text-sm font-regular capitalize tracking-wide">Jl. KH. Abdul Hamid, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810</li>
+                    </ul>
                 </div>
             </div>
 
