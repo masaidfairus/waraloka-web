@@ -1,52 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search | Waraloka - UMKM Directory</title>
-    <link href="../dist/output.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search | Waraloka - UMKM Directory</title>
+        <link href="../dist/output.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
 
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
 
-    <link rel="shortcut icon" href="../assets/images/waraloka.ico" type="image/x-icon">
-</head>
-<body class="bg-neutral relative overflow-x-hidden flex flex-col justify-center items-center">
-    
-    <header id="header"></header>
-    
-    <main class="w-full px-5 lg:px-20 relative overflow-x-hidden">
-        <section class="w-full pt-35 gap-7 flex flex-col justify-center items-center">
-            <form id="store-search-form" action="search.html" method="get" class="w-full flex flex-col gap-8">
-                <div class="w-full h-18 p-3 bg-white border-2 border-zinc-300 shadow-sm shadow-black/10 rounded-lg gap-3 flex justify-between items-center">
-                    <input type="text" name="name" class="w-3/5 lg:w-5/6 h-full px-3 lg:px-6 text-primary-text text-base font-medium outline-none" placeholder="Apa yang anda cari?">
-                    <button type="submit" class="w-2/5 lg:w-1/6 py-2.5 px-4 lg:px-8 bg-primary hover:bg-transparent border-2 border-primary rounded-md shadow-sm shadow-primary/40 text-white hover:text-primary text-base lg:text-md font-medium capitalize cursor-pointer transition-all duration-300">cari toko</button>
-                </div>
+        <link
+            rel="shortcut icon"
+            href="../assets/images/waraloka.ico"
+            type="image/x-icon">
+    </head>
+    <body
+        class="relative flex flex-col items-center justify-center overflow-x-hidden bg-neutral">
+        <header id="header"></header>
 
-                <div class="w-full gap-8 flex flex-col justify-center items-start">
-                    <h2 class="text-primary-text font-pj-sans-semibold text-left text-2xl lg:text-3xl font-bold capitalize">kategori</h2>
-                    <div id="store-categories-wrapper" class="w-full gap-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5"></div>
-                </div>
-            </form>
-        </section>
+        <main class="relative w-full overflow-x-hidden px-5 lg:px-20">
+            <section
+                class="flex w-full flex-col items-center justify-center gap-7 pt-35">
+                <form
+                    id="store-search-form"
+                    action="search.html"
+                    method="get"
+                    class="flex w-full flex-col gap-8">
+                    <div
+                        class="flex h-18 w-full items-center justify-between gap-3 rounded-lg border-2 border-zinc-300 bg-white p-3 shadow-sm shadow-black/10">
+                        <input
+                            type="text"
+                            name="name"
+                            aria-label="Kolom pencarian nama toko atau kategori"
+                            class="h-full w-3/5 px-3 text-base font-medium text-primary-text outline-none lg:w-5/6 lg:px-6"
+                            placeholder="Apa yang anda cari?" >
+                        <button
+                            type="submit"
+                            class="lg:text-md w-2/5 cursor-pointer rounded-md border-2 border-primary bg-primary px-4 py-2.5 text-base font-medium text-white capitalize shadow-sm shadow-primary/40 transition-all duration-300 hover:bg-transparent hover:text-primary lg:w-1/6 lg:px-8">
+                            cari toko
+                        </button>
+                    </div>
 
-        <section class="w-full py-15 gap-6 flex flex-col justify-center items-center">
+                    <div
+                        class="flex w-full flex-col items-start justify-center gap-8">
+                        <h2
+                            class="text-left font-pj-sans-semibold text-2xl font-bold text-primary-text capitalize lg:text-3xl">
+                            kategori
+                        </h2>
+                        <div
+                            id="store-categories-wrapper"
+                            class="grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5"></div>
+                    </div>
+                </form>
+            </section>
 
-            <h2 id="search-query-display" class="w-full text-primary-text font-pj-sans-semibold text-left text-2xl lg:text-3xl font-bold">Hasil pencarian untuk 'Makanan'</h2>
+            <section
+                class="flex w-full flex-col items-center justify-center gap-6 py-15">
+                <h2
+                    id="search-query-display"
+                    class="w-full text-left font-pj-sans-semibold text-2xl font-bold text-primary-text lg:text-3xl">
+                    Hasil pencarian untuk 'Makanan'
+                </h2>
 
-            <div id="search-results-wrapper" class="w-full gap-6 gap-y-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 justify-center items-start"></div>
-        </section>
-    </main>
+                <div
+                    id="search-results-wrapper"
+                    class="grid w-full grid-cols-1 items-start justify-center gap-6 gap-y-10 md:grid-cols-3 lg:grid-cols-5"></div>
+            </section>
+        </main>
 
-    <footer id="footer"></footer>
+        <footer id="footer"></footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../src/js/component.js" defer type="module"></script>
-    <script src="../src/js/search.js" defer type="module"></script>
-    <script src="../src/js/main.js" defer></script>
-</body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="../src/js/component.js" type="module"></script>
+        <script src="../src/js/search.js" type="module"></script>
+        <script src="../src/js/main.js" defer></script>
+    </body>
 </html>

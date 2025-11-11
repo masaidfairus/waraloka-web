@@ -1,188 +1,360 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html lang="id">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail | Waraloka - UMKM Directory</title>
     <link href="../dist/output.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
 
-    <link rel="shortcut icon" href="../assets/images/waraloka.ico" type="image/x-icon">
-</head>
-<body class="bg-neutral relative overflow-x-hidden flex flex-col justify-center items-center">
-    
+    <link
+      rel="shortcut icon"
+      href="../assets/images/waraloka.ico"
+      type="image/x-icon">
+  </head>
+  <body
+    class="relative flex flex-col items-center justify-center overflow-x-hidden bg-neutral">
     <header id="header"></header>
-    
-    <main class="w-full px-6 lg:px-20 relative overflow-x-hidden">
-        <section id="modal" class="w-full px-5 py-10 h-screen bg-black/48 fixed top-0 right-0 flex justify-center items-center z-30 lg:z-10 invisible">
-            <div id="modal-card" class="w-full lg:w-auto h-auto p-6 bg-white rounded-xl flex flex-col justify-center items-start">
-                <div class="mb-5 gap-2   flex flex-col justify-center items-start">
-                    <h1 class="text-primary-text text-left text-3xl font-pj-sans-semibold capitalize">pemilik toko</h1>
-                    <h2 id="store-owner-modal" class="text-primary-text/60 text-left text-xl font-pj-sans-medium capitalize">tubagus valentino</h2>
-                </div>
 
-                <div class="mb-7 gap-6 flex flex-col justify-center items-start">
-                    <div class="gap-4 flex justify-start items-center">
-                        <span class="w-10 lg:w-12 h-10 lg:h-12 bg-primary rounded-full text-center text-lg lg:text-xl flex justify-center items-center">
-                            <i class="fa-solid fa-phone-volume text-white"></i>
-                        </span>
+    <main class="relative w-full overflow-x-hidden px-6 lg:px-20">
+      <section
+        id="modal"
+        class="invisible fixed top-0 right-0 z-30 flex h-screen w-full items-center justify-center bg-black/48 px-5 py-10 lg:z-10">
+        <div
+          id="modal-card"
+          class="flex h-auto w-full flex-col items-start justify-center rounded-xl bg-white p-6 lg:w-auto">
+          <div class="mb-5 flex flex-col items-start justify-center gap-2">
+            <h2
+              class="text-left font-pj-sans-semibold text-3xl text-primary-text capitalize">
+              pemilik toko
+            </h2>
+            <h3
+              id="store-owner-modal"
+              class="text-left font-pj-sans-medium text-xl text-primary-text/60 capitalize">
+              tubagus valentino
+            </h3>
+          </div>
 
-                        <div class="flex gap-1 flex-col justify-center items-start">
-                            <h3 class="text-primary-text text-left text-base font-pj-sans-semibold capitalize">telepon/whatsApp</h3>
-                            <p id="store-number-modal" class="text-primary-text/60 text-left text-lg font-pj-sans-medium">0822-5885-9288</p>
-                        </div>
-                    </div>
-                    
-                    <div class="gap-4 flex justify-start items-center">
-                        <span class="w-10 lg:w-12 h-10 lg:h-12 bg-primary rounded-full text-center text-lg lg:text-xl flex justify-center items-center">
-                            <i class="fa-solid fa-location-dot text-white"></i>
-                        </span>
+          <div class="mb-7 flex flex-col items-start justify-center gap-6">
+            <div class="flex items-center justify-start gap-4">
+              <span
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-center text-lg lg:h-12 lg:w-12 lg:text-xl">
+                <i class="fa-solid fa-phone-volume text-white"></i>
+              </span>
 
-                        <div class="flex gap-1 flex-col justify-center items-start">
-                            <h3 class="text-primary-text text-left text-base font-pj-sans-semibold capitalize">lokasi</h3>
-                            <p id="store-location-modal" class="w-60 lg:w-90 text-primary-text/60 text-left text-xs lg:text-sm font-pj-sans-medium">8MH7+HGR, Jl. Raya Gn. Salak Endah, Gn. Sari, Kec. Pamijahan, Kabupaten Bogor, Jawa Barat 16810</p>
-                        </div>
-                    </div>
-                </div>
-
-                <button id="close-modal-btn" class="w-full py-3 bg-primary hover:bg-transparent border-2 border-primary rounded-md text-white hover:text-primary text-center text-lg font-pj-sans-medium capitalize cursor-pointer transition-all duration-300">kembali</button>
-            </div>
-        </section>
-
-        <section class="w-full pt-36 pb-10 flex flex-col justify-center items-center">
-            <!-- Breadcrumbs -->
-            <div class="w-full mb-10 gap-3 flex justify-start items-center">
-                <a href="index.html" class="text-primary-text/60 text-left text-xs lg:text-sm font-bold capitalize">beranda</a>
-                <i class="fa-solid fa-chevron-right text-primary-text text-xs lg:text-sm font-bold"></i>
-                <a id="store-name-breadcrumb" href="#" class="text-primary text-left text-xs lg:text-sm font-bold capitalize">toko es buah pelangi</a>
+              <div class="flex flex-col items-start justify-center gap-1">
+                <h3
+                  class="text-left font-pj-sans-semibold text-base text-primary-text capitalize">
+                  telepon/whatsApp
+                </h3>
+                <p
+                  id="store-number-modal"
+                  class="text-left font-pj-sans-medium text-lg text-primary-text/60">
+                  0822-5885-9288
+                </p>
+              </div>
             </div>
 
-            <header class="w-full mb-8 gap-8 lg:gap-6 flex flex-col justify-center items-start">
-                <div class="w-full flex justify-between items-start">
-                    <h1 id="store-name-heading" class="w-50 lg:w-max text-left text-3xl lg:text-5xl text-primary-text font-bold capitalize font-pj-sans-semibold">toko es buah pelangi</h1>
-            
-                    <button id="open-sidebar-btn" type="button" title="sidebar-btn" class="w-10 h-10 bg-primary rounded-lg text-white text-xl absolute right-6 visible lg:invisible flex justify-center items-center">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
-                <div class="gap-5 flex flex-col lg:flex-row justify-center items-start lg:items-center">
-                    <div class="text-primary-text gap-3 flex justify-center items-center">
-                        <i class="fa-solid fa-clock text-lg lg:text-xl"></i>
-                        <span id="store-opening-times" class="text-sm lg:text-base text-left font-medium capitalize">jam buka: 06.00 - 22.00 WIB</span>
-                    </div>
-                    <div class="text-primary-text gap-4.5 lg:gap-3 flex justify-center items-center">
-                        <i class="fa-solid fa-location-dot text-lg lg:text-xl"></i>
-                        <span id="store-benchmark-info" class="text-sm lg:text-base text-left font-medium capitalize">pertigaan pasar jumat</span>
-                    </div>
-                    <div class="text-primary-text gap-3 lg:gap-2 flex justify-center items-center">
-                        <i class="fa-solid fa-layer-group text-lg lg:text-xl"></i>
-                        <span id="store-category" class="text-sm lg:text-base text-left font-medium capitalize">makanan & minuman</span>
-                    </div>
-                </div>
-            </header>
+            <div class="flex items-center justify-start gap-4">
+              <span
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-center text-lg lg:h-12 lg:w-12 lg:text-xl">
+                <i class="fa-solid fa-location-dot text-white"></i>
+              </span>
 
-            <div class="w-full gap-10 flex justify-center items-start">
-                <div class="w-full flex flex-col justify-center items-start">
-                    <header class="w-full h-60 lg:h-80 mb-8 relative gap-3 flex justify-center items-center">
-                        <div class="w-150 h-full rounded-xl overflow-hidden flex justify-center items-center">
-                            <img id="store-first-gallery" src="../assets/images/fallback-img.jpg" alt="" class="w-full h-full object-center object-cover">
-                        </div>
-
-                        <div class="w-full h-full gap-2 flex flex-col justify-center items-center">
-                            <div class="w-full h-1/2 rounded-xl overflow-hidden flex justify-center items-center">
-                                <img id="store-second-gallery" src="../assets/images/fallback-img.jpg" alt="" class="w-full h-full object-center object-cover">
-                            </div>
-                            <div class="w-full h-1/2 rounded-xl overflow-hidden flex justify-center items-center">
-                                <img id="store-third-gallery" src="../assets/images/fallback-img.jpg" alt="" class="w-full h-full object-center object-cover">
-                            </div>
-                        </div>
-                    </header>
-
-                    <div class="w-full flex flex-col justify-start items-center">
-                        <div class="w-full pb-10 border-b-2 border-b-zinc-300 gap-6 flex justify-start items-center">
-                            <h3 id="info-btn" role="button" class="text-primary text-left text-xl lg:text-2xl font-semibold capitalize cursor-pointer font-pj-sans-medium">informasi</h3>
-                            <span class="w-[0.2rem] lg:w-[0.22rem] h-6 lg:h-8 bg-primary-text/60 rounded-full"></span>
-                            <h3 id="product-btn" role="button" class="text-primary-text/60 text-left text-xl lg:text-2xl font-semibold capitalize cursor-pointer font-pj-sans-medium">produk</h3>
-                        </div>
-
-                        <article id="tab-info" class="w-full relative visible flex flex-col justify-center items-center">
-                            <div class="w-full py-6 lg:py-8 gap-6 flex flex-col justify-center items-start">
-                                <h3 class="w-full text-primary-text text-3xl text-left font-bold capitalize font-pj-sans-semibold">tentang toko ini</h3>
-                                <p id="store-description" class="w-full text-primary-text/60 text-justify text-sm lg:text-base font-medium font-inter-medium"></p>
-                            </div>
-                        </article>
-
-                        <article id="tab-product" class="w-full absolute invisible flex justify-start items-center">
-                            <div id="store-products-wrapper" class="w-full py-8 pr-0 lg:pr-20 gap-2 lg:gap-5 grid grid-cols-1 lg:grid-cols-2 justify-center items-start"></div>
-                        </article>
-                    </div>
-                </div>
-
-                <aside id="side-section" class="w-[80%] lg:w-120 h-screen lg:h-max p-4 lg:p-0 bg-zinc-300/50 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none rounded-l-2xl lg:rounded-l-none gap-6 fixed lg:relative top-0 right-0 flex flex-col justify-start lg:justify-center items-center z-20 lg:z-0 translate-x-full lg:translate-x-0 transition-all duration-300">
-                    <div class="w-full h-auto visible lg:invisible py-3 relative lg:absolute flex justify-between items-center">
-                        <a href="index.html" class="w-max h-auto">
-                            <img src="../assets/images/Waraloka-Logo.svg" alt="Waraloka-Logo" class="w-35 h-auto max-w-full">
-                        </a>
-
-                        <button id="close-sidebar-btn" title="close sidebar" class="w-10 h-10 bg-primary rounded-lg text-white text-xl flex justify-center items-center">
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
-                    </div>
-
-                    <div id="side-content" class="w-full gap-6 overflow-y-scroll lg:overscroll-y-none lg:scrollbar-none flex flex-col justify-start items-center">
-                        <div class="w-full h-auto p-4 border-2 border-black/30 bg-neutral rounded-lg gap-4 flex flex-col justify-center items-center">
-                            <iframe id="store-embed-maps" class="w-full h-70 rounded-lg max-w-full shadow-sm shadow-black/20" title="google maps of this store" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.805434473167!2d106.6637691!3d-6.671014700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d0e32f879fc3%3A0xc409dc9689511bc0!2sES%20BUAH%20PELANGI!5e0!3m2!1sen!2sid!4v1761895206257!5m2!1sen!2sid" allowfullscreen=""></iframe>
-                            <a id="store-maps-link" href="https://maps.app.goo.gl/wz5aRFReNJ6dsYUd7" class="w-full py-3 bg-primary hover:bg-transparent border-2 border-primary font-pj-sans-medium rounded-md text-center text-sm text-white hover:text-primary capitalize cursor-pointer transition-all duration-300">kunjungi toko <i class="fa-solid fa-chevron-right ml-2"></i></a>
-                        </div>
-                        <div class="w-full h-auto p-4 border-2 border-black/30 bg-neutral rounded-lg gap-4 flex flex-col justify-center items-center">
-                            <div class="w-full gap-4 flex flex-col justify-center items-start">
-                                <h2 class="text-primary-text font-pj-sans-semibold text-xl text-left font-bold capitalize">rincian UMKM</h2>
-                                <div class="w-full gap-1 flex flex-col justify-center items-start">
-                                    <p class="text-primary-text font-pj-sans-medium text-base text-left font-semibold capitalize">pemilik toko</p>
-                                    <span id="store-owner" class="text-primary-text/60 font-pj-sans-regular text-xs text-left font-medium capitalize"></span>
-                                </div>
-                            </div>
-                            <button id="open-modal-btn" class="w-full py-3 bg-primary hover:bg-transparent border-2 border-primary font-pj-sans-medium rounded-md text-center text-sm text-white hover:text-primary capitalize cursor-pointer transition-all duration-300"><i class="fa-solid fa-phone-volume mr-2"></i> kontak pemilik</button>
-                        </div>
-                        <div class="w-full h-auto p-4 border-2 border-black/30 bg-neutral rounded-lg gap-4 flex flex-col justify-center items-center">
-                            <div class="w-full gap-4 flex flex-col justify-center items-start">
-                                <h2 class="text-primary-text font-pj-sans-semibold text-xl text-left font-bold capitalize">waktu buka</h2>
-                                <div class="w-full gap-1 flex flex-col justify-center items-start">
-                                    <p class="text-primary-text/60 font-pj-sans-medium text-base text-left font-semibold capitalize">berikut jadwal buka layanan kami</p>
-                                    <span id="store-times-detail" class="text-primary font-pj-sans-regular text-sm text-left font-medium capitalize"></span>
-                                </div>
-                            </div>
-
-                            <a id="store-calendar-link" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Toko+Es+Buah+Pelangi&details=Kami+buka+setiap+Senin+sampai+Jumat+dari+06.00+hingga+22.00+WIB&dates=20251107T060000/20251107T220000&recur=RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR&ctz=Asia/Jakarta" target="_blank" rel="noopener" class="w-full py-3 bg-primary hover:bg-transparent border-2 border-primary font-pj-sans-medium rounded-md text-center text-sm text-white hover:text-primary capitalize cursor-pointer transition-all duration-300"><i class="fa-regular fa-calendar-circle-plus mr-2"></i> tambahkan ke kalender</a>
-                        </div>
-                    </div>
-                </aside>
+              <div class="flex flex-col items-start justify-center gap-1">
+                <h3
+                  class="text-left font-pj-sans-semibold text-base text-primary-text capitalize">
+                  lokasi
+                </h3>
+                <p
+                  id="store-location-modal"
+                  class="w-60 text-left font-pj-sans-medium text-xs text-primary-text/60 lg:w-90 lg:text-sm">
+                  8MH7+HGR, Jl. Raya Gn. Salak Endah, Gn. Sari, Kec. Pamijahan,
+                  Kabupaten Bogor, Jawa Barat 16810
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <section class="w-full pb-20 gap-6 flex flex-col justify-center items-center">
-            <h1 class="w-full text-left text-primary-text text-3xl lg:text-4xl font-bold capitalize font-pj-sans-semibold">rekomendasi toko serupa</h1>
-            <div class="w-full overflow-x-scroll scrollbar-none flex justify-start items-center">
-                    <div id="recommended-stores-wrapper" class="w-max h-max gap-4 lg:gap-5 flex justify-center items-start"></div>
+          <button
+            id="close-modal-btn"
+            class="w-full cursor-pointer rounded-md border-2 border-primary bg-primary py-3 text-center font-pj-sans-medium text-lg text-white capitalize transition-all duration-300 hover:bg-transparent hover:text-primary">
+            kembali
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="flex w-full flex-col items-center justify-center pt-36 pb-10">
+        <!-- Breadcrumbs -->
+        <div class="mb-10 flex w-full items-center justify-start gap-3">
+          <a
+            href="index.html"
+            class="text-left text-xs font-bold text-primary-text/60 capitalize lg:text-sm">beranda</a>
+          <i
+            class="fa-solid fa-chevron-right text-xs font-bold text-primary-text lg:text-sm"></i>
+          <a
+            id="store-name-breadcrumb"
+            href="#"
+            class="text-left text-xs font-bold text-primary capitalize lg:text-sm">toko
+            es buah pelangi</a>
+        </div>
+
+        <div
+          class="mb-8 flex w-full flex-col items-start justify-center gap-8 lg:gap-6">
+          <div class="flex w-full items-start justify-between">
+            <h1
+              id="store-name-heading"
+              class="w-50 text-left font-pj-sans-semibold text-3xl font-bold text-primary-text capitalize lg:w-max lg:text-5xl">
+              toko es buah pelangi
+            </h1>
+
+            <button
+              id="open-sidebar-btn"
+              type="button"
+              title="sidebar-btn"
+              class="visible absolute right-6 flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-xl text-white lg:invisible">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <div
+            class="flex flex-col items-start justify-center gap-5 lg:flex-row lg:items-center">
+            <div
+              class="flex items-center justify-center gap-3 text-primary-text">
+              <i class="fa-solid fa-clock text-lg lg:text-xl"></i>
+              <span
+                id="store-opening-times"
+                class="text-left text-sm font-medium capitalize lg:text-base">jam
+                buka: 06.00 - 22.00 WIB</span>
+            </div>
+            <div
+              class="flex items-center justify-center gap-4.5 text-primary-text lg:gap-3">
+              <i class="fa-solid fa-location-dot text-lg lg:text-xl"></i>
+              <span
+                id="store-benchmark-info"
+                class="text-left text-sm font-medium capitalize lg:text-base">pertigaan
+                pasar jumat</span>
+            </div>
+            <div
+              class="flex items-center justify-center gap-3 text-primary-text lg:gap-2">
+              <i class="fa-solid fa-layer-group text-lg lg:text-xl"></i>
+              <span
+                id="store-category"
+                class="text-left text-sm font-medium capitalize lg:text-base">makanan
+                & minuman</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex w-full items-start justify-center gap-10">
+          <div class="flex w-full flex-col items-start justify-center">
+            <div
+              class="relative mb-8 flex h-60 w-full items-center justify-center gap-3 lg:h-80">
+              <div
+                class="flex h-full w-150 items-center justify-center overflow-hidden rounded-xl">
+                <img
+                  id="store-first-gallery"
+                  src="../assets/images/fallback-img.jpg"
+                  alt="fallback image dikarenakan gambar tidak ke load"
+                  class="h-full w-full object-cover object-center"
+                  loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div
+                class="flex h-full w-full flex-col items-center justify-center gap-2">
+                <div
+                  class="flex h-1/2 w-full items-center justify-center overflow-hidden rounded-xl">
+                  <img
+                    id="store-second-gallery"
+                    src="../assets/images/fallback-img.jpg"
+                    alt="fallback image dikarenakan gambar tidak ke load"
+                    class="h-full w-full object-cover object-center"
+                    loading="lazy"
+                    decoding="async">
                 </div>
-        </section>
+                <div
+                  class="flex h-1/2 w-full items-center justify-center overflow-hidden rounded-xl">
+                  <img
+                    id="store-third-gallery"
+                    src="../assets/images/fallback-img.jpg"
+                    alt="fallback image dikarenakan gambar tidak ke load"
+                    class="h-full w-full object-cover object-center"
+                    loading="lazy"
+                    decoding="async">
+                </div>
+              </div>
+            </div>
+
+            <div class="flex w-full flex-col items-center justify-start">
+              <div
+                class="flex w-full items-center justify-start gap-6 border-b-2 border-b-zinc-300 pb-10">
+                <button
+                  id="info-btn"
+                  class="cursor-pointer text-left font-pj-sans-medium text-xl font-semibold text-primary capitalize lg:text-2xl">
+                  informasi
+                </button>
+                <span
+                  class="h-6 w-[0.2rem] rounded-full bg-primary-text/60 lg:h-8 lg:w-[0.22rem]"></span>
+                <button
+                  id="product-btn"
+                  class="cursor-pointer text-left font-pj-sans-medium text-xl font-semibold text-primary-text/60 capitalize lg:text-2xl">
+                  produk
+                </button>
+              </div>
+
+              <article
+                id="tab-info"
+                class="visible relative flex w-full flex-col items-center justify-center">
+                <div
+                  class="flex w-full flex-col items-start justify-center gap-6 py-6 lg:py-8">
+                  <h3
+                    class="w-full text-left font-pj-sans-semibold text-3xl font-bold text-primary-text capitalize">
+                    tentang toko ini
+                  </h3>
+                  <p
+                    id="store-description"
+                    class="w-full text-justify font-inter-medium text-sm font-medium whitespace-pre-wrap text-primary-text/60 lg:text-base"></p>
+                </div>
+              </article>
+
+              <article
+                id="tab-product"
+                class="invisible absolute flex flex-col w-full items-center justify-start">
+                <h3
+                  class="w-full pt-6 lg:pt-8 text-left font-pj-sans-semibold text-3xl font-bold text-primary-text capitalize">
+                  produk tersedia:
+                </h3>
+                <div
+                  id="store-products-wrapper"
+                  class="grid w-full grid-cols-1 items-start justify-center gap-2 py-8 pr-0 lg:grid-cols-2 lg:gap-5 lg:pr-20"></div>
+              </article>
+            </div>
+          </div>
+
+          <aside
+            id="side-section"
+            class="fixed top-0 right-0 z-20 flex h-screen w-[80%] translate-x-full flex-col items-center justify-start gap-6 rounded-l-2xl bg-zinc-300/50 p-4 backdrop-blur-sm transition-all duration-300 lg:relative lg:z-0 lg:h-max lg:w-120 lg:translate-x-0 lg:justify-center lg:rounded-l-none lg:bg-transparent lg:p-0 lg:backdrop-blur-none">
+            <div
+              class="visible relative flex h-auto w-full items-center justify-between py-3 lg:invisible lg:absolute">
+              <a href="index.html" class="h-auto w-max" title="Logo Waraloka">
+                <img
+                  src="../assets/images/Waraloka-Logo.svg"
+                  alt
+                  class="h-auto w-35 max-w-full">
+              </a>
+
+              <button
+                id="close-sidebar-btn"
+                title="close sidebar"
+                class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-xl text-white">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+
+            <div
+              id="side-content"
+              class="flex w-full flex-col items-center justify-start gap-6 overflow-y-scroll lg:scrollbar-none lg:overscroll-y-none">
+              <div
+                class="flex h-auto w-full flex-col items-center justify-center gap-4 rounded-lg border-2 border-black/30 bg-neutral p-4">
+                <iframe
+                  id="store-embed-maps"
+                  class="h-70 w-full max-w-full rounded-lg shadow-sm shadow-black/20"
+                  title="google maps of this store"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.805434473167!2d106.6637691!3d-6.671014700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69d0e32f879fc3%3A0xc409dc9689511bc0!2sES%20BUAH%20PELANGI!5e0!3m2!1sen!2sid!4v1761895206257!5m2!1sen!2sid"
+                  allowfullscreen></iframe>
+                <a
+                  id="store-maps-link"
+                  href="https://maps.app.goo.gl/wz5aRFReNJ6dsYUd7"
+                  class="w-full cursor-pointer rounded-md border-2 border-primary bg-primary py-3 text-center font-pj-sans-medium text-sm text-white capitalize transition-all duration-300 hover:bg-transparent hover:text-primary">kunjungi
+                  toko <i class="fa-solid fa-chevron-right ml-2"></i></a>
+              </div>
+              <div
+                class="flex h-auto w-full flex-col items-center justify-center gap-4 rounded-lg border-2 border-black/30 bg-neutral p-4">
+                <div
+                  class="flex w-full flex-col items-start justify-center gap-4">
+                  <h2
+                    class="text-left font-pj-sans-semibold text-xl font-bold text-primary-text capitalize">
+                    rincian UMKM
+                  </h2>
+                  <div
+                    class="flex w-full flex-col items-start justify-center gap-1">
+                    <p
+                      class="text-left font-pj-sans-medium text-base font-semibold text-primary-text capitalize">
+                      pemilik toko
+                    </p>
+                    <span
+                      id="store-owner"
+                      class="text-left font-pj-sans-regular text-xs font-medium text-primary-text/60 capitalize"></span>
+                  </div>
+                </div>
+                <button
+                  id="open-modal-btn"
+                  class="w-full cursor-pointer rounded-md border-2 border-primary bg-primary py-3 text-center font-pj-sans-medium text-sm text-white capitalize transition-all duration-300 hover:bg-transparent hover:text-primary">
+                  <i class="fa-solid fa-phone-volume mr-2"></i> kontak pemilik
+                </button>
+              </div>
+              <div
+                class="flex h-auto w-full flex-col items-center justify-center gap-4 rounded-lg border-2 border-black/30 bg-neutral p-4">
+                <div
+                  class="flex w-full flex-col items-start justify-center gap-4">
+                  <h2
+                    class="text-left font-pj-sans-semibold text-xl font-bold text-primary-text capitalize">
+                    waktu buka
+                  </h2>
+                  <div
+                    class="flex w-full flex-col items-start justify-center gap-1">
+                    <p
+                      class="text-left font-pj-sans-medium text-base font-semibold text-primary-text/60 capitalize">
+                      berikut jadwal buka layanan kami
+                    </p>
+                    <span
+                      id="store-times-detail"
+                      class="text-left font-pj-sans-regular text-sm font-medium text-primary capitalize"></span>
+                  </div>
+                </div>
+
+                <a
+                  id="store-calendar-link"
+                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Toko+Es+Buah+Pelangi&details=Kami+buka+setiap+Senin+sampai+Jumat+dari+06.00+hingga+22.00+WIB&dates=20251107T060000/20251107T220000&recur=RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR&ctz=Asia/Jakarta"
+                  target="_blank"
+                  rel="noopener"
+                  class="w-full cursor-pointer rounded-md border-2 border-primary bg-primary py-3 text-center font-pj-sans-medium text-sm text-white capitalize transition-all duration-300 hover:bg-transparent hover:text-primary"><i
+                    class="fa-regular fa-calendar-circle-plus mr-2"></i>
+                  tambahkan ke kalender</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section
+        class="flex w-full flex-col items-center justify-center gap-6 pb-20">
+        <h2
+          class="w-full text-left font-pj-sans-semibold text-3xl font-bold text-primary-text capitalize lg:text-4xl">
+          rekomendasi toko serupa
+        </h2>
+        <div
+          class="scrollbar-none flex w-full items-center justify-start overflow-x-scroll">
+          <div
+            id="recommended-stores-wrapper"
+            class="flex h-max w-max items-start justify-center gap-4 lg:gap-5"></div>
+        </div>
+      </section>
     </main>
 
     <footer id="footer"></footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../src/js/component.js" type="module" defer></script>
-    <script src="../src/js/detail.js" type="module" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../src/js/component.js" type="module"></script>
+    <script src="../src/js/detail.js" type="module"></script>
     <script src="../src/js/main.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
+    <script src="../src/js/aos-init.js" defer></script>
+  </body>
 </html>

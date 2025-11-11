@@ -1,280 +1,533 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html lang="id">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda | Waraloka - UMKM Directory</title>
     <link href="../dist/output.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
 
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
 
-    <link rel="shortcut icon" href="../assets/images/waraloka.ico" type="image/x-icon">
-</head>
-<body class="bg-neutral relative overflow-x-hidden flex flex-col justify-center items-center">
-    
+    <link
+      rel="shortcut icon"
+      href="../assets/images/waraloka.ico"
+      type="image/x-icon">
+  </head>
+  <body
+    class="relative flex flex-col items-center justify-center overflow-x-hidden bg-neutral">
     <header id="header"></header>
 
-    <main class="w-full px-5 lg:px-20 relative overflow-x-hidden">
-        <section class="w-full h-screen pb-6 lg:pb-8 pt-30 lg:pt-28 flex justify-center items-center">
-            <div class="hero-bg w-full h-full px-5 bg-center bg-cover bg-no-repeat rounded-2xl gap-4 flex flex-col justify-center items-center">
-                <div class="gap-2 flex flex-col justify-center items-center">
-                    <h1 class="text-neutral text-center text-3xl lg:text-5xl font-pj-sans-bold tracking-wide leading-snug">Yukk, Cari UMKM <br>terbaik di dekat mu</h1>
-                    <p class="text-neutral/60 text-center text-xs lg:text-sm font-inter-light tracking-wider">Temukan usaha lokal favoritmu dan dukung pelaku UMKM di sekitar kamu!</p>
-                </div>
+    <main class="relative w-full overflow-x-hidden px-5 lg:px-20">
+      <section
+        class="flex h-screen w-full items-center justify-center pt-30 pb-6 lg:pt-28 lg:pb-8">
+        <div
+          class="hero-bg flex h-full w-full flex-col items-center justify-center gap-4 rounded-2xl bg-cover bg-center bg-no-repeat px-5">
+          <div class="flex flex-col items-center justify-center gap-2">
+            <h1
+              class="text-center font-pj-sans-bold text-3xl leading-snug tracking-wide text-neutral lg:text-5xl">
+              Yukk, Cari UMKM <br>terbaik di dekat mu
+            </h1>
+            <p
+              class="text-center font-inter-light text-xs tracking-wider text-neutral/60 lg:text-sm">
+              Temukan usaha lokal favoritmu dan dukung pelaku UMKM di sekitar
+              kamu!
+            </p>
+          </div>
 
-
-                    <form action="search.html" method="GET" class="w-max py-2 px-2 md:py-4 md:px-4 bg-white rounded-lg gap-10 flex flex-col lg:flex-row justify-between items-center">
-                        <div class="w-full lg:w-max pl-2 gap-3 flex justify-start items-center">
-                            <label for="search"><i class="fa-solid fa-search text-base text-zinc-400"></i></label>
-                            <input type="text" id="search" name="name" placeholder="Cari Nama Toko" class="w-full h-10 bg-transparent text-zinc-950 text-left text-base font-pj-sans-regular placeholder:text-zinc-400 focus:outline-none">
-                        </div>
-
-                        <div class="w-full lg:w-max mr-8 flex justify-center items-center">
-                            <input list="category-selector" name="category" title="select category" placeholder="Semua Kategori" class="w-full lg:w-50 px-6 lg:px-0 placeholder:text-zinc-400 text-base text-left font-pj-sans-regular capitalize">
-                                <datalist id="category-selector">
-                                    <option class="text-zinc-400 text-base text-left font-pj-sans-regular capitalize" value="" selected>Semua kategori</option>
-                                </datalist>
-                            </input>
-                        </div>
-
-                        <button class="w-full lg:w-max py-3 px-18 bg-primary rounded-md text-white text-center text-base font-pj-sans-medium capitalize cursor-pointer" type="submit">cari toko</button>
-                    </form>
-
-            </div>
-        </section>
-
-        <section class="w-full py-6 lg:py-10 gap-12 flex flex-col justify-center items-center">
-            <div class="w-full gap-6 flex flex-col justify-center items-center">
-                <div class="w-full gap-6 flex flex-col lg:flex-row justify-between items-start">
-                    <div class="w-full lg:w-auto gap-2 flex flex-col justify-center items-start">
-                        <h1 class="w-full text-3xl lg:text-4xl text-center lg:text-left text-primary-text font-pj-sans-semibold capitalize tracking-wide">UMKM di sekitar kamu</h1>
-                        <p class="w-full text-sm lg:text-base text-center lg:text-left text-primary-text/60 font-inter-medium tracking-wide">Saatnya pilih UMKM! Ini rekomendasi toko yang layak masuk daftar kamu.</p>
-                    </div>
-
-                    <a href="stores.html" class="w-full lg:w-max py-2 px-8 bg-primary hover:bg-transparent border-2 border-primary rounded-xl text-white hover:text-primary text-center text-sm lg:text-base font-pj-sans-medium capitalize tracking-wide transition-all duration-300">lihat semua</a>
-                </div>
-
-                <div class="w-full overflow-x-scroll scrollbar-none flex justify-start items-center">
-                    <div id="nearby-stores-wrapper" class="w-max h-max gap-4 flex justify-center items-start"></div>
-                </div>
+          <form
+            action="search.html"
+            method="GET"
+            class="flex w-max flex-col items-center justify-between gap-10 rounded-lg bg-white px-2 py-2 md:px-4 md:py-4 lg:flex-row">
+            <div
+              class="flex w-full items-center justify-start gap-3 pl-2 lg:w-max">
+              <label for="search"><i
+                  class="fa-solid fa-search text-base text-zinc-400"></i></label>
+              <input
+                type="text"
+                id="search"
+                name="name"
+                placeholder="Cari Nama Toko"
+                class="h-10 w-full bg-transparent text-left font-pj-sans-regular text-base text-zinc-950 placeholder:text-zinc-400 focus:outline-none">
             </div>
 
-            <div class="w-full gap-6 flex flex-col justify-center items-center">
-                <div class="w-full gap-6 flex flex-col lg:flex-row justify-between items-start">
-                    <div class="w-full lg:w-auto gap-2 flex flex-col justify-center items-start">
-                        <h1 class="w-full text-3xl lg:text-4xl text-center lg:text-left text-primary-text font-pj-sans-semibold capitalize tracking-wide">kuliner terfavorit untuk kamu</h1>
-                        <p class="w-full text-sm lg:text-base text-center lg:text-left text-primary-text/60 font-inter-medium tracking-wide">Enggak mau ketinggalan kuliner viral? Yuk, cek kuliner yang paling ramai saat ini!</p>
-                    </div>
-
-                    <a href="stores.html" class="w-full lg:w-max py-2 px-8 bg-primary hover:bg-transparent border-2 border-primary rounded-xl text-white hover:text-primary text-center text-sm lg:text-base font-pj-sans-medium capitalize tracking-wide transition-all duration-300"">lihat semua</a>
-                </div>
-
-                <div class="w-full overflow-x-scroll scrollbar-none flex justify-start items-center">
-                    <div id="favorite-stores-wrapper" class="w-max h-max gap-4 flex justify-center items-start"></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about-us" class="w-full py-6 lg:py-20 gap-8 flex flex-col justify-center items-center scroll-mt-10">
-            <div class="w-full gap-4 flex flex-col justify-center items-start">
-                <h1 class="w-full text-4xl lg:text-5xl text-center lg:text-left text-primary-text font-pj-sans-semibold capitalize tracking-wide">tentang kami</h1>
-                <p class="w-full text-sm lg:text-base text-center lg:text-left text-primary-text/60 font-inter-medium tracking-wide">Kami hadir untuk membantu kamu menemukan dan mendukung UMKM terbaik di sekitar.</p>
+            <div class="mr-8 flex w-full items-center justify-center lg:w-max">
+              <input
+                list="category-selector"
+                name="category"
+                title="select category"
+                placeholder="Semua Kategori"
+                class="w-full px-6 text-left font-pj-sans-regular text-base capitalize placeholder:text-zinc-400 lg:w-50 lg:px-0">
+              <datalist id="category-selector">
+                <option
+                  class="text-left font-pj-sans-regular text-base text-zinc-400 capitalize"
+                  value
+                  selected>
+                  Semua kategori
+                </option>
+              </datalist>
             </div>
 
-            <div class="w-full gap-4 lg:gap-10 flex flex-col lg:flex-row justify-between items-center">
-                <img src="../assets/images/image-about.png" alt="Gambar Orang Sedang Mengetik di Depan Layar Laptop" class="w-full lg:w-1/2 h-auto object-center object-cover rounded-lg">
-                <div class="w-full lg:w-1/2 gap-6 flex flex-col justify-center items-start">
-                    <div class="gap-4 flex flex-col justify-center items-start">
-                        <h2 class="w-full lg:w-130 text-2xl lg:text-4xl text-center lg:text-left text-primary-text font-pj-sans-bold capitalize tracking-wide">kami selalu memberikan yang terbaik</h2>
-                        <p class="text-base text-justify text-primary-text/60 font-inter-regular tracking-wide">Kami hadir sebagai jembatan antara pelaku UMKM dan masyarakat digital. Dengan teknologi yang mudah diakses, kami ingin menciptakan ruang bagi UMKM untuk tumbuh dan dikenal lebih luas, serta memberikan pengalaman informasi kuliner yang menyenangkan bagi semua pengunjung.</p>
-                    </div>
+            <button
+              class="w-full cursor-pointer rounded-md bg-primary px-18 py-3 text-center font-pj-sans-medium text-base text-white capitalize lg:w-max"
+              type="submit">
+              cari toko
+            </button>
+          </form>
+        </div>
+      </section>
 
-                    <div class="w-full flex justify-start items-center">
-                        <a href="#" class="w-full lg:w-max py-2 px-9 bg-primary hover:bg-transparent border-2 border-primary rounded-md lg:rounded-xl text-white hover:text-primary text-center text-base lg:text-lg font-pj-sans-medium capitalize tracking-wide transition-all duration-300"">hubungi kami</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="news" class="w-full py-8 gap-6 flex flex-col justify-center items-center scroll-mt-20">
-            <div class="w-full gap-2 flex flex-col justify-center items-start">
-                <h1 class="w-full text-3xl lg:text-4xl text-center lg:text-left text-primary-text font-pj-sans-semibold capitalize tracking-wide">berita terkini</h1>
-                <p class="w-full text-sm lg:text-base text-center lg:text-left text-primary-text/60 font-inter-medium tracking-wide">Enggak mau ketinggalan kuliner viral? Yuk, cek kuliner yang paling ramai saat ini!</p>
-            </div>
-
-            <div class="w-full h-160 lg:h-120 gap-3 flex flex-col lg:flex-row justify-center items-center">
-                <a href="news.html" class="w-full first-news lg:w-1/2 h-full p-6 bg-no-repeat bg-cover bg-center-top rounded-lg flex flex-col justify-end items-start">
-                    <div class="w-full gap-3 flex flex-col justify-center items-start">
-                        <span class="py-1 px-4 bg-primary rounded-lg text-white text-center text-xs lg:text-base capitalize tracking-wide">news</span>
-                        <h2 class="text-base lg:text-3xl text-left text-white font-pj-sans-semibold capitalize tracking-wider">Cerita UMKM Binaan Pertamina Raup Rp300 Juta per Bulan dari Olahan Kelapa</h2>
-                    </div>
-                </a>
-
-                <div class="w-full lg:w-1/2 h-full gap-3 flex flex-col justify-center items-start">
-                    <div class="w-full h-1/2 gap-3 flex justify-center items-start">
-                        <a href="news.html" class="w-1/2 second-news h-full p-3 bg-no-repeat bg-cover bg-center rounded-lg flex flex-col justify-end items-start">
-                            <div class="w-full gap-1 flex flex-col justify-center items-start">
-                                <span class="py-1 px-3 bg-primary rounded-sm text-white text-center text-[0.5rem] capitalize tracking-wider">news</span>
-                                <h2 class="text-[0.6rem] text-left text-white font-pj-sans-medium capitalize tracking-wider">Perkuat Daya Saing, 100 UMKM di Wilayah Indonesia Timur Diberi Pendampingan</h2>
-                            </div>
-                        </a>
-                        
-                        <a href="news.html" class="w-1/2 third-news h-full p-3 bg-no-repeat bg-cover bg-center rounded-lg flex flex-col justify-end items-start">
-                            <div class="w-full gap-1 flex flex-col justify-center items-start">
-                                <span class="py-1 px-3 bg-primary rounded-sm text-white text-center text-[0.5rem] capitalize tracking-wider">news</span>
-                                <h2 class="text-[0.6rem] text-left text-white font-pj-sans-medium capitalize tracking-wider">Tekanan Waktu dan Strategi Lapangan Warnai Episode 4 Shopee Jagoan UMKM Naik Kelas</h2>
-                            </div>
-                        </a>
-                    </div>
-
-                    <a href="news.html" class="w-full fourth-news h-1/2 p-5 bg-no-repeat bg-cover bg-center rounded-lg flex flex-col justify-end items-start">
-                        <div class="w-full gap-2 lg:gap-3 flex flex-col justify-center items-start">
-                            <span class="py-1 px-4 bg-primary rounded-lg text-white text-center text-[0.6rem] lg:text-sm capitalize tracking-wide">news</span>
-                            <h2 class="text-xs lg:text-xl text-left text-white font-pj-sans-semibold capitalize tracking-wider">Target Ciptakan 12 Juta Lapangan Kerja, Penyaluran KUR Sentuh Rp217,20 Triliun</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonial" class="w-full py-12 gap-10 flex flex-col justify-center items-center scroll-mt-18">
-            <div class="w-full gap-2 flex flex-col justify-center items-center">
-                <h1 class="w-full text-3xl lg:text-4xl text-center text-primary-text font-pj-sans-semibold capitalize tracking-wide">ulasan dari pelanggan favorit kami</h1>
-                <p class="w-full text-sm lg:text-base text-center text-primary-text/60 font-inter-medium tracking-wide">Dengarkan apa yang mereka katakan tentang kami</p>
+      <section
+        class="flex w-full flex-col items-center justify-center gap-12 py-6 lg:py-10">
+        <div class="flex w-full flex-col items-center justify-center gap-6">
+          <div
+            class="flex w-full flex-col items-start justify-between gap-6 lg:flex-row">
+            <div
+              class="flex w-full flex-col items-start justify-center gap-2 lg:w-auto">
+              <h2
+                class="w-full text-center font-pj-sans-semibold text-3xl tracking-wide text-primary-text capitalize lg:text-left lg:text-4xl">
+                UMKM di sekitar kamu
+              </h2>
+              <p
+                class="w-full text-center font-inter-medium text-sm tracking-wide text-primary-text/60 lg:text-left lg:text-base">
+                Saatnya pilih UMKM! Ini rekomendasi toko yang layak masuk daftar
+                kamu.
+              </p>
             </div>
 
-            <div class="w-full gap-3 grid grid-cols-1 lg:grid-cols-4 justify-center items-start">
-                <div class="w-full h-auto p-5 bg-white border-2 border-zinc-400 rounded-lg gap-6 flex flex-col justify-between items-center">
-                    <div class="w-full gap-3 flex justify-start items-center">
-                        <span class="w-13 h-13 pt-2 max-w-full bg-primary rounded-full text-white text-center text-2xl font-pj-sans-semibold uppercase">at</span>
-                        <div class="gap-1 flex flex-col justify-center items-start">
-                            <h3 class="text-primary-text text-left text-xl font-pj-sans-semibold capitalize tracking-wide">athar ilmy</h3>
-                            <p class="text-primary-text/60 text-left text-sm font-inter-medium capitalize tracking-wide">bogor</p>
-                        </div>
-                    </div>
+            <a
+              href="stores.html"
+              class="w-full rounded-xl border-2 border-primary bg-primary px-8 py-2 text-center font-pj-sans-medium text-sm tracking-wide text-white capitalize transition-all duration-300 hover:bg-transparent hover:text-primary lg:w-max lg:text-base">lihat
+              semua</a>
+          </div>
 
-                    <p class="w-full text-primary-text text-left text-lg lg:text-base font-inter-regular tracking-wide">“Saya sangat puas dengan Berita di website ini.”</p>
-                </div>
-                
-                <div class="w-full h-auto p-5 bg-white border-2 border-zinc-400 rounded-lg gap-6 flex flex-col justify-between items-center">
-                    <div class="w-full gap-3 flex justify-start items-center">
-                        <span class="w-13 h-13 pt-2 max-w-full bg-primary rounded-full text-white text-center text-2xl font-pj-sans-semibold uppercase">if</span>
-                        <div class="gap-1 flex flex-col justify-center items-start">
-                            <h3 class="text-primary-text text-left text-xl font-pj-sans-semibold capitalize tracking-wide">ibnu farisi</h3>
-                            <p class="text-primary-text/60 text-left text-sm font-inter-medium capitalize tracking-wide">depok</p>
-                        </div>
-                    </div>
+          <div
+            class="scrollbar-none flex w-full items-center justify-start overflow-x-scroll">
+            <div
+              id="nearby-stores-wrapper"
+              class="flex h-max w-max items-start justify-center gap-4"></div>
+          </div>
+        </div>
 
-                    <p class="w-full text-primary-text text-left text-lg lg:text-base font-inter-regular tracking-wide">“Mencari kuliner lebih mudah di waraloka!”</p>
-                </div>
-                
-                <div class="w-full h-auto p-5 bg-white border-2 border-zinc-400 rounded-lg gap-6 flex flex-col justify-between items-center">
-                    <div class="w-full gap-3 flex justify-start items-center">
-                        <span class="w-13 h-13 pt-2 max-w-full bg-primary rounded-full text-white text-center text-2xl font-pj-sans-semibold uppercase">f</span>
-                        <div class="gap-1 flex flex-col justify-center items-start">
-                            <h3 class="text-primary-text text-left text-xl font-pj-sans-semibold capitalize tracking-wide">farhan</h3>
-                            <p class="text-primary-text/60 text-left text-sm font-inter-medium capitalize tracking-wide">bekasi</p>
-                        </div>
-                    </div>
-
-                    <p class="w-full text-primary-text text-left text-lg lg:text-base font-inter-regular tracking-wide">“Dulu sebelum tahu waraloka, saya kalau mau cari toko atau jasa harus buka maps dulu.”</p>
-                </div>
-                
-                <div class="w-full h-auto p-5 bg-white border-2 border-zinc-400 rounded-lg gap-6 flex flex-col justify-between items-center">
-                    <div class="w-full gap-3 flex justify-start items-center">
-                        <span class="w-13 h-13 pt-2 max-w-full bg-primary rounded-full text-white text-center text-2xl font-pj-sans-semibold uppercase">a</span>
-                        <div class="gap-1 flex flex-col justify-center items-start">
-                            <h3 class="text-primary-text text-left text-xl font-pj-sans-semibold capitalize tracking-wide">ahnaf</h3>
-                            <p class="text-primary-text/60 text-left text-sm font-inter-medium capitalize tracking-wide">depok</p>
-                        </div>
-                    </div>
-
-                    <p class="w-full text-primary-text text-left text-lg lg:text-base font-inter-regular tracking-wide">“Lokasi tokonya akurat.”</p>
-                </div>
-                
-                <div class="w-full h-auto p-5 bg-white border-2 border-zinc-400 rounded-lg gap-6 flex flex-col justify-between items-center">
-                    <div class="w-full gap-3 flex justify-start items-center">
-                        <span class="w-13 h-13 pt-2 max-w-full bg-primary rounded-full text-white text-center text-2xl font-pj-sans-semibold uppercase">m</span>
-                        <div class="gap-1 flex flex-col justify-center items-start">
-                            <h3 class="text-primary-text text-left text-xl font-pj-sans-semibold capitalize tracking-wide">milan</h3>
-                            <p class="text-primary-text/60 text-left text-sm font-inter-medium capitalize tracking-wide">jakarta</p>
-                        </div>
-                    </div>
-
-                    <p class="w-full text-primary-text text-left text-lg lg:text-base font-inter-regular tracking-wide">“Rekomendasi tempat kulinernya dijamin mantap.”</p>
-                </div>
-                
-                <div class="w-full h-auto p-5 bg-white border-2 border-zinc-400 rounded-lg gap-6 flex flex-col justify-between items-center">
-                    <div class="w-full gap-3 flex justify-start items-center">
-                        <span class="w-13 h-13 pt-2 max-w-full bg-primary rounded-full text-white text-center text-2xl font-pj-sans-semibold uppercase">y</span>
-                        <div class="gap-1 flex flex-col justify-center items-start">
-                            <h3 class="text-primary-text text-left text-xl font-pj-sans-semibold capitalize tracking-wide">yazid</h3>
-                            <p class="text-primary-text/60 text-left text-sm font-inter-medium capitalize tracking-wide">batam</p>
-                        </div>
-                    </div>
-
-                    <p class="w-full text-primary-text text-left text-lg lg:text-base font-inter-regular tracking-wide">“Banyak sekali hidden gems buat toko-toko UMKM.”</p>
-                </div>
-                
-                <div class="w-full h-auto p-5 bg-white border-2 border-zinc-400 rounded-lg gap-6 flex flex-col justify-between items-center">
-                    <div class="w-full gap-3 flex justify-start items-center">
-                        <span class="w-13 h-13 pt-2 max-w-full bg-primary rounded-full text-white text-center text-2xl font-pj-sans-semibold uppercase">r</span>
-                        <div class="gap-1 flex flex-col justify-center items-start">
-                            <h3 class="text-primary-text text-left text-xl font-pj-sans-semibold capitalize tracking-wide">Rafa</h3>
-                            <p class="text-primary-text/60 text-left text-sm font-inter-medium capitalize tracking-wide">lampung</p>
-                        </div>
-                    </div>
-
-                    <p class="w-full text-primary-text text-left text-lg lg:text-base font-inter-regular tracking-wide">“Ayo mari kita support toko lokal UMKM untuk memajukan ekonomi negeri kita.”</p>
-                </div>
-                
-                <div class="w-full h-auto p-5 bg-white border-2 border-zinc-400 rounded-lg gap-6 flex flex-col justify-between items-center">
-                    <div class="w-full gap-3 flex justify-start items-center">
-                        <span class="w-13 h-13 pt-2 max-w-full bg-primary rounded-full text-white text-center text-2xl font-pj-sans-semibold uppercase">z</span>
-                        <div class="gap-1 flex flex-col justify-center items-start">
-                            <h3 class="text-primary-text text-left text-xl font-pj-sans-semibold capitalize tracking-wide">zahir</h3>
-                            <p class="text-primary-text/60 text-left text-sm font-inter-medium capitalize tracking-wide">solo</p>
-                        </div>
-                    </div>
-
-                    <p class="w-full text-primary-text text-left text-lg lg:text-base font-inter-regular tracking-wide">“Ternyata ga semua UMKM menyediakan layanan buruk.”</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="w-full py-20 gap-4 flex flex-col justify-center items-center">
-            <div class="swiper w-full rounded-xl overflow-x-scroll scrollbar-none">
-                <div class="swiper-wrapper w-max flex justify-start items-center">
-                    <img src="../assets/images/banner-satu.png" alt="banner-satu" class="swiper-slide w-[90%] h-auto max-w-full rounded-xl">
-                    <img src="../assets/images/banner-dua.png" alt="banner-dua" class="swiper-slide w-[90%] h-auto max-w-full rounded-xl">
-                    <img src="../assets/images/banner-tiga.png" alt="banner-tiga" class="swiper-slide w-[90%] h-auto max-w-full rounded-xl">
-                </div>
-
-            </div>
-            
-            <div class="w-full px-2 lg:px-13 absolute flex justify-between items-center">
-                <span class="swiper-button-prev w-6 lg:w-14 h-6 lg:h-14 rounded-full bg-neutral border-2 border-primary text-primary text-sm lg:text-2xl flex justify-center items-center cursor-pointer"><i class="fa-solid fa-chevron-left"></i></span>
-                <span class="swiper-button-next w-6 lg:w-14 h-6 lg:h-14 rounded-full bg-neutral border-2 border-primary text-primary text-sm lg:text-2xl flex justify-center items-center cursor-pointer"><i class="fa-solid fa-chevron-right"></i></span>
+        <div class="flex w-full flex-col items-center justify-center gap-6">
+          <div
+            class="flex w-full flex-col items-start justify-between gap-6 lg:flex-row">
+            <div
+              class="flex w-full flex-col items-start justify-center gap-2 lg:w-auto">
+              <h2
+                class="w-full text-center font-pj-sans-semibold text-3xl tracking-wide text-primary-text capitalize lg:text-left lg:text-4xl">
+                kuliner terfavorit untuk kamu
+              </h2>
+              <p
+                class="w-full text-center font-inter-medium text-sm tracking-wide text-primary-text/60 lg:text-left lg:text-base">
+                Enggak mau ketinggalan kuliner viral? Yuk, cek kuliner yang
+                paling ramai saat ini!
+              </p>
             </div>
 
-            <div class="swiper-pagination w-full text-[0.5rem] gap-2 flex justify-start items-center mt-0">
-                <i class="fa-solid fa-circle text-primary-text"></i>
-                <i class="fa-solid fa-circle text-gray-200"></i>
-                <i class="fa-solid fa-circle text-gray-200"></i>
+            <a
+              href="stores.html"
+              class="w-full rounded-xl border-2 border-primary bg-primary px-8 py-2 text-center font-pj-sans-medium text-sm tracking-wide text-white capitalize transition-all duration-300 hover:bg-transparent hover:text-primary lg:w-max lg:text-base">lihat
+              semua</a>
+          </div>
+
+          <div
+            class="scrollbar-none flex w-full items-center justify-start overflow-x-scroll">
+            <div
+              id="favorite-stores-wrapper"
+              class="flex h-max w-max items-start justify-center gap-4"></div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="about-us"
+        class="flex w-full scroll-mt-10 flex-col items-center justify-center gap-8 py-6 lg:py-20">
+        <div class="flex w-full flex-col items-start justify-center gap-4">
+          <h2
+            class="w-full text-center font-pj-sans-semibold text-4xl tracking-wide text-primary-text capitalize lg:text-left lg:text-5xl">
+            tentang kami
+          </h2>
+          <p
+            class="w-full text-center font-inter-medium text-sm tracking-wide text-primary-text/60 lg:text-left lg:text-base">
+            Kami hadir untuk membantu kamu menemukan dan mendukung UMKM terbaik
+            di sekitar.
+          </p>
+        </div>
+
+        <div
+          class="flex w-full flex-col items-center justify-between gap-4 lg:flex-row lg:gap-10">
+          <img
+            src="../assets/images/image-about.webp"
+            alt="Seorang pria bekerja dengan serius di laptop MacBook Air-nya yang terbuka, di atas meja kayu."
+            class="h-auto w-full rounded-lg object-cover object-center lg:w-1/2"
+            loading="lazy"
+            decoding="async">
+          <div class="flex w-full flex-col items-start justify-center gap-6 lg:w-1/2">
+            <div class="flex flex-col items-start justify-center gap-4">
+              <h2
+                class="w-full text-center font-pj-sans-bold text-2xl tracking-wide text-primary-text capitalize lg:w-130 lg:text-left lg:text-4xl">
+                kami selalu memberikan yang terbaik
+              </h2>
+              <p
+                class="text-justify font-inter-regular text-base tracking-wide text-primary-text/60">
+                Kami hadir sebagai jembatan antara pelaku UMKM dan masyarakat
+                digital. Dengan teknologi yang mudah diakses, kami ingin
+                menciptakan ruang bagi UMKM untuk tumbuh dan dikenal lebih luas,
+                serta memberikan pengalaman informasi kuliner yang menyenangkan
+                bagi semua pengunjung.
+              </p>
             </div>
-        </section>
+
+            <div class="flex w-full items-center justify-start">
+              <a
+                href="#"
+                class="w-full rounded-md border-2 border-primary bg-primary px-9 py-2 text-center font-pj-sans-medium text-base tracking-wide text-white capitalize transition-all duration-300 hover:bg-transparent hover:text-primary lg:w-max lg:rounded-xl lg:text-lg">hubungi
+                kami</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="news"
+        class="flex w-full scroll-mt-20 flex-col items-center justify-center gap-6 py-8">
+        <div class="flex w-full flex-col items-start justify-center gap-2">
+          <h2
+            class="w-full text-center font-pj-sans-semibold text-3xl tracking-wide text-primary-text capitalize lg:text-left lg:text-4xl">
+            berita terkini
+          </h2>
+          <p
+            class="w-full text-center font-inter-medium text-sm tracking-wide text-primary-text/60 lg:text-left lg:text-base">
+            Enggak mau ketinggalan kuliner viral? Yuk, cek kuliner yang paling
+            ramai saat ini!
+          </p>
+        </div>
+
+        <div
+          class="flex h-160 w-full flex-col items-center justify-center gap-3 lg:h-120 lg:flex-row">
+          <a
+            href="news.html"
+            class="first-news bg-center-top flex h-full w-full flex-col items-start justify-end rounded-lg bg-cover bg-no-repeat p-6 lg:w-1/2">
+            <div class="flex w-full flex-col items-start justify-center gap-3">
+              <span
+                class="rounded-lg bg-primary px-4 py-1 text-center text-xs tracking-wide text-white capitalize lg:text-base">berita</span>
+              <h2
+                class="text-left font-pj-sans-semibold text-base tracking-wider text-white capitalize lg:text-3xl">
+                Cerita UMKM Binaan Pertamina Raup Rp300 Juta per Bulan dari
+                Olahan Kelapa
+              </h2>
+            </div>
+          </a>
+
+          <div
+            class="flex h-full w-full flex-col items-start justify-center gap-3 lg:w-1/2">
+            <div class="flex h-1/2 w-full items-start justify-center gap-3">
+              <a
+                href="news.html"
+                class="second-news flex h-full w-1/2 flex-col items-start justify-end rounded-lg bg-cover bg-center bg-no-repeat p-3">
+                <div
+                  class="flex w-full flex-col items-start justify-center gap-1">
+                  <span
+                    class="rounded-sm bg-primary px-3 py-1 text-center text-[0.5rem] tracking-wider text-white capitalize">berita</span>
+                  <h2
+                    class="text-left font-pj-sans-medium text-[0.6rem] tracking-wider text-white capitalize">
+                    Perkuat Daya Saing, 100 UMKM di Wilayah Indonesia Timur
+                    Diberi Pendampingan
+                  </h2>
+                </div>
+              </a>
+
+              <a
+                href="news.html"
+                class="third-news flex h-full w-1/2 flex-col items-start justify-end rounded-lg bg-cover bg-center bg-no-repeat p-3">
+                <div
+                  class="flex w-full flex-col items-start justify-center gap-1">
+                  <span
+                    class="rounded-sm bg-primary px-3 py-1 text-center text-[0.5rem] tracking-wider text-white capitalize">berita</span>
+                  <h2
+                    class="text-left font-pj-sans-medium text-[0.6rem] tracking-wider text-white capitalize">
+                    Tekanan Waktu dan Strategi Lapangan Warnai Episode 4 Shopee
+                    Jagoan UMKM Naik Kelas
+                  </h2>
+                </div>
+              </a>
+            </div>
+
+            <a
+              href="news.html"
+              class="fourth-news flex h-1/2 w-full flex-col items-start justify-end rounded-lg bg-cover bg-center bg-no-repeat p-5">
+              <div
+                class="flex w-full flex-col items-start justify-center gap-2 lg:gap-3">
+                <span
+                  class="rounded-lg bg-primary px-4 py-1 text-center text-[0.6rem] tracking-wide text-white capitalize lg:text-sm">berita</span>
+                <h2
+                  class="text-left font-pj-sans-semibold text-xs tracking-wider text-white capitalize lg:text-xl">
+                  Target Ciptakan 12 Juta Lapangan Kerja, Penyaluran KUR Sentuh
+                  Rp217,20 Triliun
+                </h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="testimonial"
+        class="flex w-full scroll-mt-18 flex-col items-center justify-center gap-10 py-12">
+        <div class="flex w-full flex-col items-center justify-center gap-2">
+          <h2
+            class="w-full text-center font-pj-sans-semibold text-3xl tracking-wide text-primary-text capitalize lg:text-4xl">
+            ulasan dari pelanggan favorit kami
+          </h2>
+          <p
+            class="w-full text-center font-inter-medium text-sm tracking-wide text-primary-text/60 lg:text-base">
+            Dengarkan apa yang mereka katakan tentang kami
+          </p>
+        </div>
+
+        <div
+          class="grid w-full grid-cols-1 items-start justify-center gap-3 lg:grid-cols-4">
+          <div
+            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            <div class="flex w-full items-center justify-start gap-3">
+              <span
+                class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">at</span>
+              <div class="flex flex-col items-start justify-center gap-1">
+                <h3
+                  class="text-left font-pj-sans-semibold text-xl tracking-wide text-primary-text capitalize">
+                  athar ilmy
+                </h3>
+                <p
+                  class="text-left font-inter-medium text-sm tracking-wide text-primary-text/60 capitalize">
+                  bogor
+                </p>
+              </div>
+            </div>
+
+            <p
+              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              “Saya sangat puas dengan Berita di website ini.”
+            </p>
+          </div>
+
+          <div
+            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            <div class="flex w-full items-center justify-start gap-3">
+              <span
+                class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">if</span>
+              <div class="flex flex-col items-start justify-center gap-1">
+                <h3
+                  class="text-left font-pj-sans-semibold text-xl tracking-wide text-primary-text capitalize">
+                  ibnu farisi
+                </h3>
+                <p
+                  class="text-left font-inter-medium text-sm tracking-wide text-primary-text/60 capitalize">
+                  depok
+                </p>
+              </div>
+            </div>
+
+            <p
+              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              “Mencari kuliner lebih mudah di waraloka!”
+            </p>
+          </div>
+
+          <div
+            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            <div class="flex w-full items-center justify-start gap-3">
+              <span
+                class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">f</span>
+              <div class="flex flex-col items-start justify-center gap-1">
+                <h3
+                  class="text-left font-pj-sans-semibold text-xl tracking-wide text-primary-text capitalize">
+                  farhan
+                </h3>
+                <p
+                  class="text-left font-inter-medium text-sm tracking-wide text-primary-text/60 capitalize">
+                  bekasi
+                </p>
+              </div>
+            </div>
+
+            <p
+              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              “Dulu sebelum tahu waraloka, saya kalau mau cari toko atau jasa
+              harus buka maps dulu.”
+            </p>
+          </div>
+
+          <div
+            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            <div class="flex w-full items-center justify-start gap-3">
+              <span
+                class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">a</span>
+              <div class="flex flex-col items-start justify-center gap-1">
+                <h3
+                  class="text-left font-pj-sans-semibold text-xl tracking-wide text-primary-text capitalize">
+                  ahnaf
+                </h3>
+                <p
+                  class="text-left font-inter-medium text-sm tracking-wide text-primary-text/60 capitalize">
+                  depok
+                </p>
+              </div>
+            </div>
+
+            <p
+              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              “Lokasi tokonya akurat.”
+            </p>
+          </div>
+
+          <div
+            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            <div class="flex w-full items-center justify-start gap-3">
+              <span
+                class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">m</span>
+              <div class="flex flex-col items-start justify-center gap-1">
+                <h3
+                  class="text-left font-pj-sans-semibold text-xl tracking-wide text-primary-text capitalize">
+                  milan
+                </h3>
+                <p
+                  class="text-left font-inter-medium text-sm tracking-wide text-primary-text/60 capitalize">
+                  jakarta
+                </p>
+              </div>
+            </div>
+
+            <p
+              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              “Rekomendasi tempat kulinernya dijamin mantap.”
+            </p>
+          </div>
+
+          <div
+            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            <div class="flex w-full items-center justify-start gap-3">
+              <span
+                class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">y</span>
+              <div class="flex flex-col items-start justify-center gap-1">
+                <h3
+                  class="text-left font-pj-sans-semibold text-xl tracking-wide text-primary-text capitalize">
+                  yazid
+                </h3>
+                <p
+                  class="text-left font-inter-medium text-sm tracking-wide text-primary-text/60 capitalize">
+                  batam
+                </p>
+              </div>
+            </div>
+
+            <p
+              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              “Banyak sekali hidden gems buat toko-toko UMKM.”
+            </p>
+          </div>
+
+          <div
+            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            <div class="flex w-full items-center justify-start gap-3">
+              <span
+                class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">r</span>
+              <div class="flex flex-col items-start justify-center gap-1">
+                <h3
+                  class="text-left font-pj-sans-semibold text-xl tracking-wide text-primary-text capitalize">
+                  Rafa
+                </h3>
+                <p
+                  class="text-left font-inter-medium text-sm tracking-wide text-primary-text/60 capitalize">
+                  lampung
+                </p>
+              </div>
+            </div>
+
+            <p
+              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              “Ayo mari kita support toko lokal UMKM untuk memajukan ekonomi
+              negeri kita.”
+            </p>
+          </div>
+
+          <div
+            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            <div class="flex w-full items-center justify-start gap-3">
+              <span
+                class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">z</span>
+              <div class="flex flex-col items-start justify-center gap-1">
+                <h3
+                  class="text-left font-pj-sans-semibold text-xl tracking-wide text-primary-text capitalize">
+                  zahir
+                </h3>
+                <p
+                  class="text-left font-inter-medium text-sm tracking-wide text-primary-text/60 capitalize">
+                  solo
+                </p>
+              </div>
+            </div>
+
+            <p
+              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              “Ternyata ga semua UMKM menyediakan layanan buruk.”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="flex w-full flex-col items-center justify-center gap-4 py-20">
+        <div class="swiper scrollbar-none w-full overflow-x-scroll rounded-xl">
+          <div class="swiper-wrapper flex w-max items-center justify-start">
+            <img
+              src="../assets/images/banner-satu.webp"
+              alt=""
+              class="swiper-slide h-auto w-[90%] max-w-full rounded-xl"
+              loading="lazy"
+              decoding="async">
+            <img
+              src="../assets/images/banner-dua.webp"
+              alt=""
+              class="swiper-slide h-auto w-[90%] max-w-full rounded-xl"
+              loading="lazy"
+              decoding="async">
+            <img
+              src="../assets/images/banner-tiga.webp"
+              alt=""
+              class="swiper-slide h-auto w-[90%] max-w-full rounded-xl"
+              loading="lazy"
+              decoding="async">
+          </div>
+        </div>
+
+        <div
+          class="absolute flex w-full items-center justify-between px-2 lg:px-13">
+          <span
+            class="swiper-button-prev flex h-6 w-6 cursor-pointer items-center justify-center rounded-full border-2 border-primary bg-neutral text-sm text-primary lg:h-14 lg:w-14 lg:text-2xl"><i
+              class="fa-solid fa-chevron-left"></i></span>
+          <span
+            class="swiper-button-next flex h-6 w-6 cursor-pointer items-center justify-center rounded-full border-2 border-primary bg-neutral text-sm text-primary lg:h-14 lg:w-14 lg:text-2xl"><i
+              class="fa-solid fa-chevron-right"></i></span>
+        </div>
+
+        <div
+          class="swiper-pagination mt-0 flex w-full items-center justify-start gap-2 text-[0.5rem]">
+          <i class="fa-solid fa-circle text-primary-text"></i>
+          <i class="fa-solid fa-circle text-gray-200"></i>
+          <i class="fa-solid fa-circle text-gray-200"></i>
+        </div>
+      </div>
     </main>
 
     <footer id="footer"></footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../src/js/component.js" type="module" defer></script>
-    <script src="../src/js/home.js" type="module" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../src/js/component.js" type="module"></script>
+    <script src="../src/js/home.js" type="module"></script>
     <script src="../src/js/main.js" defer></script>
-</body>
+  </body>
 </html>

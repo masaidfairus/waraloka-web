@@ -1,9 +1,33 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.1.16",
+    "aos": "^2.3.4",
     "tailwindcss": "^4.1.16"
   },
   "scripts": {
     "build:css": "npx @tailwindcss/cli -i ./src/css/input.css -o ./dist/output.css --watch --minify"
+  },
+  "name": "waraloka-web",
+  "version": "1.0.0",
+  "description": "WARALOKA adalah website berbasis peta yang membantu masyarakat menjelajahi UMKM di daerah Pamijahan, Bogor. Kami ingin menjadikan usaha kecil lebih terlihat, lebih mudah dijangkau, dan lebih dihargai.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masaidfairus/waraloka-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masaidfairus/waraloka-web/issues"
+  },
+  "homepage": "https://github.com/masaidfairus/waraloka-web#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/aos": "^3.0.7",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1"
   }
 }

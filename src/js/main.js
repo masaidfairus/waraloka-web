@@ -1,55 +1,13 @@
-document.getElementById('open-sidebar').addEventListener('click', openSidebar)
-document.getElementById('close-sidebar').addEventListener('click', closeSidebar)
+const openSidebarBtn = document.getElementById('open-sidebar');
+if (openSidebarBtn) openSidebarBtn.addEventListener('click', openSidebar);
+const closeSidebarBtn = document.getElementById('close-sidebar');
+if (closeSidebar) closeSidebarBtn.addEventListener('click', closeSidebar);
 
 function openSidebar() {
-  document.getElementById('sidebar').classList.replace('translate-x-full', 'translate-x-0')
-  closeSidebar();
+  const sidebar = document.getElementById('sidebar');
+  if (sidebar) sidebar.classList.replace('translate-x-full', 'translate-x-0');
 }
 
 function closeSidebar() {
-  document.getElementById('sidebar').classList.replace('translate-x-0', 'translate-x-full')
+  document.getElementById('sidebar').classList.replace('translate-x-0', 'translate-x-full');
 }
-
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-
-  autoplay: {
-    delay: 1000,
-    disableOnInteraction: false,
-  },
-
-  speed: 1500,
-  spaceBetween: 30,
-  centeredSlides: true,
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
-const customPagination = document.querySelectorAll('.swiper-pagination i');
-
-// Update warna berdasarkan slide aktif
-swiper.on('slideChange', () => {
-  // Reset semua jadi abu-abu
-  customPagination.forEach(dot => dot.classList.remove('text-primary-text'));
-  customPagination.forEach(dot => dot.classList.add('text-gray-200'));
-
-  // Ambil index aktif dari swiper (looped slides bikin perlu modifikasi)
-  const realIndex = swiper.realIndex; // ini penting buat loop mode
-
-  // Tambah warna aktif
-  if (customPagination[realIndex]) {
-    customPagination[realIndex].classList.remove('text-gray-200');
-    customPagination[realIndex].classList.add('text-primary-text');
-  }
-});
-
-// Tambahin event biar bisa diklik manual juga
-customPagination.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
-    swiper.slideToLoop(index); // biar bisa loncat ke slide yang diklik
-  });
-});

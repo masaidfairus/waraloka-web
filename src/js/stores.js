@@ -1,9 +1,9 @@
-import { getStoresData } from "./component.js";
+import { getStoresData } from './component.js';
 
 function renderStore(stores, element) {
-    let storesHTML = ``
-    stores.forEach(store => {
-        storesHTML += `
+  let storesHTML = ``;
+  stores.forEach((store) => {
+    storesHTML += `
         <a href="detail.html?id=${store.id}" class="w-full gap-3 flex flex-col justify-center items-start">
             <img src="${store.images.thumbnail.image}" alt="${store.images.thumbnail.alt}" class="w-full h-50 max-w-full rounded-xl object-cover object-center">
             <div class="gap-1 flex flex-col justify-center items-start">
@@ -11,15 +11,15 @@ function renderStore(stores, element) {
                 <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">${store.category}</p>
             </div>
         </a>        
-        `
-    })
-    element.innerHTML = storesHTML
+        `;
+  });
+  element.innerHTML = storesHTML;
 }
 
 async function initStoresPage() {
-    const storesData = await getStoresData()
-    const storesWrapper = document.getElementById('stores-wrapper')
-    renderStore(storesData, storesWrapper)
+  const storesData = await getStoresData();
+  const storesWrapper = document.getElementById('stores-wrapper');
+  renderStore(storesData, storesWrapper);
 }
 
-document.addEventListener('DOMContentLoaded', initStoresPage)
+document.addEventListener('DOMContentLoaded', initStoresPage);
