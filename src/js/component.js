@@ -67,7 +67,7 @@ export function renderCategoryStore(stores, category, index) {
 header.classList = 'w-full relative z-10';
 header.innerHTML = `
             <nav aria-label="Main Navigation" class="w-full px-6 lg:px-20 py-6 bg-neutral shadow-sm shadow-black/20 fixed flex justify-between items-center">
-                <a href="index.html" class="w-max h-auto invisible lg:visible">
+                <a href="index.html" class="w-max h-auto absolute left-6 lg:static">
                     <img src="../assets/images/Waraloka-Logo.svg" alt="" class="w-40 h-auto max-w-full">
                 </a>
 
@@ -84,10 +84,7 @@ header.innerHTML = `
             </nav>
 
             <aside id="sidebar" class="w-80 h-screen py-6 px-8 bg-zinc-300/50 backdrop-blur-xs fixed right-0 top-0 gap-12 flex flex-col justify-start items-start translate-x-full transition-all duration-300">
-                <div class="w-full gap-8 flex justify-between items-center">
-                    <a href="index.html" class="w-max h-auto">
-                        <img src="../assets/images/Waraloka-Logo.svg" alt="" class="w-40 h-auto max-w-full">
-                    </a>
+                <div class="w-full flex justify-end items-center">
 
                     <a id="close-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl flex justify-center items-center">
                         <i class="fa-solid fa-xmark"></i>
