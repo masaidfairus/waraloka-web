@@ -1,33 +1,26 @@
-import { getStoresData } from './component.js';
-import { getCategoriesArray } from './component.js';
+import {
+  getStoresData,
+  getCategoriesArray,
+  createStoreCardHTML,
+} from "./component.js";
 
 function getSearchParams() {
   const params = new URLSearchParams(window.location.search);
   return {
-    name: params.get('name') || '',
-    category: params.get('category') || '',
+    name: params.get("name") || "",
+    category: params.get("category") || "",
   };
 }
 
 function renderStore(stores, element) {
   let storesHTML = ``;
-  stores.forEach((store) => {
-    storesHTML += `
-        <a href="detail.html?id=${store.id}" class="w-full gap-3 flex flex-col justify-center items-start">
-            <img src="${store.images.thumbnail.image}" alt="${store.images.thumbnail.alt}" class="w-full h-50 max-w-full rounded-xl object-cover object-center">
-            <div class="gap-1 flex flex-col justify-center items-start">
-                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">${store.name}</h2>
-                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">${store.category}</p>
-            </div>
-        </a>        
-        `;
-  });
+  storesHTML = stores.map((store) => createStoreCardHTML(store)).join("");
   element.innerHTML = storesHTML;
 }
 
 function renderStoreCategories(stores) {
   let categoriesHTML = ``;
-  const categoriesWrapper = document.getElementById('store-categories-wrapper');
+  const categoriesWrapper = document.getElementById("store-categories-wrapper");
   const categories = getCategoriesArray(stores);
   for (let category of categories) {
     categoriesHTML += `
@@ -56,17 +49,21 @@ function renderStoreCategories(stores) {
 
 async function initSearchPage() {
   const searchParams = getSearchParams();
-  const resultsWrapper = document.getElementById('search-results-wrapper');
-  const queryDisplay = document.getElementById('search-query-display');
+  const resultsWrapper = document.getElementById("search-results-wrapper");
+  const queryDisplay = document.getElementById("search-query-display");
 
-  queryDisplay.textContent = `Hasil pencarian untuk '${searchParams.name}' di ${searchParams.category || 'Semua Kategori'}`;
+  queryDisplay.textContent = `Hasil pencarian untuk '${searchParams.name}' di ${searchParams.category || "Semua Kategori"}`;
 
   const allStores = await getStoresData();
 
   const filteredStores = allStores.filter((store) => {
-    const nameMatch = store.name.toLowerCase().includes(searchParams.name.toLowerCase());
+    const nameMatch = store.name
+      .toLowerCase()
+      .includes(searchParams.name.toLowerCase());
 
-    const categoryMatch = searchParams.category ? store.category === searchParams.category : true;
+    const categoryMatch = searchParams.category
+      ? store.category === searchParams.category
+      : true;
 
     return nameMatch && categoryMatch;
   });
@@ -84,4 +81,4 @@ async function initSearchPage() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', initSearchPage);
+document.addEventListener("DOMContentLoaded", initSearchPage);

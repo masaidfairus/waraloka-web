@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical"
+      href="https:/https://waraloka.pages.dev/beranda">
+    <meta name="robots" content="noindex">
+    <meta name="description"
+      content="Waraloka adalah platform penemuan UMKM terpercaya di Pamijahan, Bogor. Temukan usaha lokal, dukung ekonomi lokal, dan jelajahi UMKM terbaik di sekitarmu.">
     <title>Beranda | Waraloka - UMKM Directory</title>
     <link href="../dist/output.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
@@ -40,26 +45,27 @@
           <form
             action="search.html"
             method="GET"
-            class="flex w-full lg:w-max flex-col items-center justify-between gap-10 rounded-lg bg-white py-5 px-5 md:px-4 md:py-4 lg:flex-row">
+            class="flex w-full lg:w-max flex-col items-center justify-between gap-4 rounded-lg bg-white py-5 px-5 md:px-4 md:py-4 lg:flex-row">
             <div
-              class="flex w-full items-center justify-start gap-3 md:pl-4 lg:w-max">
+              class="flex w-full items-center justify-start md:pl-4 lg:w-max">
               <label for="search"><i
                   class="fa-solid fa-search text-base text-zinc-400"></i></label>
               <input
                 type="text"
                 id="search"
                 name="name"
+                autocomplete="additional-name"
                 placeholder="Cari Nama Toko"
-                class="h-10 w-full bg-transparent text-left font-pj-sans-regular text-base text-zinc-950 placeholder:text-zinc-400 focus:outline-none">
+                class="w-full py-2 pl-3 bg-transparent rounded-md text-left font-pj-sans-regular text-base text-zinc-950 placeholder:text-zinc-400 focus:outline-primary transition-all duration-300">
             </div>
-
-            <div class="mr-8 flex w-full items-center justify-center lg:w-max">
+            <div class="border border-gray-300 w-full lg:w-auto lg:h-full"></div>
+            <div class="flex w-full items-center justify-center lg:w-max">
               <input
                 list="category-selector"
                 name="category"
                 title="select category"
                 placeholder="Semua Kategori"
-                class="w-full px-6 text-left font-pj-sans-regular text-base capitalize placeholder:text-zinc-400 lg:w-50 lg:px-0">
+                class="w-full px-6 py-2 rounded-md text-left font-pj-sans-regular text-base capitalize placeholder:text-zinc-400 lg:w-50 focus:outline-primary transition-all duration-300">
               <datalist id="category-selector">
                 <option
                   class="text-left font-pj-sans-regular text-base text-zinc-400 capitalize"
@@ -69,9 +75,9 @@
                 </option>
               </datalist>
             </div>
-
+            <div class="border border-gray-300 w-full lg:w-auto lg:h-full"></div>
             <button
-              class="w-full cursor-pointer rounded-md bg-primary px-18 py-3 text-center font-pj-sans-medium text-base text-white capitalize lg:w-max"
+              class="w-full cursor-pointer rounded-md bg-primary px-18 py-3 text-center font-pj-sans-medium text-base text-white capitalize lg:w-max focus:outline-primary transition-all duration-300"
               type="submit">
               cari toko
             </button>
@@ -165,7 +171,8 @@
             class="h-auto w-full rounded-lg object-cover object-center lg:w-1/2"
             loading="lazy"
             decoding="async">
-          <div class="flex w-full flex-col items-start justify-center gap-6 lg:w-1/2">
+          <div
+            class="flex w-full flex-col items-start justify-center gap-6 lg:w-1/2">
             <div class="flex flex-col items-start justify-center gap-4">
               <h2
                 class="w-full text-center font-pj-sans-bold text-2xl tracking-wide text-primary-text capitalize lg:w-130 lg:text-left lg:text-4xl">
@@ -484,19 +491,19 @@
           <div class="swiper-wrapper flex w-max items-center justify-start">
             <img
               src="../assets/images/banner-satu.webp"
-              alt=""
+              alt
               class="swiper-slide h-auto w-[90%] max-w-full rounded-xl"
               loading="lazy"
               decoding="async">
             <img
               src="../assets/images/banner-dua.webp"
-              alt=""
+              alt
               class="swiper-slide h-auto w-[90%] max-w-full rounded-xl"
               loading="lazy"
               decoding="async">
             <img
               src="../assets/images/banner-tiga.webp"
-              alt=""
+              alt
               class="swiper-slide h-auto w-[90%] max-w-full rounded-xl"
               loading="lazy"
               decoding="async">

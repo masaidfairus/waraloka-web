@@ -1,70 +1,59 @@
-const header = document.getElementById('header');
-const footer = document.getElementById('footer');
+const header = document.getElementById("header");
+const footer = document.getElementById("footer");
 
 export async function getStoresData() {
   try {
-    const response = await fetch('../src/data/store-data.json');
+    const response = await fetch("../src/data/store-data.json");
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error('Failed to load store data:', error);
+    console.error("Failed to load store data:", error);
+    return [];
   }
 }
 
 export function getCategoriesArray(stores) {
-  const categoriesArray = [];
-  for (let store of stores) {
-    if (!categoriesArray.includes(store.category)) {
-      categoriesArray.push(store.category);
-    }
-  }
-  return categoriesArray;
+  return [...new Set(stores.map((store) => store.category))];
 }
 
-export function renderUniqueStore(stores, wrapperElement, index) {
+export function createStoreCardHTML(store) {
+  return `
+      <a href="detail.html?id=${store.id}" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
+        <img src="${store.images.thumbnail.image}" alt="${store.images.thumbnail.alt}" class="w-full h-50 max-w-full rounded-xl object-cover object-center" loading="lazy" decoding="async">
+        <div class="gap-1 flex flex-col justify-center items-start">
+          <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">${store.name}</h2>
+          <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">${store.category}</p>
+        </div>
+      </a>
+    `;
+}
+
+export function renderUniqueStore(stores, wrapperElement, limit) {
   const shuffledArray = [...stores];
-  let wrapperHTML = '';
+  let wrapperHTML = "";
 
   for (let i = shuffledArray.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
   }
 
-  const randomItems = shuffledArray.slice(0, index);
-  randomItems.forEach((store) => {
-    wrapperHTML += `
-        <a href="detail.html?id=${store.id}" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
-            <img src="${store.images.thumbnail.image}" alt="${store.images.thumbnail.alt}" class="w-full h-50 max-w-full rounded-xl object-cover object-center" loading="lazy" decoding="async">
-            <div class="gap-1 flex flex-col justify-center items-start">
-                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">${store.name}</h2>
-                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">${store.category}</p>
-            </div>
-        </a>        
-        `;
-  });
+  const randomItems = shuffledArray.slice(0, limit);
+  wrapperHTML = randomItems.map((store) => createStoreCardHTML(store)).join("");
   wrapperElement.innerHTML = wrapperHTML;
 }
 
-export function renderCategoryStore(stores, category, index) {
+export function renderCategoryStore(stores, category, limit) {
   const filterCategory = stores.filter((store) => store.category === category);
-  const limitedStores = filterCategory.slice(0, index);
+  const limitedStores = filterCategory.slice(0, limit);
   let storesHTML = ``;
-  limitedStores.forEach((store) => {
-    storesHTML += `
-        <a href="detail.html?id=${store.id}" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
-            <img src="${store.images.thumbnail.image}" alt="${store.images.thumbnail.alt}" class="w-full h-50 max-w-full rounded-xl object-cover object-center" loading="lazy" decoding="async">
-            <div class="gap-1 flex flex-col justify-center items-start">
-                <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">${store.name}</h2>
-                <p class="text-primary-text/60 text-base text-left font-inter-regular capitalize tracking-wide">${store.category}</p>
-            </div>
-        </a>        
-        `;
-  });
-  document.getElementById('favorite-stores-wrapper').innerHTML = storesHTML;
+  storesHTML = limitedStores
+    .map((store) => createStoreCardHTML(store))
+    .join("");
+  document.getElementById("favorite-stores-wrapper").innerHTML = storesHTML;
 }
 
-header.classList = 'w-full relative z-10';
+header.classList = "w-full relative z-10";
 header.innerHTML = `
             <nav aria-label="Main Navigation" class="w-full px-6 lg:px-20 py-6 bg-neutral shadow-sm shadow-black/20 fixed flex justify-between items-center">
                 <a href="index.html" class="w-max h-auto absolute left-6 lg:static">
@@ -100,7 +89,7 @@ header.innerHTML = `
             </aside>
 `;
 
-footer.classList = 'w-full flex flex-col justify-center items-center';
+footer.classList = "w-full flex flex-col justify-center items-center";
 footer.innerHTML = `
         <div class="w-full py-8 border-y-2 border-y-zinc-400 gap-10 flex flex-col justify-center items-center">
             <div class="w-full px-8 lg:px-28 gap-6 lg:gap-0 grid lg:flex grid-cols-2 lg:grid-cols-0 justify-between items-start">
