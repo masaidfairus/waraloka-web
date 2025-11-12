@@ -133,7 +133,7 @@ footer.innerHTML = `
                 <div class="gap-8 flex flex-col justify-center items-start">
                     <ul class=" gap-3 flex flex-col justify-center items-start">
                         <li class="text-primary-text text-left text-xs lg:text-sm font-semibold uppercase tracking-wide">layanan pelanggan (WA):</li>
-                        <li><a href="https://www.whatsapp.com/" class="text-primary text-left text-xs lg:text-sm font-regular underline capitalize tracking-wide">+62 882-2990-0877</a></li>
+                        <li><a href="https://wa.me/+6288229900877" class="text-primary text-left text-xs lg:text-sm font-regular underline capitalize tracking-wide">+62 882-2990-0877</a></li>
                     </ul>
 
                     <ul class=" gap-3 flex flex-col justify-center items-start">
