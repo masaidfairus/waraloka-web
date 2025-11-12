@@ -31,8 +31,8 @@ const modalCard = document.getElementById('modal-card');
 
 document.getElementById('open-modal-btn').addEventListener('click', openModal);
 document.getElementById('close-modal-btn').addEventListener('click', closeModal);
-document.getElementById('close-sidebar-btn').addEventListener('click', openSidebar);
-document.getElementById('close-sidebar-btn').addEventListener('click', closeSidebar);
+document.getElementById('open-sidebar-btn').addEventListener('click', openSideContent);
+document.getElementById('close-sidebar-btn').addEventListener('click', closeSideContent);
 infoBtn.addEventListener('click', openInfoTab);
 productBtn.addEventListener('click', openProductTab);
 
@@ -95,14 +95,14 @@ function renderStoreInfo(store) {
   storeCalendarLink.href = store.location.calendarLink ?? 'https://calendar.google.com/calendar';
 }
 
-function openSidebar() {
+function openSideContent() {
   sideSectionEl.classList.replace('translate-x-full', 'translate-x-0');
   sideContentEl.classList.replace('overflow-y-none', 'overflow-y-scroll');
 
   closeSidebar();
 }
 
-function closeSidebar() {
+function closeSideContent() {
   sideSectionEl.classList.replace('translate-x-0', 'translate-x-full');
   sideContentEl.classList.replace('overflow-y-scroll', 'overflow-y-none');
 }
