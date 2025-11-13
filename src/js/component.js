@@ -56,7 +56,7 @@ export function renderCategoryStore(stores, category, limit) {
 header.classList = "w-full relative z-10";
 header.innerHTML = `
             <nav aria-label="Main Navigation" class="w-full px-6 lg:px-20 py-6 bg-neutral shadow-sm shadow-black/20 fixed flex justify-between items-center">
-                <a href="index.html" class="w-max h-auto absolute left-6 lg:static">
+                <a href="index.html" class="w-max h-auto absolute left-6 lg:static" aria-label="Waraloka - Kembali ke beranda">
                     <img src="../assets/images/Waraloka-Logo.svg" alt="" class="w-40 h-auto max-w-full">
                 </a>
 
@@ -67,7 +67,7 @@ header.innerHTML = `
                     <li><a href="#about-us" class="text-primary-text/60 text-base text-center font-medium capitalize">tentang kami</a></li>
                 </ul>
 
-                <button id="open-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl absolute right-6 visible lg:invisible flex justify-center items-center">
+                <button id="open-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl absolute right-6 visible lg:invisible flex justify-center items-center" aria-label="Buka menu navigasi">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </nav>
@@ -75,7 +75,7 @@ header.innerHTML = `
             <aside id="sidebar" class="w-80 h-screen py-6 px-8 bg-zinc-300/50 backdrop-blur-xs fixed right-0 top-0 gap-12 flex flex-col justify-start items-start translate-x-full transition-all duration-300">
                 <div class="w-full flex justify-end items-center">
 
-                    <button id="close-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl flex justify-center items-center">
+                    <button id="close-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl flex justify-center items-center" aria-label="Tutup menu navigasi">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
@@ -129,7 +129,7 @@ footer.innerHTML = `
                 </div>
             </div>
 
-            <a href="index.html" class="w-max h-auto">
+            <a href="index.html" class="w-max h-auto" aria-label="Waraloka - Kembali ke beranda">
                 <img src="../assets/images/Waraloka-Logo.svg" alt="" class="w-50 lg:w-70 h-auto max-w-full">
             </a>
 
