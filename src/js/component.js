@@ -67,7 +67,7 @@ header.innerHTML = `
                     <li><a href="#about-us" class="text-primary-text/60 text-base text-center font-medium capitalize">tentang kami</a></li>
                 </ul>
 
-                <button id="open-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl absolute right-6 visible lg:invisible flex justify-center items-center">
+                <button id="open-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl absolute right-6 visible lg:invisible flex justify-center items-center" aria-label="Open Sidebar Menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </nav>
@@ -75,7 +75,7 @@ header.innerHTML = `
             <aside id="sidebar" class="w-80 h-screen py-6 px-8 bg-zinc-300/50 backdrop-blur-xs fixed right-0 top-0 gap-12 flex flex-col justify-start items-start translate-x-full transition-all duration-300">
                 <div class="w-full flex justify-end items-center">
 
-                    <button id="close-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl flex justify-center items-center">
+                    <button id="close-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl flex justify-center items-center" aria-label="Close Sidebar Menu">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
