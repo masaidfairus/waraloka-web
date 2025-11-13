@@ -62,29 +62,29 @@ header.innerHTML = `
 
                 <ul class="gap-8 flex font-inter-medium justify-center items-center invisible lg:visible">
                     <li><a href="index.html" class="text-primary-text text-base text-center font-medium capitalize">beranda</a></li>
-                    <li><a href="index.html#testimonial" class="text-primary-text/60 text-base text-center font-medium capitalize">testimoni</a></li>
-                    <li><a href="index.html#news" class="text-primary-text/60 text-base text-center font-medium capitalize">berita</a></li>
-                    <li><a href="index.html#about-us" class="text-primary-text/60 text-base text-center font-medium capitalize">tentang kami</a></li>
+                    <li><a href="#testimonial" class="text-primary-text/60 text-base text-center font-medium capitalize">testimoni</a></li>
+                    <li><a href="#news" class="text-primary-text/60 text-base text-center font-medium capitalize">berita</a></li>
+                    <li><a href="#about-us" class="text-primary-text/60 text-base text-center font-medium capitalize">tentang kami</a></li>
                 </ul>
 
-                <a id="open-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl absolute right-6 visible lg:invisible flex justify-center items-center">
+                <button id="open-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl absolute right-6 visible lg:invisible flex justify-center items-center">
                     <i class="fa-solid fa-bars"></i>
-                </a>
+                </button>
             </nav>
 
             <aside id="sidebar" class="w-80 h-screen py-6 px-8 bg-zinc-300/50 backdrop-blur-xs fixed right-0 top-0 gap-12 flex flex-col justify-start items-start translate-x-full transition-all duration-300">
                 <div class="w-full flex justify-end items-center">
 
-                    <a id="close-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl flex justify-center items-center">
+                    <button id="close-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl flex justify-center items-center">
                         <i class="fa-solid fa-xmark"></i>
-                    </a>
+                    </button>
                 </div>
 
                 <ul class="w-full gap-3 font-inter-medium flex flex-col justify-center items-start">
                     <li><a href="index.html" class="text-primary-text text-lg text-center font-semibold capitalize">beranda</a></li>
-                    <li><a href="index.html#testimonial" class="text-primary-text/60 text-lg text-center font-semibold capitalize">testimoni</a></li>
-                    <li><a href="index.html#news" class="text-primary-text/60 text-lg text-center font-semibold capitalize">berita</a></li>
-                    <li><a href="index.html#about-us" class="text-primary-text/60 text-lg text-center font-semibold capitalize">tentang kami</a></li>
+                    <li><a href="#testimonial" class="text-primary-text/60 text-lg text-center font-semibold capitalize">testimoni</a></li>
+                    <li><a href="#news" class="text-primary-text/60 text-lg text-center font-semibold capitalize">berita</a></li>
+                    <li><a href="#about-us" class="text-primary-text/60 text-lg text-center font-semibold capitalize">tentang kami</a></li>
                 </ul>
             </aside>
 `;
