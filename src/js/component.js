@@ -19,7 +19,7 @@ export function getCategoriesArray(stores) {
 
 export function createStoreCardHTML(store) {
   return `
-      <a href="detail.html?id=${store.id}" class="w-[19.45rem] lg:w-70 gap-3 flex flex-col justify-center items-start">
+      <a href="detail.html?id=${store.id}" class="w-[20rem] lg:w-70 lg:max-w-[300px] gap-3 flex flex-col justify-center items-start">
         <img src="${store.images.thumbnail.image}" alt="${store.images.thumbnail.alt}" class="w-full h-50 max-w-full rounded-xl object-cover object-center" loading="lazy" decoding="async">
         <div class="gap-1 flex flex-col justify-center items-start">
           <h2 class="text-primary-text text-lg text-left font-pj-sans-semibold capitalize tracking-wide">${store.name}</h2>
@@ -67,7 +67,7 @@ header.innerHTML = `
                     <li><a href="#about-us" class="text-primary-text/60 text-base text-center font-medium capitalize">tentang kami</a></li>
                 </ul>
 
-                <button id="open-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl absolute right-6 visible lg:invisible flex justify-center items-center"  aria-label="Buka menu navigasi">
+                <button id="open-sidebar" class="w-12 h-12 bg-primary rounded-xl text-white text-2xl absolute right-6 visible lg:invisible flex justify-center items-center" aria-label="Buka menu navigasi">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </nav>

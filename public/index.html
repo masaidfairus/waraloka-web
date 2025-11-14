@@ -24,16 +24,16 @@
 
     <main class="relative w-full overflow-x-hidden px-5 lg:px-20">
       <section
-        class="flex h-screen w-full items-center justify-center pt-30 pb-6 lg:pt-28 lg:pb-8">
+        class="flex h-screen w-full items-center justify-center pt-28 pb-5 lg:pt-28 lg:pb-8">
         <div
-          class="hero-bg flex h-full w-full flex-col items-center justify-center gap-4 rounded-2xl bg-cover bg-center bg-no-repeat md:px-30 px-5">
+          class="hero-bg flex h-full w-full flex-col items-center justify-center gap-5 lg:gap-12 rounded-2xl bg-cover bg-center bg-no-repeat md:px-35 px-5">
           <div class="flex flex-col items-center justify-center gap-2">
             <h1
-              class="text-center font-pj-sans-bold text-3xl leading-snug tracking-wide text-neutral lg:text-5xl md:text-5xl">
+              class="text-center font-pj-sans-bold text-2xl leading-snug tracking-wide text-neutral lg:text-5xl">
               Yukk, Cari UMKM <br>terbaik di dekat mu
             </h1>
             <p
-              class="text-center font-inter-light text-sm tracking-wider text-neutral/60 lg:text-base">
+              class="text-center font-inter-light text-[0.6rem] tracking-wider text-neutral/60 lg:text-base">
               Temukan usaha lokal favoritmu dan dukung pelaku UMKM di sekitar
               kamu!
             </p>
@@ -42,30 +42,30 @@
           <form
             action="search.html"
             method="GET"
-            class="flex w-full lg:w-max flex-col items-center justify-between gap-4 rounded-lg bg-white py-5 px-5 md:px-4 md:py-4 lg:flex-row">
+            class="flex w-full lg:w-max flex-col items-center justify-between gap-3 lg:gap-4 rounded-lg bg-white py-5 px-5 md:px-4 md:py-4 lg:flex-row">
             <div
-              class="flex w-full items-center justify-start md:pl-4 lg:w-max">
+              class="gap-2 flex w-full items-center justify-center md:pl-4 lg:w-max text-xs lg:text-base">
               <label for="search"><i
-                  class="fa-solid fa-search text-base text-zinc-400"></i></label>
+                  class="fa-solid fa-search text-zinc-400"></i></label>
               <input
                 type="text"
                 id="search"
                 name="name"
                 autocomplete="additional-name"
                 placeholder="Cari Nama Toko"
-                class="w-full py-2 pl-3 bg-transparent rounded-md text-left font-pj-sans-regular text-base text-zinc-950 placeholder:text-zinc-400 focus:outline-primary transition-all duration-300">
+                class="w-full py-1 lg:py-2 px-3 bg-transparent rounded-md text-left font-pj-sans-regular text-zinc-950 placeholder:text-zinc-400 focus:outline-primary transition-all duration-300">
             </div>
             <div class="border border-gray-300 w-full lg:w-auto lg:h-full"></div>
-            <div class="flex w-full items-center justify-center lg:w-max">
+            <div class="flex w-full items-center justify-center lg:w-max text-xs lg:text-base">
               <input
                 list="category-selector"
                 name="category"
                 title="select category"
                 placeholder="Semua Kategori"
-                class="w-full px-6 py-2 rounded-md text-left font-pj-sans-regular text-base capitalize placeholder:text-zinc-400 lg:w-50 focus:outline-primary transition-all duration-300">
+                class="w-full px-6 py-1 lg:py-2 rounded-md text-left font-pj-sans-regular capitalize placeholder:text-zinc-400 lg:w-50 focus:outline-primary transition-all duration-300">
               <datalist id="category-selector">
                 <option
-                  class="text-left font-pj-sans-regular text-base text-zinc-400 capitalize"
+                  class="text-left font-pj-sans-regular text-zinc-400 capitalize"
                   value
                   selected>
                   Semua kategori
@@ -74,7 +74,7 @@
             </div>
             <div class="border border-gray-300 w-full lg:w-auto lg:h-full"></div>
             <button
-              class="w-full cursor-pointer rounded-md bg-primary px-18 py-3 text-center font-pj-sans-medium text-base text-white capitalize lg:w-max focus:outline-primary transition-all duration-300"
+              class="w-full cursor-pointer rounded-md bg-primary hover:bg-transparent border-2 border-primary py-2 lg:py-3 text-center font-pj-sans-medium text-sm lg:text-base text-white hover:text-primary capitalize lg:w-max focus:outline-primary transition-all duration-300"
               type="submit">
               cari toko
             </button>
@@ -110,7 +110,7 @@
             class="scrollbar-none flex w-full items-center justify-start overflow-x-scroll">
             <div
               id="nearby-stores-wrapper"
-              class="flex h-max w-max items-start justify-center gap-4"></div>
+              class="flex h-max w-max items-start justify-center gap-6"></div>
           </div>
         </div>
 
@@ -140,7 +140,7 @@
             class="scrollbar-none flex w-full items-center justify-start overflow-x-scroll">
             <div
               id="favorite-stores-wrapper"
-              class="flex h-max w-max items-start justify-center gap-4"></div>
+              class="flex h-max w-max items-start justify-center gap-6"></div>
           </div>
         </div>
       </section>
@@ -235,9 +235,9 @@
                 <div
                   class="flex w-full flex-col items-start justify-center gap-1">
                   <span
-                    class="rounded-sm bg-primary px-3 py-1 text-center text-[0.5rem] tracking-wider text-white capitalize">berita</span>
+                    class="rounded-lg bg-primary px-4 py-1 text-center text-[0.6rem] tracking-wide text-white capitalize lg:text-xs">berita</span>
                   <h2
-                    class="text-left font-pj-sans-medium text-[0.6rem] tracking-wider text-white capitalize">
+                    class="text-left font-pj-sans-medium text-[0.5rem] tracking-wider text-white capitalize lg:text-base">
                     Perkuat Daya Saing, 100 UMKM di Wilayah Indonesia Timur
                     Diberi Pendampingan
                   </h2>
@@ -250,9 +250,9 @@
                 <div
                   class="flex w-full flex-col items-start justify-center gap-1">
                   <span
-                    class="rounded-sm bg-primary px-3 py-1 text-center text-[0.5rem] tracking-wider text-white capitalize">berita</span>
+                    class="rounded-lg bg-primary px-4 py-1 text-center text-[0.6rem] tracking-wide text-white capitalize lg:text-xs">berita</span>
                   <h2
-                    class="text-left font-pj-sans-medium text-[0.6rem] tracking-wider text-white capitalize">
+                    class="text-left font-pj-sans-medium text-[0.5rem] tracking-wider text-white capitalize lg:text-base">
                     Tekanan Waktu dan Strategi Lapangan Warnai Episode 4 Shopee
                     Jagoan UMKM Naik Kelas
                   </h2>
@@ -266,9 +266,9 @@
               <div
                 class="flex w-full flex-col items-start justify-center gap-2 lg:gap-3">
                 <span
-                  class="rounded-lg bg-primary px-4 py-1 text-center text-[0.6rem] tracking-wide text-white capitalize lg:text-sm">berita</span>
+                  class="rounded-lg bg-primary px-4 py-1 text-center text-[0.6rem] tracking-wide text-white capitalize lg:text-xs">berita</span>
                 <h2
-                  class="text-left font-pj-sans-semibold text-xs tracking-wider text-white capitalize lg:text-xl">
+                  class="text-left font-pj-sans-medium text-[0.5rem] tracking-wider text-white capitalize lg:text-base">
                   Target Ciptakan 12 Juta Lapangan Kerja, Penyaluran KUR Sentuh
                   Rp217,20 Triliun
                 </h2>
@@ -295,7 +295,7 @@
         <div
           class="grid w-full grid-cols-1 items-start justify-center gap-3 lg:grid-cols-4">
           <div
-            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            class="flex h-auto lg:h-48 w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
             <div class="flex w-full items-center justify-start gap-3">
               <span
                 class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">at</span>
@@ -312,13 +312,13 @@
             </div>
 
             <p
-              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              class="w-full h-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
               “Saya sangat puas dengan Berita di website ini.”
             </p>
           </div>
 
           <div
-            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            class="flex h-auto lg:h-48 w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
             <div class="flex w-full items-center justify-start gap-3">
               <span
                 class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">if</span>
@@ -335,13 +335,13 @@
             </div>
 
             <p
-              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              class="w-full h-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
               “Mencari kuliner lebih mudah di waraloka!”
             </p>
           </div>
 
           <div
-            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            class="flex h-auto lg:h-48 w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
             <div class="flex w-full items-center justify-start gap-3">
               <span
                 class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">f</span>
@@ -358,14 +358,14 @@
             </div>
 
             <p
-              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              class="w-full h-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
               “Dulu sebelum tahu waraloka, saya kalau mau cari toko atau jasa
               harus buka maps dulu.”
             </p>
           </div>
 
           <div
-            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            class="flex h-auto lg:h-48 w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
             <div class="flex w-full items-center justify-start gap-3">
               <span
                 class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">a</span>
@@ -382,13 +382,13 @@
             </div>
 
             <p
-              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              class="w-full h-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
               “Lokasi tokonya akurat.”
             </p>
           </div>
 
           <div
-            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            class="flex h-auto lg:h-48 w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
             <div class="flex w-full items-center justify-start gap-3">
               <span
                 class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">m</span>
@@ -405,13 +405,13 @@
             </div>
 
             <p
-              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              class="w-full h-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
               “Rekomendasi tempat kulinernya dijamin mantap.”
             </p>
           </div>
 
           <div
-            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            class="flex h-auto lg:h-48 w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
             <div class="flex w-full items-center justify-start gap-3">
               <span
                 class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">y</span>
@@ -428,13 +428,13 @@
             </div>
 
             <p
-              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              class="w-full h-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
               “Banyak sekali hidden gems buat toko-toko UMKM.”
             </p>
           </div>
 
           <div
-            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            class="flex h-auto lg:h-48 w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
             <div class="flex w-full items-center justify-start gap-3">
               <span
                 class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">r</span>
@@ -451,14 +451,14 @@
             </div>
 
             <p
-              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              class="w-full h-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
               “Ayo mari kita support toko lokal UMKM untuk memajukan ekonomi
               negeri kita.”
             </p>
           </div>
 
           <div
-            class="flex h-auto w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
+            class="flex h-auto lg:h-48 w-full flex-col items-center justify-between gap-6 rounded-lg border-2 border-zinc-400 bg-white p-5">
             <div class="flex w-full items-center justify-start gap-3">
               <span
                 class="h-13 w-13 max-w-full rounded-full bg-primary pt-2 text-center font-pj-sans-semibold text-2xl text-white uppercase">z</span>
@@ -475,7 +475,7 @@
             </div>
 
             <p
-              class="w-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
+              class="w-full h-full text-left font-inter-regular text-lg tracking-wide text-primary-text lg:text-base">
               “Ternyata ga semua UMKM menyediakan layanan buruk.”
             </p>
           </div>
